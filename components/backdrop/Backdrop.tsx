@@ -59,42 +59,52 @@ export default function Backdrop() {
       gsap.set(img, { x: state.x, y: state.y, scale: state.scale });
     };
 
+    // The camera follows a target every frame, so fast scrolling never
+    // leaves it behind: it just moves faster, then settles.
+    let aim = target("wide");
     const go = (stop: Stop, instant = false) => {
       current = stop;
-      const t = target(stop);
+      aim = target(stop);
       if (reduce || instant) {
-        Object.assign(state, t);
+        Object.assign(state, aim);
         apply();
-        return;
       }
-      gsap.to(state, {
-        ...t,
-        duration: 1.6,
-        ease: "power3.inOut",
-        overwrite: true,
-        onUpdate: apply,
-      });
     };
 
-    // Start wide, then settle on the first section's stop.
+    const sections = Array.from(document.querySelectorAll<HTMLElement>("[data-stop]"));
+    const pick = () => {
+      const line = window.innerHeight * 0.5;
+      let best: HTMLElement | null = null;
+      let bestD = Infinity;
+      for (const el of sections) {
+        const r = el.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > window.innerHeight) continue;
+        const d = r.top <= line && r.bottom >= line ? 0 : Math.min(Math.abs(r.top - line), Math.abs(r.bottom - line));
+        if (d < bestD) {
+          bestD = d;
+          best = el;
+        }
+      }
+      const stop = (best?.dataset.stop as Stop) || "wide";
+      if (stop !== current) go(stop);
+    };
+
     Object.assign(state, target("wide"));
     gsap.set(img, { ...state, opacity: 0 });
     gsap.to(img, { opacity: 1, duration: 1.2, ease: "power2.out", delay: 0.1 });
+    pick();
 
-    const triggers: ScrollTrigger[] = [];
-    const sections = Array.from(document.querySelectorAll<HTMLElement>("[data-stop]"));
-    sections.forEach((el) => {
-      const stop = (el.dataset.stop as Stop) || "wide";
-      triggers.push(
-        ScrollTrigger.create({
-          trigger: el,
-          start: "top 60%",
-          end: "bottom 40%",
-          onEnter: () => go(stop),
-          onEnterBack: () => go(stop),
-        }),
-      );
-    });
+    const tick = (_t: number, dt: number) => {
+      if (reduce) return;
+      // Exponential ease: ~2.4 units per second toward the target.
+      const k = 1 - Math.exp(-(dt / 1000) * 2.4);
+      state.x += (aim.x - state.x) * k;
+      state.y += (aim.y - state.y) * k;
+      state.scale += (aim.scale - state.scale) * k;
+      apply();
+    };
+    gsap.ticker.add(tick);
+    window.addEventListener("scroll", pick, { passive: true });
 
     // Gentle drift so the picture never feels frozen between stops.
     let drift: gsap.core.Tween | undefined;
@@ -110,10 +120,10 @@ export default function Backdrop() {
     const onLeave = () => go("wide");
     window.addEventListener("resize", onResize);
     window.addEventListener("backdrop:wide", onLeave);
-    ScrollTrigger.refresh();
 
     return () => {
-      triggers.forEach((t) => t.kill());
+      gsap.ticker.remove(tick);
+      window.removeEventListener("scroll", pick);
       drift?.scrollTrigger?.kill();
       drift?.kill();
       window.removeEventListener("resize", onResize);

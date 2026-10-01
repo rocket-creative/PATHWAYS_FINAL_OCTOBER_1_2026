@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <article>
       {/* Hero: the whole branch, wide. */}
-      <header className="relative min-h-[calc(100svh-var(--header-h))]" data-stop="wide">
+      <header className="relative pb-6 lg:min-h-[calc(100svh-var(--header-h))] lg:pb-0" data-stop="wide">
         <div className="wrap pt-10 md:pt-20">
           <div className="glass glass--strong max-w-[760px] px-6 py-7 md:px-10 md:py-10">
             <p className="eyebrow mb-4" data-reveal>
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="wrap mt-10 flex items-center gap-3 text-[0.85rem] font-bold tracking-[0.18em] text-brand-ink uppercase" data-reveal style={{ fontFamily: "var(--font-display)" }}>
+        <p className="wrap mt-6 flex items-center gap-3 lg:mt-10 text-[0.85rem] font-bold tracking-[0.18em] text-brand-ink uppercase" data-reveal style={{ fontFamily: "var(--font-display)" }}>
           <span className="circle inline-block animate-bounce bg-brand" style={{ width: 10, height: 10 }} aria-hidden="true" />
           Follow the path
         </p>

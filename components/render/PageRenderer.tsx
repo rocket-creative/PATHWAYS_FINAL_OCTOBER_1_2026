@@ -5,6 +5,7 @@ import { Split } from "@/components/ui/Split";
 import { PathLine } from "@/components/ui/PathLine";
 import { Inline } from "./Blocks";
 import { SITE } from "@/lib/site";
+import { Related } from "./Related";
 
 /**
  * Lays a PageContent out as a winding page: a hero, then sections that
@@ -21,6 +22,7 @@ export default function PageRenderer({ page }: { page: PageContent }) {
           <SectionView key={s.id} section={s} index={i} />
         ))}
       </div>
+      <Related url={page.url} />
       {page.closing && <Closing page={page} />}
     </article>
   );
