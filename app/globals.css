@@ -81,7 +81,7 @@ body {
   background: var(--paper-deep);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.975rem;
   line-height: 1.6;
   margin: 0;
   overflow-x: clip;
@@ -110,14 +110,14 @@ h4 {
   margin: 0;
 }
 h1 {
-  font-size: clamp(2.1rem, 1.6rem + 2.2vw, 3.9rem);
-  line-height: 1.04;
+  font-size: clamp(2rem, 1.5rem + 1.8vw, 3.3rem);
+  line-height: 1.05;
 }
 h2 {
-  font-size: clamp(1.5rem, 1.25rem + 1.2vw, 2.35rem);
+  font-size: clamp(1.4rem, 1.2rem + 0.9vw, 2rem);
 }
 h3 {
-  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.55rem);
+  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.3rem);
 }
 p {
   margin: 0;
@@ -139,14 +139,14 @@ a {
 .eyebrow {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--brand);
 }
 
 .lead {
-  font-size: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   line-height: 1.5;
   color: var(--ink);
 }
@@ -446,7 +446,7 @@ a {
   border-left: 2px solid rgb(0 126 252 / 0.25);
 }
 .faq__item h3 {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 
 /* Header + footer bookends */
@@ -610,7 +610,7 @@ a {
 .tile__title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   color: var(--brand-ink);
 }
 .tile__text {

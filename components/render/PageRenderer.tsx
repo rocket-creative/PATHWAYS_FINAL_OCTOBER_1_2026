@@ -39,12 +39,12 @@ function Hero({ page }: { page: PageContent }) {
           )}
           <Split as="h1" text={page.h1} />
           {page.subtitle && (
-            <p className="lead mt-5 text-brand-deep" data-reveal>
+            <p className="mt-4 text-[1.1rem] font-bold text-brand-deep" style={{ fontFamily: "var(--font-display)" }} data-reveal>
               {page.subtitle}
             </p>
           )}
           {page.intro?.map((p, i) => (
-            <p key={i} className="lead mt-5" data-reveal>
+            <p key={i} className="lead mt-4" data-reveal>
               <Inline text={p} />
             </p>
           ))}

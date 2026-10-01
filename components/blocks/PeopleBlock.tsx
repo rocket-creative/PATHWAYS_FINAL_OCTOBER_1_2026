@@ -43,8 +43,8 @@ export function PeopleBlock({ group }: { group: string }) {
     return (
       <div className="grid gap-4 sm:grid-cols-2">
         {WELLNESS.map((p) => (
-          <Link key={p.slug} href={`/team/${p.slug}`} className="tile !grid-cols-[96px_1fr] !rounded-[var(--r-md)]" data-reveal>
-            <Headshot slug={p.slug} name={p.displayName} size={96} ring={false} />
+          <Link key={p.slug} href={`/team/${p.slug}`} className="tile !grid-cols-[128px_1fr] !rounded-[var(--r-md)]" data-reveal>
+            <Headshot slug={p.slug} name={p.displayName} size={128} ring={false} />
             <span>
               <span className="eyebrow block !text-[0.68rem]">{p.role}</span>
               <span className="tile__title block">{p.displayName}</span>
@@ -67,7 +67,7 @@ export function PeopleBlock({ group }: { group: string }) {
         <div className="grid gap-6 md:grid-cols-2">
           {dogs.map((d) => (
             <div key={d.slug} className="grid gap-3 text-center" data-reveal>
-              <Photo asset={photo[d.slug]} alt={`${d.name}, therapy dog`} shape="circle" className="ring mx-auto w-[220px]" sizes="220px" />
+              <Photo asset={photo[d.slug]} alt={`${d.name}, therapy dog`} shape="circle" className="ring mx-auto w-[260px]" sizes="260px" />
               <h3>{d.name}</h3>
               {d.paragraphs.map((p, i) => (
                 <p key={i} className="text-left">
@@ -84,10 +84,10 @@ export function PeopleBlock({ group }: { group: string }) {
   return (
     <div className="grid gap-8">
       {people.map((p) => (
-        <div key={p.slug} id={p.slug} className="grid scroll-mt-28 items-start gap-5 sm:grid-cols-[150px_1fr]" data-reveal>
-          <Headshot slug={p.slug} name={p.name} size={150} className="mx-auto sm:mx-0" />
+        <div key={p.slug} id={p.slug} className="grid scroll-mt-28 items-start gap-5 sm:grid-cols-[190px_1fr]" data-reveal>
+          <Headshot slug={p.slug} name={p.name} size={190} className="mx-auto sm:mx-0" />
           <div className="grid gap-2">
-            <h3 className="!text-[1.4rem]">
+            <h3 className="!text-[1.25rem]">
               {p.name}
               {p.credentials && <span className="font-normal text-ink-soft">, {p.credentials}</span>}
             </h3>

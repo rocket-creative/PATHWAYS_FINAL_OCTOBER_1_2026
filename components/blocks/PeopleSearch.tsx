@@ -35,7 +35,7 @@ export default function PeopleSearch({ people }: { people: P[] }) {
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="Try anxiety, teens, couples, veterans, ADHD…"
-            className="w-full rounded-full border border-[rgb(0_126_252_/_0.35)] bg-white px-5 py-3 text-[1.05rem] outline-none focus:border-brand"
+            className="w-full rounded-full border border-[rgb(0_126_252_/_0.35)] bg-white px-5 py-3 text-[1rem] outline-none focus:border-brand"
           />
         </label>
         <div className="flex flex-wrap gap-2" aria-label="Quick filters">
@@ -63,9 +63,9 @@ export default function PeopleSearch({ people }: { people: P[] }) {
         {results.map((p) => (
           <article key={p.slug} id={p.slug} className="glass grid scroll-mt-28 gap-3 p-6" style={{ borderRadius: "var(--r-md)" }}>
             <div className="flex items-center gap-4">
-              <Headshot slug={p.slug} name={p.name} size={88} />
+              <Headshot slug={p.slug} name={p.name} size={128} />
               <div>
-                <h3 className="!text-[1.2rem]">
+                <h3 className="!text-[1.1rem]">
                   {p.name}
                   {p.credentials && <span className="font-normal text-ink-soft">, {p.credentials}</span>}
                 </h3>
@@ -73,7 +73,7 @@ export default function PeopleSearch({ people }: { people: P[] }) {
               </div>
             </div>
             {p.paragraphs.map((t, i) => (
-              <p key={i} className="text-[0.98rem]">
+              <p key={i} className="text-[0.95rem]">
                 {t}
               </p>
             ))}

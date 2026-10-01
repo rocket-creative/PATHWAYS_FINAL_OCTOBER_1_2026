@@ -45,7 +45,7 @@ export default function Home() {
               Discover Your
             </p>
             <Split as="h1" text="Pathways Within" />
-            <p className="mt-4 text-[clamp(1.3rem,1rem+1.4vw,2rem)] font-bold leading-tight text-brand-deep" style={{ fontFamily: "var(--font-display)" }} data-reveal>
+            <p className="mt-4 text-[clamp(1.15rem,1rem+0.9vw,1.6rem)] font-bold leading-tight text-brand-deep" style={{ fontFamily: "var(--font-display)" }} data-reveal>
               A 360º Approach to Healing &amp; Transformation
             </p>
             <p className="lead mt-2" data-reveal>
@@ -235,7 +235,7 @@ export default function Home() {
           <div className="marquee py-4">
             <div className="marquee__track">
               {Array.from({ length: 4 }).map((_, i) => (
-                <span key={i} className="text-[clamp(1.2rem,1rem+1.2vw,1.9rem)] font-bold text-brand-deep" style={{ fontFamily: "var(--font-display)" }} aria-hidden={i > 0}>
+                <span key={i} className="text-[clamp(1.05rem,0.95rem+0.8vw,1.5rem)] font-bold text-brand-deep" style={{ fontFamily: "var(--font-display)" }} aria-hidden={i > 0}>
                   The Pathways Within team helped me find my way back to myself -K.F. 〰️
                 </span>
               ))}

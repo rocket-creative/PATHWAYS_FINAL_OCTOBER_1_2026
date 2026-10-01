@@ -92,7 +92,7 @@ function BlockView({ block: b }: { block: Block }) {
     case "quote":
       return (
         <blockquote className="my-2 border-l-0 pl-0" data-reveal>
-          <p className="text-[1.35rem] leading-snug text-brand-ink" style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}>
+          <p className="text-[1.15rem] leading-snug text-brand-ink" style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}>
             {b.text}
           </p>
           {b.cite && <footer className="mt-2 text-ink-soft">{b.cite}</footer>}
@@ -174,13 +174,13 @@ function BlockView({ block: b }: { block: Block }) {
       );
     case "person":
       return (
-        <div className="grid items-start gap-6 sm:grid-cols-[200px_1fr]" data-reveal>
-          <div className="orbit mx-auto w-[180px] sm:mx-0 sm:mt-2">
-            <Headshot slug={b.slug} name={b.name} size={180} />
+        <div className="grid items-start gap-6 sm:grid-cols-[250px_1fr]" data-reveal>
+          <div className="orbit mx-auto w-[220px] sm:mx-0 sm:mt-2">
+            <Headshot slug={b.slug} name={b.name} size={220} />
           </div>
           <div className="grid gap-3">
             {b.eyebrow && <p className="eyebrow">{b.eyebrow}</p>}
-            <h3 className="!text-[1.7rem]">{b.name}</h3>
+            <h3 className="!text-[1.45rem]">{b.name}</h3>
             {b.credentials && <p className="-mt-2 text-ink-soft">{b.credentials}</p>}
             {b.paragraphs.map((p, i) => (
               <p key={i}>
