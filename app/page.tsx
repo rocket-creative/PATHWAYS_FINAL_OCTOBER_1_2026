@@ -75,15 +75,17 @@ export default function Home() {
             <div className="relative mx-auto w-[min(70vw,380px)]">
               <div className="orbit">
                 <Photo asset="cw-labyrinth-beach" alt="A stone labyrinth on the beach" shape="circle" className="ring" float={40} sizes="380px" />
-              </div>
-              <span className="circle ring absolute -right-4 -top-4 flex items-center justify-center bg-white text-center" style={{ width: 118, height: 118 }} data-reveal>
-                <span style={{ fontFamily: "var(--font-display)" }} className="font-bold leading-none text-brand-deep">
-                  <span className="block text-[2rem]">
-                    <span data-count="360">360</span>º
+                <span className="orbit-rider">
+                  <span className="orbit-rider__badge circle ring flex items-center justify-center bg-white text-center">
+                    <span style={{ fontFamily: "var(--font-display)" }} className="font-bold leading-none text-brand-deep">
+                      <span className="block text-[2rem]">
+                        <span data-count="360">360</span>º
+                      </span>
+                      <span className="block text-[0.6rem] tracking-[0.18em] uppercase">Wellness</span>
+                    </span>
                   </span>
-                  <span className="block text-[0.6rem] tracking-[0.18em] uppercase">Wellness</span>
                 </span>
-              </span>
+              </div>
             </div>
             <div className="glass px-6 py-7 md:px-9 md:py-9">
               <p className="eyebrow mb-3" data-reveal>

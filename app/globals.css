@@ -321,6 +321,31 @@ a {
     transform: rotate(360deg);
   }
 }
+/* Badge rides the dashed ring. The track turns; the badge turns back so the words stay upright. */
+.orbit-rider {
+  position: absolute;
+  inset: -9%;
+  z-index: 1;
+  pointer-events: none;
+  animation: orbit-spin 60s linear infinite;
+}
+.orbit-rider__badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 118px;
+  height: 118px;
+  transform: translate(-50%, -50%);
+  animation: orbit-face 60s linear infinite;
+}
+@keyframes orbit-face {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
 
 /* ------------------------------------------------------------------ */
 /* Layout                                                              */
@@ -620,7 +645,9 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .marquee__track,
-  .orbit::before {
+  .orbit::before,
+  .orbit-rider,
+  .orbit-rider__badge {
     animation: none;
   }
 }
