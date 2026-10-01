@@ -1,0 +1,413 @@
+{
+ "dogsIntro": "Specializing in creating a comfortable and cozy place where humans can express their dreams, hopes, and feelings.",
+ "people": [
+  {
+   "slug": "rachel-lessard",
+   "group": "leadership",
+   "name": "Rachel Lessard",
+   "credentials": "LCSW-R",
+   "title": "Founder of Pathways Within",
+   "paragraphs": [
+    "Together we can explore your experiences in order to help you feel safe and secure again. In my office, with our without your loved one, we can develop new styles of communication that can create the relationship you have always wanted."
+   ],
+   "specialties": "Specializes in anxiety, depression, PTSD, couples, hypnotherapy, veterans, first responders, and weight loss surgery evals and counseling."
+  },
+  {
+   "slug": "ksusha-cascio",
+   "group": "leadership",
+   "name": "Ksusha Cascio",
+   "credentials": "LCSW",
+   "title": "Chief Operating Officer",
+   "paragraphs": [
+    "Reaching out for help can feel daunting but nothing happens in our comfort (or discomfort) zone. I am here to provide a judgment-free safe space to explore, challenge, and develop the best version of yourself."
+   ],
+   "specialties": "Specializes in Complex PTSD, adult ADHD, job related stress, Internal Family Systems and parts work"
+  },
+  {
+   "slug": "joe-bush",
+   "group": "leadership",
+   "name": "Joe Bush",
+   "credentials": "LCSW",
+   "title": "Clinical Director, Nassau",
+   "paragraphs": [
+    "You do not have to go through this alone. In my sessions, I strive to create a non-judgmental and empathetic environment where we can safely explore life challenges."
+   ],
+   "specialties": "Specializes in anxiety, depression, adolescents, college transition, relationship issues, bipolar disorder, men’s issues, anger, school refusal, ADHD, job-related stress, and family work."
+  },
+  {
+   "slug": "lee-wasser",
+   "group": "leadership",
+   "name": "Lee Wasser",
+   "credentials": "LMHC-D",
+   "title": "Clinical Director, Suffolk",
+   "paragraphs": [
+    "The world is a very diverse place. Every person is so different and comes from a different perspective. I am skilled in a variety of backgrounds and clinical approaches and continually work to build my toolbox for treatment. as a counselor, I want you to embrace your individuality as we work together to see what works best for you."
+   ],
+   "specialties": "Specializes in LGBTQ+ Issues, teens, adults, trauma, depression, self-harm, anxiety, mood disorders, sex, addiction, relationship issues, impulsivity, coping with life changes, domestic violence, and assault."
+  },
+  {
+   "slug": "kaitlyn-kelly",
+   "group": "leadership",
+   "name": "Kaitlyn Kelly",
+   "credentials": "LMHC",
+   "title": "Supervisor",
+   "paragraphs": [
+    "Therapy is for everyone! In a session with me, you can expect a genuine judgement-freee zone where you can feel comfortable to share openly and honestly. Beginning your mental health journey can be intimidating, but it doesn’t have to be scary. I’m looking forward to working with you in your journey and help you meet your individual goals in therapy!"
+   ],
+   "specialties": "Specializes in anxiety, depression, stress management, communication, teens, adults"
+  },
+  {
+   "slug": "laura-desilva",
+   "group": "leadership",
+   "name": "Laura DeSilva",
+   "credentials": "LMHC",
+   "title": "Supervisor",
+   "paragraphs": [
+    "As an eclectic clinician, I pull from humanistic, cognitive behavioral, and psychodynamic frameworks to suit my clients’ needs. I view counseling as a collaboration between the therapist and client and take a person-centered approach to the process. I strive to bring warmth, genuineness, and acceptance to the therapeutic relationship so my clients feel safe and unconditionally supported to grow and change."
+   ],
+   "specialties": "Specializes in anxiety, trauma, and depression."
+  },
+  {
+   "slug": "samantha-juravich",
+   "group": "leadership",
+   "name": "Samantha Juravich",
+   "credentials": "LCSW",
+   "title": "Supervisor",
+   "paragraphs": [
+    "My first goal as a therapist is to create a safe space and supportive therapeutic environment that assists clients with self-discovery change and improving their quality of life. I strive to provide treatment that is effective, inclusive, and functional. I tailor each session to the client’s individual needs, incorporating a variety of therapeutic techniques and collaborating with other treatment providers when needed."
+   ],
+   "specialties": "Specializes in children, teens, families trauma, behavior concerns, anxiety, depression, low self-esteem, developmental delays, ADHD, and intellectual disabilities."
+  },
+  {
+   "slug": "beth-gabellini",
+   "group": "clinical",
+   "name": "Beth Gabellini",
+   "credentials": "LCSW",
+   "title": "",
+   "paragraphs": [
+    "My philosophy is that we are all perfectly imperfect, and should seek to live as our authentic selves. I am an open-minded, caring professional who won’t judge you, but rather, give you the space to feel safe, be heard, and work through your thoughts and emotions."
+   ],
+   "specialties": "Specializes in relationships, veterans, woman’s empowerment, and life transitions."
+  },
+  {
+   "slug": "carly-sandstrom",
+   "group": "clinical",
+   "name": "Carly Sandstrom",
+   "credentials": "LMHC",
+   "title": "",
+   "paragraphs": [
+    "In therapy, there is no “one size fits all” approach. Using an eclectic approach, I tailor each session to be the most beneficial for you on your journey with mental health. You can expect a warm, trusting, and empathetic environment where we can safely work through life’s problems and joys. I believe in the power of a strong, compassionate therapeutic relationship. We will work together to discover ways to provide relief and elicit positive change."
+   ],
+   "specialties": "Specializes in trauma, anxiety, veterans & first responders, attachment theory & parts work"
+  },
+  {
+   "slug": "jen-brooks",
+   "group": "clinical",
+   "name": "Jen Brooks",
+   "credentials": "LCSW",
+   "title": "",
+   "paragraphs": [
+    "Life can hand us many challenges, but you are not alone. I will strive to provide a balance of support, understanding, and compassion in your journey of growth. Virtually or in-office, we can work together to problem-solve and practice skills that will help you feel in control of your life again and achieve your goals."
+   ],
+   "specialties": "Specializes in anxiety, depression, anger management, trauma, adults with traumatic brain injuries, autism and ADHD (Teens+), behavior modification & mindfulness."
+  },
+  {
+   "slug": "lauren-hollander",
+   "group": "clinical",
+   "name": "Lauren Hollander",
+   "credentials": "LCSW, SEP",
+   "title": "",
+   "paragraphs": [
+    "I focus on incorporating a client’s mind, body spirit, and emotions in the healing process. I focus on moving toward healing and growth in a safe and judgment-free space that I create with my clients."
+   ],
+   "specialties": "Specializes in somatic therapy, trauma, PTSD, depression, anxiety, bipolar disorder, and borderline personality disorder."
+  },
+  {
+   "slug": "paula-gonthier",
+   "group": "clinical",
+   "name": "Paula Gonthier",
+   "credentials": "LCSW",
+   "title": "",
+   "paragraphs": [
+    "I will help you access your own strengths and talents to recognize and remove the roadblocks that prevent you from achieving your goals and living your ideal life. We will rediscover hope and meaning. And you will learn to approach challenges with calm and self-assurance."
+   ],
+   "specialties": "Specializes in couples, health issues, and midlife crisis."
+  },
+  {
+   "slug": "anna-ostrow",
+   "group": "clinical",
+   "name": "Anna Ostrow",
+   "credentials": "MHC-LP",
+   "title": "",
+   "paragraphs": [
+    "Life can be overwhelming, but you don’t have to go through it alone. I’m here to create a warm, supportive, and judgment-free space where you can feel safe to be yourself. Whether you're feeling anxious, overwhelmed, or just trying to make sense of things, we’ll work together to explore what’s coming up for you and find ways to move forward. My goal is to help you feel heard, understood, and a little more grounded with each step."
+   ],
+   "specialties": "Specializes in adolescents, young adults, adults, anxiety, depression, life transitions, relationships, stress management."
+  },
+  {
+   "slug": "charity-meyer",
+   "group": "clinical",
+   "name": "Charity (Valen) Meyer",
+   "credentials": "MFT-LP",
+   "title": "",
+   "paragraphs": [
+    "Recognizing that every person's journey is unique, my passion is to create a safe, warm, and non-judgmental space where you feel truly heard and understood. I will meet you with compassion wherever you are on your path, adapting my therapeutic approach to help you reframe your story, develop practical solutions, and feel empowered to make meaningful changes."
+   ],
+   "specialties": "Specializes in LGBTQIA+ Issues, Neurodivergence, Addiction, Depression, Anxiety, Bipolar Disorder, and Relationship Issues, including those navigating Polyamorous Relationships."
+  },
+  {
+   "slug": "chelsea-bell",
+   "group": "clinical",
+   "name": "Chelsea Bell",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "Taking the first step to seek help can be a very difficult yet rewarding task. My goal is to create a comfortable environment that is free of judgment and unique to you. Together we can work to explore your goals and overcome life’s challenges."
+   ],
+   "specialties": "Specializes in anxiety, depression. trauma, self-esteem, and mindfulness"
+  },
+  {
+   "slug": "frank-tropeano",
+   "group": "clinical",
+   "name": "Frank Tropeano",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "Life can sometimes feel overwhelming, but you do not have to go through those times alone. I strive to create an open space where clients feel safe and supported as they work through challenges. Together, we will work to create the best version of yourself."
+   ],
+   "specialties": "Specializes in anxiety, depression, conflict and problem-solving, couples and relationships"
+  },
+  {
+   "slug": "juliette-squicciarini",
+   "group": "clinical",
+   "name": "Juliette Squicciarini",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "The though of therapy can be intimidating! That’s why as a therapist, I am committed to creating a positive, uplifting, and safe space where you will feel seen and heard. Together, we’ll work through life experiences in a supportive environment, where you can heal and grow. You’re not alone on this journey— I’m here with you every step of the way!"
+   ],
+   "specialties": "Specializes in adolescents, adults, anxiety, depression, stress management, substance use"
+  },
+  {
+   "slug": "kathleen-dimartino",
+   "group": "clinical",
+   "name": "Kathleen Dimartino",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "I understand that the challenges we face in life may feel overwhelming at times. Therapy is often a great place to start (or continue) when we are in need of some extra support. Together, we can navigate life’s difficulties and help you to feel better."
+   ],
+   "specialties": "Specializes in chronic pain and illnesses, borderline personality disorder, self-harm, depression, and anxiety."
+  },
+  {
+   "slug": "lindsay-laier",
+   "group": "clinical",
+   "name": "Lindsay Laier",
+   "credentials": "LMFT",
+   "title": "",
+   "paragraphs": [
+    "Life is a cycle and change can bring many challenges. In therapy, I work with individuals, families and couples to provide insight and perspective on the challenges that life puts in our paths. Together we will establish goals for therapy and build the tools needed to bring positive change in a relaxed and non-judgmental environment."
+   ],
+   "specialties": "Specializes in: Individuals, family relationships, life transitions, boundaries, couples, parenting, divorce, teens and young adults."
+  },
+  {
+   "slug": "maddy-zambri",
+   "group": "clinical",
+   "name": "Maddy Zambri",
+   "credentials": "LMHC",
+   "title": "",
+   "paragraphs": [
+    "Life is full of changes and challenges that affect people across many aspects of their lives. Reaching out for help during these times is often a struggle in and of itself, but no destination is ever reached without taking the first step. I want to help you take that first step by providing a safe, judgement- free environment to explore your life and empower you to regain and maintain balance and harmony throughout the many challenges and changes of life."
+   ],
+   "specialties": "Specializes in life transitions, stress management, addiction, anxiety, mood disorders, LGBTQIA+, and neurodivergence"
+  },
+  {
+   "slug": "mariah-simone",
+   "group": "clinical",
+   "name": "Mariah Simone",
+   "credentials": "MHC-LP",
+   "title": "",
+   "paragraphs": [
+    "My goal as a therapist is to help you feel safe, heard, and comfortable while working toward your therapeutic goals. My approach is eclectic, utilizing aspects of mindfulness, cognitive behavioral and psychodynamic approaches to help you achieve your unique goals and guide you through your personal healing. In our time together, you will always be greeted with unconditional positive regard and shown true support."
+   ],
+   "specialties": "Specializes in anxiety, depression, self-esteem, coping skills, stress, adolescents, teens, young adults"
+  },
+  {
+   "slug": "nicole-duffy",
+   "group": "clinical",
+   "name": "Nicole Duffy",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "Everyone should feel comfortable, safe, and understood. With a person-centered approach, I strive to meet you where you're at. Each session will be tailored to meet your goals and identify skills to move towards change. Together, we will work through life's unique challenges."
+   ],
+   "specialties": "Specializes in recovery from domestic violence and sexual assault, rediscovering joy and purpose, building strength and confidence."
+  },
+  {
+   "slug": "kalovna-edmond",
+   "group": "clinical",
+   "name": "Kalovna Edmond",
+   "credentials": "MFT-LP",
+   "title": "",
+   "paragraphs": [
+    "I believe healthy relationships are the foundation of a fulfilling life. As a Marriage and Family Therapist, I’m passionate about helping couples and families improve communication, strengthen trust, and create lasting change. My goal is to provide a safe, supportive space where you feel seen and understood as we work together toward growth and healing."
+   ],
+   "specialties": "Specializes in Couples Therapy, Communication Skills, Anxiety & Stress, Life Transitions."
+  },
+  {
+   "slug": "madeline-amzler",
+   "group": "clinical",
+   "name": "Madeline Amzler",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "Together, we will explore patterns, work through difficult experiences, and build practical tools for change. I’m especially passionate about supporting individuals navigating trauma, relationship challenges, and life transitions, helping you reconnect with your strengths and sense of self."
+   ],
+   "specialties": "Specializes in relationship trauma, attachment healing, first responders, veterans."
+  },
+  {
+   "slug": "sofia-marinucci",
+   "group": "clinical",
+   "name": "Sofia Marinucci",
+   "credentials": "MHC-LP",
+   "title": "",
+   "paragraphs": [
+    "I believe therapy should be a space where you feel comfortable, supported, and accepted without judgment. Using a person-centered approach, I aim to create a collaborative environment where your unique experiences, strengths, and goals guide our work together."
+   ],
+   "specialties": "Specializes in Anxiety, OCD, ADHD, Depression, Relational Issues, Stress, Life Transitions, School Refusal, Autism, teens, adolescents, adults, and families."
+  },
+  {
+   "slug": "colm-ashe",
+   "group": "clinical",
+   "name": "Colm Ashe",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "I break down mindfulness tools into practicals steps that foster somatic safety and help you create meaningful change in your life. Together, we can explore old stories, regulate your nervous system, and reconnect with a grounded sense of self."
+   ],
+   "specialties": "Specializes in parts work, spirituality, adolescent/transitional age guidance, somatic connection, creative purpose, men’s issues and trauma."
+  },
+  {
+   "slug": "karen-hill",
+   "group": "clinical",
+   "name": "Karen (Ren) Hill",
+   "credentials": "LMSW",
+   "title": "",
+   "paragraphs": [
+    "Whether you are experiencing mental health challenges, daily life stressors, life transitions, or other hardships, you deserve compassion, respect, and acceptance, regardless of your identity, background, or current life circumstances. As a therapist, I strive to provide my clients with a reassuring, supportive space where you can feel safe, accepted, and truly understood. I will collaboratively work with you to identify your unique needs and strengths, while setting reasonable goals to overcome the challenges you face."
+   ],
+   "specialties": "Specializes in Chronic stress, anxiety, victims of sexual assault, C-PTSD, Intimate Partner Violence."
+  },
+  {
+   "slug": "tia-baumohl",
+   "group": "specialized",
+   "name": "Tia Baumohl",
+   "credentials": "Certified Coach & Energy Medicine Practitioner",
+   "title": "",
+   "paragraphs": [
+    "Getting my start in supporting mothers and their partners through pregnancy and labor for over a decade, I am seasoned at supporting people during life’s most transformative journeys. With over five years of expertise in energy work and coaching practices, I empower individuals and couples to navigate challenging dynamics, facilitating breakthroughs and uncovering untapped potentials. Trained in various modalities proved to alleviate symptoms of anxiety, depression, and nervous system dysregulation, I offer strategic interventions for relationship enhancement, effective communication, and personal evolution, fostering holistic well-being and profound transformations."
+   ],
+   "specialties": "Specializes in assertiveness/ confidence building, effective communication, IFS-Parts work, healing attachment patterns, breaking codependency patterns."
+  },
+  {
+   "slug": "tiffany-roberts",
+   "group": "specialized",
+   "name": "Tiffany Roberts",
+   "credentials": "PMHNP, MSN, BSN, RN-BC",
+   "title": "",
+   "paragraphs": [
+    "I take the time to really understand each person - not just what they’re feeling, but what they need. Medication, when used, is always thoughtful and part of a bigger supportive plan."
+   ],
+   "specialties": "Specializes in Anxiety, depression, mood disorders, ADHD and other mood disorders."
+  },
+  {
+   "slug": "gloria-saladino",
+   "group": "admin",
+   "name": "Gloria Saladino",
+   "credentials": "",
+   "title": "",
+   "paragraphs": [
+    "As a front desk manager at Pathways Within, I’m here to ensure every client’s experience is welcoming, seamless and supportive. I’m proud to be part of a team that honors whole-person wellness, whether through our clinical therapy services or holistic body care."
+   ],
+   "specialties": ""
+  },
+  {
+   "slug": "domino",
+   "group": "dogs",
+   "name": "Domino",
+   "credentials": "",
+   "title": "",
+   "paragraphs": [
+    "With his calm presence, gentle eyes, and intuitive heart, Domino brings comfort and connection to every client he meets. Known for offering the best snuggles and silent support, he instinctively knows when someone needs a little extra love. Whether he’s resting quietly during a session or offering a paw in solidarity, Domino reminds us all of the healing power of presence, patience, and unconditional affection. He’s truly a good boy—and an even better therapist."
+   ],
+   "specialties": ""
+  },
+  {
+   "slug": "gypsy-sassafras",
+   "group": "dogs",
+   "name": "Gypsy Sassafras",
+   "credentials": "",
+   "title": "",
+   "paragraphs": [
+    "Gypsy Sassafras was born on a dairy farm in upstate New York on August 22, 2022. Gypsy now lives in a beach community outside of NYC where she enjoys walks on the boardwalk, retrieving balls and running alongside her mom roller skating. You can see her at times popping up during virtual therapy sessions and when in person she enjoys a belly rub and greets clients with her happy dance. Gypsy is a kind soul with a warm smile who connects with people on an emotional level. She holds space for laughter and crying and comforts the most sensitive feelings. You can follow her on her instagram page @Gypsy_Sassafras"
+   ],
+   "specialties": ""
+  }
+ ],
+ "wellness": [
+  {
+   "slug": "christine-cervo",
+   "name": "Christine Cervo",
+   "role": "LICENSED MASSAGE THERAPIST",
+   "paragraphs": [
+    "Christine is a licensed massage therapist with a simple goal: to help people feel better in their bodies.",
+    "A graduate of the New York College of Health Professions, Christine has additional training in aromatherapy, reflexology, sports massage, and prenatal massage. Her work is both skilled and intuitive, allowing her to adapt each session to the person in front of her rather than follow a one-size-fits-all routine.",
+    "Christine pays close attention to what the body is communicating and understands that no two bodies - or days - feel exactly the same. Some sessions may focus on tension, pain, or recovery. Others may create space for quiet, rest, and a much-needed reset.",
+    "Her thoughtful, personalized approach reflects the heart of Pathways Within Wellness: listen closely, meet people where they are, and create care that helps them feel more comfortable, supported, and connected to themselves."
+   ],
+   "cta": "Work with Christine Cervo",
+   "displayName": "Christine Cervo",
+   "short": "Christine is a licensed massage therapist with a simple goal: to help people feel better in their bodies."
+  },
+  {
+   "slug": "leonard-ma",
+   "name": "Leonard Ma",
+   "role": "LICENSED ACUPUNCTURIST",
+   "paragraphs": [
+    "Leonard's connection to acupuncture began early. Growing up, he saw its impact within his own family and experienced its benefits personally while managing a heart issue as a child.",
+    "That early exposure later became a clear calling. During his clinical training, Leonard saw how acupuncture could support not only physical pain, but also emotional and mental well-being.",
+    "At Pathways Within, he brings a calm, easygoing presence and a deeply holistic approach to care. Leonard looks beyond isolated symptoms and works with each patient as a whole person, helping support greater balance across the body, mind, and spirit."
+   ],
+   "cta": "Work with Leonard",
+   "displayName": "Leonard Ma",
+   "short": "Leonard looks beyond isolated symptoms and works with each patient as a whole person, helping support greater balance across the body, mind, and spirit."
+  },
+  {
+   "slug": "tia-baumohl",
+   "name": "Tia Baumohl",
+   "role": "CERTIFIED COACH & ENERGY MEDICINE PRACTITIONER",
+   "paragraphs": [
+    "Tia's work is rooted in helping people navigate change with greater clarity, connection, and confidence.",
+    "She began her career supporting mothers and their partners through pregnancy and labor, giving her more than a decade of experience guiding people through some of life's most transformative moments. Over the past five years, she has expanded that work through energy medicine and coaching, supporting individuals and couples as they move through challenging dynamics, strengthen communication, and uncover new possibilities.",
+    "Tia is trained in a range of modalities that may help ease anxiety, depression, and nervous system dysregulation. Her approach is warm, strategic, and deeply holistic, helping clients build self-awareness, create meaningful breakthroughs, and move toward lasting personal growth."
+   ],
+   "cta": "Work with Tia Baumohl",
+   "displayName": "Tia Baumohl",
+   "short": "Tia's work is rooted in helping people navigate change with greater clarity, connection, and confidence."
+  },
+  {
+   "slug": "danielle-ingenito",
+   "name": "Danielle Ingenito",
+   "role": "LICENSED MASSAGE THERAPIST",
+   "paragraphs": [
+    "Danielle is a licensed massage therapist with 12 years of experience, specializing in therapeutic massage and deep-tissue techniques. She completed more than 1,100 hours of comprehensive training at the Connecticut Center for Massage Therapy in Westport, Connecticut.",
+    "“My approach is tailored to each client, with a focus on relieving tension, reducing pain, and supporting overall wellness. I’m also trained in Transcendental Meditation, practicing for over 10 years.",
+    "My belief is the body can heal itself given the proper conditions and environment. Massage therapy is a great way to bring the body back into balance and greatly supports mental health by reducing tat mental noise and excessive thought patterns. Knowing when to slow down and get help is just as important. When the body is relaxed, it comes back to the present moment.",
+    "In addition to massage, I found meditation and breathwork reduces overall stress and calms the nervous system.”"
+   ],
+   "cta": "Work with Danielle",
+   "displayName": "Danielle Ingenito, LMT",
+   "short": "Danielle specializes in deep tissue, trigger point and sports massage."
+  }
+ ]
+}

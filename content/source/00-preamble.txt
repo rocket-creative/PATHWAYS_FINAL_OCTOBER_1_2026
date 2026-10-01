@@ -1,0 +1,61 @@
+PATHWAYS WITHIN — FULL SITE TEXT CAPTURE (SOURCE OF TRUTH)
+Captured 2026-10-01 from the live sites, verbatim. Nothing corrected: typos, spacing, punctuation and casing are as published.
+
+How to read this file
+- Each page starts with a "URL:" / "Title:" header. "Title" is the browser <title> tag.
+- Page body text is in page order, exactly as rendered.
+- Text hidden behind collapsed accordions (FAQ answers, service detail panels, EMDR phases, etc.) is appended under
+  "----- ACCORDION / FAQ ANSWERS -----" for that page, question then answer.
+- Site-wide header nav, dropdown menus and footer are captured once per site (under the site's home page) and not repeated.
+- Embedded third-party contact forms (link.trustdrivencare.com iframes) are captured field by field, with dropdown options.
+- Bracketed notes like [Google Map embed] mark non-text embeds. Nothing else is editorial.
+
+Coverage
+SITE 1 — Landing page: https://www.pathwayswithin.me/   (1 page; /360-degree-wellness is a duplicate of it)
+SITE 2 — Therapy ("Wisdom") site: https://www.pathwayswithin.me/home   (27 pages from sitemap.xml, plus /cart)
+         Folder URLs /services, /types-of-therapy, /get-started redirect to /individual-therapy, /hypnotherapy, /contact. /wisdom returns a 404.
+SITE 3 — Wellness site: https://pathwayswithinwellness.com   (21 pages from sitemap.xml, plus root /)
+         Root / serves the same content as /new-home-page. /pathways-to redirects to /about; /Wellness redirects to /massages.
+         Footer links /iv-vitamin-infusion-1 and /payment-plans return 404 (no page exists). Home-page items "Lutronic Accufit" and "IV Vitamin Infusion" have no page.
+Cart page (pathwayswithin.me/cart) text: "Shopping Cart / You have nothing in your shopping cart. / Continue Shopping"
+
+Page order in this file
+01 Landing (/)
+02 Wisdom Home (/home) + site header/nav/footer
+03 About Us
+04 Individual Therapy
+05 Child Therapy
+06 Teen Therapy
+07 Couples Therapy
+08 Family Therapy
+09 Trauma Therapy
+10 Weight Loss Surgery Support
+11 Veterans & First Responders
+12 Medication Management
+13 Performance & Wellness Coaching
+14 Hypnotherapy
+15 Somatic Therapy
+16 EMDR Therapy
+17 IFS Therapy
+18 Grief Therapy
+19 Group Therapy
+20 Ketamine Assisted Therapy
+21 Parent-Child Interaction Therapy; 360 Degree Wellness (duplicate note)
+22 Clinicians
+23 Contact (with form fields); Locations
+24 FAQ
+25 News + 2 news posts
+30 Wellness Home + site header/nav/footer
+31 Wellness About
+32 Massage
+33 Acupuncture
+34 Cupping Therapy
+35 Energy Work; Cryotherapy
+36 Reiki; Integrative Energy Therapy
+37 Skincare (face-treatments)
+38 Body Treatments
+39 Body Sculpting; Hair
+40 New Home Page; Location
+41 Wellness Contact (with form fields); Providers
+42 Provider bios (Christine Cervo, Leonard Ma, Tia Baumohl, Danielle Ingenito)
+
