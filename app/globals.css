@@ -330,6 +330,61 @@ a {
   }
 }
 
+/* Hero lockup. Out of flow so glass copy and circular photos keep their boxes. */
+.hero-mark {
+  pointer-events: none;
+}
+.hero-mark__logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-mark--stage {
+  display: none;
+  position: absolute;
+  right: max(var(--gutter), calc((100vw - 1240px) / 2));
+  top: 0;
+  width: min(440px, calc(100vw - 760px - 2 * var(--gutter) - 48px));
+}
+.hero-mark--badge {
+  position: absolute;
+  z-index: 2;
+  top: 1.15rem;
+  right: 1.15rem;
+  width: 104px;
+}
+@media (min-width: 768px) {
+  .hero-mark--badge {
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 120px;
+  }
+  .hero-mark--card {
+    top: 1.15rem;
+    right: 1.15rem;
+    width: 200px;
+  }
+}
+/* Homepage corner badge, below the fixed header. Narrow phones use a smaller disc so it clears the headline. */
+.hero-mark--home {
+  top: 0.4rem;
+  right: var(--gutter);
+  width: 112px;
+}
+@media (max-width: 520px) {
+  .hero-mark--home {
+    width: 76px;
+  }
+}
+@media (min-width: 1180px) {
+  .hero-mark--stage {
+    display: block;
+  }
+  .hero-mark--home {
+    display: none;
+  }
+}
+
 /* ------------------------------------------------------------------ */
 /* Layout                                                              */
 /* ------------------------------------------------------------------ */

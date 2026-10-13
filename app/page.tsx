@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Split } from "@/components/ui/Split";
 import { Photo } from "@/components/ui/Photo";
 import { Cta, Arrow, LabyrinthGlyph } from "@/components/render/Blocks";
+import HeroMark from "@/components/ui/HeroMark";
 import { PathLine } from "@/components/ui/PathLine";
 import { LocationsBlock } from "@/components/blocks/LocationsBlock";
 import Quiz from "@/components/blocks/Quiz";
@@ -48,6 +49,7 @@ export default function Home() {
     <article>
       {/* Hero: the whole branch, wide. */}
       <header className="relative pb-6 lg:min-h-[calc(100svh-var(--header-h))] lg:pb-0" data-stop="wide">
+        <HeroMark variant="stage" />
         <div className="wrap pt-10 md:pt-20">
           <div className="glass glass--strong max-w-[760px] px-6 py-7 md:px-10 md:py-10">
             <Split as="h1" text="Pathways Within" />
@@ -73,6 +75,7 @@ export default function Home() {
           <span className="circle inline-block animate-bounce bg-brand" style={{ width: 10, height: 10 }} aria-hidden="true" />
           Follow the path
         </p>
+        <HeroMark variant="badge" home />
       </header>
 
       <div className="relative" data-draw-scope>

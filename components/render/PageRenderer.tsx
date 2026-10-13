@@ -6,6 +6,7 @@ import { PathLine } from "@/components/ui/PathLine";
 import { Inline } from "./Blocks";
 import { SITE } from "@/lib/site";
 import { Related } from "./Related";
+import HeroMark from "@/components/ui/HeroMark";
 
 /**
  * Lays a PageContent out as a winding page: a hero, then sections that
@@ -30,33 +31,39 @@ export default function PageRenderer({ page }: { page: PageContent }) {
 
 function Hero({ page }: { page: PageContent }) {
   const hasPhoto = Boolean(page.heroPhoto);
+  const copy = (
+    <div className="glass glass--strong py-7 pl-6 pr-32 md:py-10 md:pl-10 md:pr-64">
+      {page.eyebrow && (
+        <p className="eyebrow mb-4" data-reveal>
+          {page.eyebrow}
+        </p>
+      )}
+      <Split as="h1" text={page.h1} />
+      {page.subtitle && (
+        <p className="mt-4 text-[1.1rem] font-bold text-brand-deep" style={{ fontFamily: "var(--font-display)" }} data-reveal>
+          {page.subtitle}
+        </p>
+      )}
+      {page.intro?.map((p, i) => (
+        <p key={i} className="lead mt-4" data-reveal>
+          <Inline text={p} />
+        </p>
+      ))}
+      {page.heroCtas && (
+        <div className="mt-8 flex flex-wrap gap-3" data-reveal>
+          {page.heroCtas.map((c) => (
+            <Cta key={c.href + c.label} {...c} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
   return (
     <header className="section pt-10 md:pt-16" data-stop={page.heroStop ?? "wide"}>
       <div className={`wrap grid items-center gap-10 ${hasPhoto ? "lg:grid-cols-[1.15fr_0.85fr]" : ""}`}>
-        <div className="glass glass--strong px-6 py-7 md:px-10 md:py-10">
-          {page.eyebrow && (
-            <p className="eyebrow mb-4" data-reveal>
-              {page.eyebrow}
-            </p>
-          )}
-          <Split as="h1" text={page.h1} />
-          {page.subtitle && (
-            <p className="mt-4 text-[1.1rem] font-bold text-brand-deep" style={{ fontFamily: "var(--font-display)" }} data-reveal>
-              {page.subtitle}
-            </p>
-          )}
-          {page.intro?.map((p, i) => (
-            <p key={i} className="lead mt-4" data-reveal>
-              <Inline text={p} />
-            </p>
-          ))}
-          {page.heroCtas && (
-            <div className="mt-8 flex flex-wrap gap-3" data-reveal>
-              {page.heroCtas.map((c) => (
-                <Cta key={c.href + c.label} {...c} />
-              ))}
-            </div>
-          )}
+        <div className="relative">
+          {copy}
+          <HeroMark variant="badge" card />
         </div>
         {page.heroPhoto && (
           <div className="relative mx-auto w-[min(78vw,460px)] lg:w-full lg:max-w-[520px]">
