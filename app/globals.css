@@ -541,10 +541,11 @@ a {
   background: var(--brand-soft);
   color: var(--brand-deep);
 }
-/* Services flyout: anchored to the nav's left edge so the first column is never clipped offscreen. */
+/* Services flyout spans the header. Pull it up to the trigger so the pointer can move onto it. */
 .mega--wide {
   left: 0;
   right: 0;
+  top: calc(100% - 28px);
   margin-inline: auto;
   transform: none;
   width: auto;

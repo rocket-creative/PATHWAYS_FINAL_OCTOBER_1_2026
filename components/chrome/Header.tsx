@@ -10,15 +10,41 @@ export default function Header() {
   const [drawer, setDrawer] = useState(false);
   const pathname = usePathname();
   const navRef = useRef<HTMLElement>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearClose = () => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  };
+
+  const openMenu = (label: string) => {
+    clearClose();
+    setOpen(label);
+  };
+
+  // The Services panel is wider than its trigger. A short delay lets the pointer
+  // cross the seam, and entering another item cancels the close immediately.
+  const scheduleClose = (label: string) => {
+    clearClose();
+    closeTimer.current = setTimeout(() => {
+      setOpen((current) => (current === label ? null : current));
+    }, 160);
+  };
 
   useEffect(() => {
+    clearClose();
     setOpen(null);
     setDrawer(false);
   }, [pathname]);
 
+  useEffect(() => clearClose, []);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
+        clearClose();
         setOpen(null);
         setDrawer(false);
       }
@@ -66,8 +92,8 @@ export default function Header() {
               <div
                 key={group.label}
                 className={group.columns ? "static" : "relative"}
-                onMouseEnter={() => setOpen(group.label)}
-                onMouseLeave={() => setOpen((o) => (o === group.label ? null : o))}
+                onMouseEnter={() => openMenu(group.label)}
+                onMouseLeave={() => scheduleClose(group.label)}
               >
                 <button
                   type="button"
