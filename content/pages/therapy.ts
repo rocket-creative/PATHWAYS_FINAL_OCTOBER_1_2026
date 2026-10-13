@@ -9,10 +9,10 @@ const CONTACT = { label: "Contact Us", href: "/contact" };
 
 const individualTherapy: PageContent = {
   url: "/services/individual-therapy",
-  title: "Individual Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Individual Therapy on Long Island — Pathways Within",
   meta: "Individual therapy is your classic one-on-one counseling. The goal of individual therapy is to find greater self-awareness and give you the tools to live a more meaningful life.",
   source: "04-www-pathwayswithin-me-individual-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Individual Therapy on Long Island",
   intro: [
     "Individual therapy is your classic one-on-one counseling. The beauty of individual therapy lies in two main foundations: first, that you are willing to challenge yourself and learn more about the roots of your symptoms and yourself in the process; and second, that you are having a dialogue with a trained professional. The goal of individual therapy is to find greater self-awareness and give you the tools to live a more meaningful life.",
@@ -140,10 +140,10 @@ const individualTherapy: PageContent = {
 
 const childTherapy: PageContent = {
   url: "/services/child-therapy",
-  title: "Therapy for Children on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Therapy for Children on Long Island — Pathways Within",
   meta: "There’s no singular way forward when someone small is experiencing something really big and we’re happy to help you navigate your next steps.",
   source: "05-www-pathwayswithin-me-child-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Therapy for Children on Long Island",
   subtitle: "Do you know your child needs support but you’re not sure where to begin?",
   intro: [
@@ -254,10 +254,10 @@ const childTherapy: PageContent = {
 
 const teenTherapy: PageContent = {
   url: "/services/teen-therapy",
-  title: "Therapy for Teens on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Therapy for Teens on Long Island — Pathways Within",
   meta: "Teens reign supreme in the realm of “I don’t want to talk about it” and with good reason. We’re here to support that effort, not replace or undermine it.",
   source: "06-www-pathwayswithin-me-teen-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Therapy for Teens on Long Island",
   subtitle: "Do you or your child need someone to talk to but you’re not sure where or how to begin?",
   intro: [
@@ -389,10 +389,10 @@ const teenTherapy: PageContent = {
 
 const couplesTherapy: PageContent = {
   url: "/services/couples-therapy",
-  title: "Couples Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Couples Therapy on Long Island — Pathways Within",
   meta: "Relationships can be difficult to maintain, especially as the years go by and each person changes in unforeseen ways. Therapy can be a powerful way to tease out the underlying issues in order to build stronger connections with your partner.",
   source: "07-www-pathwayswithin-me-couples-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Couples Therapy on Long Island",
   intro: [
     "Relationships can be difficult to maintain, especially as the years go by and each person changes in unforeseen ways. A break in communication can often lead to other problems that plague modern marriages, and therapy can be a powerful way to tease out the underlying issues in order to build stronger connections with your partner.",
@@ -534,10 +534,10 @@ const couplesTherapy: PageContent = {
 
 const familyTherapy: PageContent = {
   url: "/services/family-therapy",
-  title: "Family Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Family Therapy on Long Island — Pathways Within",
   meta: "Family therapy at Pathways Within supports healing within the relationships that shape us most — whether those are with biological family, chosen family, or the unique constellation of people who make up your support system.",
   source: "08-www-pathwayswithin-me-family-therapy-on-long-island.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Family Therapy on Long Island",
   subtitle: "Healing happens in connection",
   intro: [
@@ -643,10 +643,10 @@ const familyTherapy: PageContent = {
 
 const traumaTherapy: PageContent = {
   url: "/services/trauma-therapy",
-  title: "Trauma Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Trauma Therapy on Long Island — Pathways Within",
   meta: "Trauma has lasting physical and emotional effects that can leave you tired, jumpy, anxious, feeling ashamed, exposed, insecure, and wondering who you can trust. We can help you become better at managing your trauma and reducing the symptoms associated with it.",
   source: "09-www-pathwayswithin-me-trauma-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Trauma Therapy on Long Island",
   intro: [
     "Trauma has lasting physical and emotional effects that can leave you tired, jumpy, anxious, feeling ashamed, exposed, insecure, and wondering who you can trust. We can’t control everything that happens to us, or how we are affected by these events. However, we can help you become better at managing your trauma and reducing the symptoms associated with it.",
@@ -758,10 +758,10 @@ const traumaTherapy: PageContent = {
 
 const weightLossSurgerySupport: PageContent = {
   url: "/services/weight-loss-surgery-support",
-  title: "Weight Loss Surgery Support on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Weight Loss Surgery Support on Long Island — Pathways Within",
   meta: "Weight loss surgery comes with a lot of caveats, and an often overlooked part of the procedure is its psychological effects. By talking to a professional and others who have gone through similar experiences, you can better prepare yourself for the road ahead.",
   source: "10-www-pathwayswithin-me-weight-loss-surgery-support.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Weight Loss Surgery Support on Long Island",
   intro: [
     "Weight loss surgery comes with a lot of caveats, and an often overlooked part of the procedure is its psychological effects. By talking to a professional and others who have gone through similar experiences, you can better prepare yourself for the road ahead and increase your chances of success.",
@@ -864,10 +864,10 @@ const weightLossSurgerySupport: PageContent = {
 
 const veteransFirstResponders: PageContent = {
   url: "/services/veterans-first-responders",
-  title: "Therapy for Veterans and First Responders on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Therapy for Veterans and First Responders on Long Island — Pathways Within",
   meta: "Veterans and first responders are often associated with these words - and with good reason. With experts trained in the tools and therapies designed to support veterans and first responders, we’re here and ready to help.",
   source: "11-www-pathwayswithin-me-veterans-first-responders.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Therapy for Veterans & First Responders on Long Island",
   subtitle: "Protecting the wellbeing of those who protect us",
   intro: [
@@ -1013,10 +1013,10 @@ const veteransFirstResponders: PageContent = {
 
 const hypnotherapy: PageContent = {
   url: "/services/hypnotherapy",
-  title: "Hypnotherapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Hypnotherapy on Long Island — Pathways Within",
   meta: "Hypnotherapy is the intentional induction of a gentle trance-like state to allow your unconscious mind some time in the driver’s seat.",
   source: "14-www-pathwayswithin-me-hypnotherapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Hypnotherapy on Long Island",
   subtitle: "Do you ever wish you could mute the external noise of the world and turn inward to decipher the things you’re feeling?",
   intro: [
@@ -1145,10 +1145,10 @@ const hypnotherapy: PageContent = {
 
 const somaticTherapy: PageContent = {
   url: "/services/somatic-therapy",
-  title: "Somatic Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Somatic Therapy on Long Island — Pathways Within",
   meta: "Our bodies have eternal memories. These are the places where trauma hides from plain view, and somatic therapy seeks to heal the body from the tension associated with trauma.",
   source: "15-www-pathwayswithin-me-somatic-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Somatic Therapy on Long Island",
   intro: [
     "Our bodies have eternal memories. Whether we remember our experiences or not, they live in our nervous system, our digestive system, our head, neck, shoulders. These are the places where trauma hides from plain view, and somatic therapy seeks to heal the body from the tension associated with trauma.",
@@ -1257,10 +1257,10 @@ const somaticTherapy: PageContent = {
 
 const emdrTherapy: PageContent = {
   url: "/services/emdr-therapy",
-  title: "EMDR Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "EMDR Therapy on Long Island — Pathways Within",
   meta: "What if we told you that with the support of a trained therapist, we can use your eyes to navigate the healing processes in your brain? EMDR can help you heal without spending a lot of time rehashing the things that hurt you.",
   source: "16-www-pathwayswithin-me-emdr-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "EMDR Therapy on Long Island",
   subtitle: "Are you ready to heal, but less prepared to revisit the details of traumatic or repressed memories?",
   intro: [
@@ -1393,10 +1393,10 @@ const emdrTherapy: PageContent = {
 
 const ifsTherapy: PageContent = {
   url: "/services/ifs-therapy",
-  title: "IFS Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "IFS Therapy on Long Island — Pathways Within",
   meta: "Internal Family Systems (IFS) therapy is a powerful, evidence-based approach that helps you explore and heal the many “parts” within you — the protectors, exiled wounds, and the Self that holds wisdom and compassion.",
   source: "17-www-pathwayswithin-me-ifs-therapy-on-long-island.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "IFS Therapy on Long Island",
   subtitle: "Reconnect with your inner world",
   intro: [
@@ -1506,10 +1506,10 @@ const ifsTherapy: PageContent = {
 
 const griefTherapy: PageContent = {
   url: "/services/grief-therapy",
-  title: "Grief Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Grief Therapy on Long Island — Pathways Within",
   meta: "People lose loved ones every day; death is a natural part of life. By engaging in grief therapy, you’ll have the time and space to talk through your loss and your therapist will help you develop coping skills to manage your grief in the long term.",
   source: "18-www-pathwayswithin-me-grief-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Grief Therapy on Long Island",
   intro: [
     "People lose loved ones every day; death is a natural part of life. However, we are not always prepared to deal with losing a loved one, or with the intensity of grief and its ability to take over our lives. By engaging in grief therapy, you’ll have the time and space to talk through your loss and your therapist will help you develop coping skills to manage your grief in the long term.",
@@ -1614,10 +1614,10 @@ const griefTherapy: PageContent = {
 
 const groupTherapy: PageContent = {
   url: "/services/group-therapy",
-  title: "Group Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Group Therapy on Long Island — Pathways Within",
   meta: "While group therapy might sound scary or overwhelming at first, the reality is that we yearn for meaningful connections. You have more in common with other people than you think.",
   source: "19-www-pathwayswithin-me-group-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Group Therapy on Long Island",
   intro: [
     "While group therapy might sound scary or overwhelming at first, the reality is that we yearn for meaningful connections. Sitting in a room with strangers is the ideal way to share your concerns without feeling judged. You have more in common with other people than you think, and as the weeks go by, you’ll get to practice sharing your own feelings and listening to others talk about their experiences, helping you feel more confident and connected.",
@@ -1766,10 +1766,10 @@ const groupTherapy: PageContent = {
 
 const ketamineAssistedTherapy: PageContent = {
   url: "/services/ketamine-assisted-therapy",
-  title: "Ketamine Assisted Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Ketamine Assisted Therapy on Long Island — Pathways Within",
   meta: "Life-altering change to your healing game, one hour at a time? It’s possible with ketamine-assisted therapy as a part of your clinical counseling experience.",
   source: "20-www-pathwayswithin-me-ketamine-assisted-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Ketamine Assisted Therapy on Long Island",
   intro: [
     "Life-altering change to your healing game, one hour at a time? It’s possible with ketamine-assisted therapy as a part of your clinical counseling experience.",
@@ -1916,10 +1916,10 @@ const ketamineAssistedTherapy: PageContent = {
 
 const parentChildInteractionTherapy: PageContent = {
   url: "/services/parent-child-interaction-therapy",
-  title: "Parent-Child Interaction Therapy on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Parent-Child Interaction Therapy on Long Island — Pathways Within",
   meta: "For children and their caregivers who have experienced trauma or are having challenges with overcoming behaviors or habits in the home. Parent-Child Interaction Therapy is the evidence-based answer to the questions parents, caregivers, and guardians have been looking for to help their children.",
   source: "21-www-pathwayswithin-me-parent-child-interaction-therapy.txt",
-  eyebrow: "Therapy",
+  eyebrow: "Mental Health",
   h1: "Parent-Child Interaction Therapy on Long Island",
   intro: [
     "For children and their caregivers who have experienced trauma or are having challenges with overcoming behaviors or habits in the home. Parent-Child Interaction Therapy is the evidence-based answer to the questions parents, caregivers, and guardians have been looking for to help their children.",

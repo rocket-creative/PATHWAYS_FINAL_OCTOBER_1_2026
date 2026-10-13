@@ -47,7 +47,7 @@ export default function Header() {
         <Link href="/" className="no-underline" aria-label="Pathways Within home" style={{ fontFamily: "var(--font-display)" }}>
           <span className="flex flex-col leading-tight text-brand-ink">
             <span className="text-[1.1rem] font-bold">Pathways Within</span>
-            <span className="hidden text-[0.62rem] tracking-[0.18em] uppercase opacity-70 sm:block">Wisdom &amp; Wellness Collaborative</span>
+            <span className="hidden whitespace-nowrap text-[0.62rem] tracking-[0.18em] uppercase opacity-70 sm:block lg:hidden xl:block">Mental Health · Mind-Body Support · Wellness</span>
           </span>
         </Link>
 
@@ -65,7 +65,7 @@ export default function Header() {
             return (
               <div
                 key={group.label}
-                className="relative"
+                className={group.columns ? "static" : "relative"}
                 onMouseEnter={() => setOpen(group.label)}
                 onMouseLeave={() => setOpen((o) => (o === group.label ? null : o))}
               >
@@ -82,16 +82,28 @@ export default function Header() {
                   </svg>
                 </button>
                 {isOpen && (
-                  <div className="mega" style={group.columns ? { gridTemplateColumns: `repeat(${group.columns.length}, minmax(190px, 1fr))`, width: "max-content" } : undefined}>
+                  <div className={group.columns ? "mega mega--wide" : "mega"} style={group.columns ? { gridTemplateColumns: `2fr repeat(${group.columns.length - 1}, 1fr)` } : undefined}>
                     {group.columns?.map((col) => (
-                      <div key={col.title}>
-                        <div className="mega__title">{col.title}</div>
-                        {col.links.map((l) => (
-                          <Link key={l.href} href={l.href}>
-                            {l.label}
-                            {l.note && <span className="ml-2 text-[0.7rem] uppercase tracking-wider text-ink-soft">{l.note}</span>}
-                          </Link>
-                        ))}
+                      <div key={col.title} className={col.sub ? "grid grid-cols-2 gap-x-4 gap-y-0 content-start" : undefined}>
+                        <div className={col.sub ? "mega__title col-span-2" : "mega__title"}>{col.title}</div>
+                        <div>
+                          {col.links.map((l) => (
+                            <Link key={l.href} href={l.href}>
+                              {l.label}
+                              {l.note && <span className="ml-2 text-[0.7rem] uppercase tracking-wider text-ink-soft">{l.note}</span>}
+                            </Link>
+                          ))}
+                        </div>
+                        {col.sub && (
+                          <div>
+                            <div className="mega__subtitle">{col.sub.title}</div>
+                            {col.sub.links.map((l) => (
+                              <Link key={l.href} href={l.href}>
+                                {l.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     ))}
                     {group.links?.map((l) => (
@@ -112,10 +124,10 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href={SITE.phoneHref} className="hidden font-bold text-brand-ink no-underline md:inline" style={{ fontFamily: "var(--font-display)" }}>
+          <a href={SITE.phoneHref} className="hidden whitespace-nowrap font-bold text-brand-ink no-underline md:inline lg:hidden xl:inline" style={{ fontFamily: "var(--font-display)" }}>
             {SITE.phone}
           </a>
-          <Link href="/contact" className="btn btn--primary hidden md:inline-flex" style={{ padding: "0.7em 1.3em" }}>
+          <Link href="/contact" className="btn btn--primary hidden whitespace-nowrap md:inline-flex" style={{ padding: "0.7em 1.3em" }}>
             Contact Us
           </Link>
           <button
@@ -139,10 +151,17 @@ export default function Header() {
                   {group.label}
                 </Link>
                 <div className="grid gap-1">
-                  {group.columns?.flatMap((c) => c.links).map((l) => (
-                    <Link key={l.href} href={l.href} className="py-1 no-underline text-ink">
-                      {l.label}
-                    </Link>
+                  {group.columns?.map((c) => (
+                    <div key={c.title} className="mb-2 grid gap-1">
+                      <span className="pt-1 text-[0.72rem] font-bold uppercase tracking-[0.14em] text-brand" style={{ fontFamily: "var(--font-display)" }}>
+                        {c.title}
+                      </span>
+                      {c.links.concat(c.sub?.links ?? []).map((l) => (
+                        <Link key={l.href} href={l.href} className="py-1 no-underline text-ink">
+                          {l.label}
+                        </Link>
+                      ))}
+                    </div>
                   ))}
                   {group.links?.map((l) => (
                     <Link key={l.href} href={l.href} className="py-1 no-underline text-ink">

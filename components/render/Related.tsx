@@ -5,8 +5,8 @@ import { Arrow } from "./Blocks";
 /** Cross-links on every interior page: siblings in the same service family, then the main entry points. */
 export function Related({ url }: { url: string }) {
   const columns = NAV[0].columns!;
-  const column = columns.find((c) => c.links.some((l) => l.href === url));
-  const siblings = column ? column.links.filter((l) => l.href !== url) : [];
+  const column = columns.find((c) => c.links.concat(c.sub?.links ?? []).some((l) => l.href === url));
+  const siblings = column ? column.links.concat(column.sub?.links ?? []).filter((l) => l.href !== url) : [];
   const core = [
     { label: "All services", href: "/services" },
     { label: "Our Team", href: "/team" },

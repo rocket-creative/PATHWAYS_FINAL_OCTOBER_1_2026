@@ -59,7 +59,7 @@ export function Headshot({
   ring?: boolean;
 }) {
   return (
-    <span className={`circle ${ring ? "ring" : ""} block shrink-0 bg-white ${className}`} style={{ width: size, height: size }}>
+    <span className={`circle ${ring ? "ring" : ""} block shrink-0 bg-white ${className}`} style={{ width: size, maxWidth: "100%", aspectRatio: "1 / 1" }}>
       <img
         src={`/img/providers/${slug}-320.webp`}
         srcSet={HEADSHOT_WIDTHS.map((w) => `/img/providers/${slug}-${w}.webp ${w}w`).join(", ")}

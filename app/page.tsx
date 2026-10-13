@@ -5,33 +5,42 @@ import { Photo } from "@/components/ui/Photo";
 import { Cta, Arrow, LabyrinthGlyph } from "@/components/render/Blocks";
 import { PathLine } from "@/components/ui/PathLine";
 import { LocationsBlock } from "@/components/blocks/LocationsBlock";
+import Quiz from "@/components/blocks/Quiz";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Pathways Within - Wisdom and Wellness - New York Therapy" },
+  title: { absolute: "Pathways Within — A 360º Approach to Healing & Transformation" },
   description:
-    "At Pathways Within, we believe true well-being is about more than just mental health or physical appearance—it’s about caring for yourself as whole person.",
+    "Pathways Within brings mental health, physical wellness, and personal growth into one connected experience on Long Island. Therapy, medication management, coaching, massage, acupuncture, and energy work.",
   alternates: { canonical: "/" },
 };
 
-/** Source: 01 (landing), 02 (Wisdom home), 03 (About), 43 (new home page). Copy verbatim; layout new. */
-const SERVICES = [
-  { title: "Individual, Couples & Family Therapy", href: "/services/individual-therapy", asset: "th-ap26-conversation" },
-  { title: "EMDR, IFS & DBT Therapy", href: "/services/emdr-therapy", asset: "th-ap26-green-listen" },
-  { title: "CBT & Somatic Therapy", href: "/services/somatic-therapy", asset: "th-ap26-seated" },
-  { title: "Support for Veterans & First Responders", href: "/services/veterans-first-responders", asset: "cw-veteran-cap" },
-  { title: "Medication Management", href: "/services/medication-management", asset: "cw-ap26-med-np" },
-  { title: "Performance & Wellness Coaching", href: "/services/performance-wellness-coaching", asset: "ha-tia-baumohl" },
-  { title: "Massage", href: "/services/massage", asset: "cw-ap-massage-session" },
-  { title: "Acupuncture", href: "/services/acupuncture", asset: "cw-ap26-acu-leo" },
-  { title: "Energy Work", href: "/services/energy-work", asset: "cw-ap26-hands" },
+/** Copy: client revision deck, Page 1 (Homepage). */
+const SERVICES: { bucket: string; title: string; href: string; asset: string }[] = [
+  { bucket: "Mental Health", title: "Individual, Couples & Family Therapy", href: "/services/individual-therapy", asset: "th-ap26-conversation" },
+  { bucket: "Mental Health", title: "Child & Teen Therapy", href: "/services/child-therapy", asset: "th-ap26-kids-three" },
+  { bucket: "Mental Health", title: "EMDR, IFS & Somatic Therapy", href: "/services/emdr-therapy", asset: "th-ap26-green-listen" },
+  { bucket: "Mental Health", title: "Veterans & First Responders", href: "/services/veterans-first-responders", asset: "cw-veteran-cap" },
+  { bucket: "Mental Health", title: "Medication Management", href: "/services/medication-management", asset: "cw-ap26-med-np" },
+  { bucket: "Mind-Body Support", title: "Performance & Wellness Coaching", href: "/services/performance-wellness-coaching", asset: "ha-tia-baumohl" },
+  { bucket: "Mind-Body Support", title: "Energy Work", href: "/services/energy-work", asset: "cw-ap26-hands" },
+  { bucket: "Wellness", title: "Massage", href: "/services/massage", asset: "cw-ap-massage-session" },
+  { bucket: "Wellness", title: "Acupuncture", href: "/services/acupuncture", asset: "cw-ap26-acu-leo" },
+  { bucket: "Wellness", title: "Cupping Therapy", href: "/services/cupping-therapy", asset: "cw-ap26-acu-shoulder" },
 ];
 
 const INTAKE = [
-  { title: "You contact the Welcome Team", text: "Fill out the form below and someone from our team will be in touch. Or Contact Us Directly." },
-  { title: "A 360 intake conversation", text: "A Welcome Team member reaches out and schedules a 360 intake, a conversation about what you are experiencing and what you want to change." },
-  { title: "One plan, built around you", text: "The team builds a care plan across therapy, medication management, coaching, and wellness as needed, and matches you with available providers." },
-  { title: "Your first appointment", text: "Your first appointment is scheduled. The Welcome Team stays your point of contact." },
+  { title: "You Contact the Welcome Team", text: "Fill out the Contact Form, call, or text us. No need to choose a provider or service first." },
+  { title: "We Learn More About You", text: "A Welcome Team member connects with you to hear what is bringing you in and what kind of support you may be looking for." },
+  { title: "We Help Build a Starting Point", text: "Together, we identify an appropriate place to begin across therapy, medication management, coaching, and wellness." },
+  { title: "We Stay Connected", text: "We help you schedule your first appointment, and the Welcome Team remains a resource if your needs change along the way." },
+];
+
+const WHY = [
+  { title: "Whole-Person Care", text: "Mental, physical, and emotional well-being are connected. We treat them that way." },
+  { title: "More Than One Way to Begin", text: "Therapy may be right for you. So might medication management, coaching, massage, acupuncture, energy work, or another kind of support." },
+  { title: "A Team That Talks to Each Other", text: "When appropriate and with your permission, providers can collaborate so your care feels more connected." },
+  { title: "Care That Can Evolve", text: "What you need now may change over time. Your care can change with you." },
 ];
 
 export default function Home() {
@@ -41,22 +50,22 @@ export default function Home() {
       <header className="relative pb-6 lg:min-h-[calc(100svh-var(--header-h))] lg:pb-0" data-stop="wide">
         <div className="wrap pt-10 md:pt-20">
           <div className="glass glass--strong max-w-[760px] px-6 py-7 md:px-10 md:py-10">
-            <p className="eyebrow mb-4" data-reveal>
-              Discover Your
-            </p>
             <Split as="h1" text="Pathways Within" />
             <p className="mt-4 text-[clamp(1.15rem,1rem+0.9vw,1.6rem)] font-bold leading-tight text-brand-deep" style={{ fontFamily: "var(--font-display)" }} data-reveal>
               A 360º Approach to Healing &amp; Transformation
             </p>
-            <p className="lead mt-2" data-reveal>
-              Your Mind, Body &amp; Spirit—In Harmony
+            <p className="lead mt-5 max-w-[58ch]" data-reveal>
+              Pathways Within brings mental health, physical wellness, and personal growth into one connected experience.
             </p>
-            <p className="mt-6 max-w-[58ch]" data-reveal>
-              At Pathways Within, we believe true well-being is about more than just mental health or physical appearance—it’s about caring for yourself as whole person. Our unique 360º holistic approach blends clinical therapy and advanced medspa services to support emotional healing, physical renewal, and overall well-being.
+            <p className="mt-4 max-w-[58ch]" data-reveal>
+              Our team works together to help you find the support that makes sense for you—whether that means therapy, medication management, coaching, massage, acupuncture, energy work, or a combination of services.
+            </p>
+            <p className="mt-4 max-w-[58ch] font-bold text-brand-ink" data-reveal>
+              Start with what you know. We can help with the rest.
             </p>
             <div className="mt-8 flex flex-wrap gap-3" data-reveal>
               <Cta label="Contact Us" href="/contact" />
-              <Cta label="Find your path" href="/how-it-works" secondary />
+              <Cta label="Find Your Path" href="#find-your-path" secondary />
             </div>
           </div>
         </div>
@@ -69,34 +78,32 @@ export default function Home() {
       <div className="relative" data-draw-scope>
         <PathLine />
 
-        {/* The labyrinth story */}
+        {/* Follow the Path */}
         <section className="section" data-stop="labyrinth">
           <div className="wrap grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="relative mx-auto w-[min(70vw,380px)]">
               <div className="orbit">
                 <Photo asset="cw-labyrinth-beach" alt="A stone labyrinth on the beach" shape="circle" className="ring" float={40} sizes="380px" />
-                <span className="orbit-rider">
-                  <span className="orbit-rider__badge circle ring flex items-center justify-center bg-white text-center">
-                    <span style={{ fontFamily: "var(--font-display)" }} className="font-bold leading-none text-brand-deep">
-                      <span className="block text-[2rem]">
-                        <span data-count="360">360</span>º
-                      </span>
-                      <span className="block text-[0.6rem] tracking-[0.18em] uppercase">Wellness</span>
-                    </span>
-                  </span>
-                </span>
               </div>
+              <span className="circle ring absolute -right-4 -top-4 flex items-center justify-center bg-white text-center" style={{ width: 118, height: 118 }} data-reveal>
+                <span style={{ fontFamily: "var(--font-display)" }} className="font-bold leading-none text-brand-deep">
+                  <span className="block text-[2rem]">
+                    <span data-count="360">360</span>º
+                  </span>
+                  <span className="block text-[0.6rem] tracking-[0.18em] uppercase">Approach</span>
+                </span>
+              </span>
             </div>
             <div className="glass px-6 py-7 md:px-9 md:py-9">
               <p className="eyebrow mb-3" data-reveal>
-                Everyone’s route to care can be different
+                Follow the Path
               </p>
-              <h2 data-reveal>The labyrinth in our logo says a lot about how we see growth.</h2>
+              <h2 data-reveal>Everyone’s Route to Care Can Be Different</h2>
               <p className="mt-5" data-reveal>
-                A labyrinth is not a maze. There are no wrong turns, trick doors, or giant red signs telling you that you have failed. The path may wind, pause, circle inward, or open outward, but it keeps moving.
+                The labyrinth in our logo says a lot about how we see growth. A labyrinth is not a maze. There are no wrong turns or dead ends. The path may wind, pause, circle inward, or open outward—but it keeps moving.
               </p>
               <p className="mt-4" data-reveal>
-                That same philosophy shapes the Pathways Within experience. Start where you are. Move at your pace. Choose the support that makes sense for you now, knowing that your needs may change along the way.
+                That same philosophy shapes the Pathways Within experience. Start where you are. Move at your pace. Choose the support that makes sense now, knowing your needs may change along the way.
               </p>
               <p className="lead mt-5" data-reveal>
                 The path does not have to be straight to be taking you somewhere.
@@ -105,7 +112,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 360 intake */}
+        {/* The 360 Intake */}
         <section className="section" data-stop="seated">
           <div className="wrap wrap--wide grid items-start gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="glass px-6 py-7 md:px-9 md:py-9">
@@ -114,7 +121,7 @@ export default function Home() {
               </p>
               <h2 data-reveal>Choose Your Personalized Path</h2>
               <p className="lead mt-4" data-reveal>
-                You do not need to know exactly what kind of support you need. Our Welcome Team guides everyone through the same intake process to build an individual plan.
+                You do not need to arrive knowing exactly what kind of support you need. Our Welcome Team starts with a 360 Intake to learn more about what is going on, what you would like to change, and where it may make sense to begin.
               </p>
               <ol className="mt-8 grid gap-5 pl-0">
                 {INTAKE.map((s, i) => (
@@ -131,7 +138,7 @@ export default function Home() {
               </ol>
               <div className="mt-8 flex flex-wrap gap-3" data-reveal>
                 <Cta label="Contact Us" href="/contact" />
-                <Cta label="How it works" href="/how-it-works" secondary />
+                <Cta label="How It Works" href="/how-it-works" secondary />
               </div>
             </div>
             <div className="relative mx-auto grid w-[min(80vw,440px)] grid-cols-2 gap-4 lg:mt-16 lg:w-full">
@@ -142,6 +149,22 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Quiz: the low-pressure entry point, right after the 360 Intake. */}
+        <section className="section" data-stop="cairn" id="find-your-path">
+          <div className="wrap">
+            <div className="mb-6 max-w-[640px]">
+              <p className="eyebrow mb-3" data-reveal>
+                Find Your Path
+              </p>
+              <h2 data-reveal>Answer five questions.</h2>
+              <p className="lead mt-3" data-reveal>
+                A low-pressure way to see where it may make sense to begin.
+              </p>
+            </div>
+            <Quiz />
+          </div>
+        </section>
+
         {/* Services */}
         <section className="section" data-stop="pool">
           <div className="wrap">
@@ -149,9 +172,9 @@ export default function Home() {
               <p className="eyebrow mb-3" data-reveal>
                 Services
               </p>
-              <h2 data-reveal>Healing is holistic.</h2>
+              <h2 data-reveal>Mental Health. Mind-Body Support. Wellness.</h2>
               <p className="lead mt-4" data-reveal>
-                Mental Health &amp; Therapy. Holistic, Whole Body Care. One team, at every location.
+                One connected team.
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -160,7 +183,10 @@ export default function Home() {
                   <span className="circle bg-brand-soft" style={{ width: 76, height: 76 }}>
                     <img src={`/img/photos/${s.asset}-640.webp`} alt="" width={76} height={76} loading="lazy" className="h-full w-full object-cover" />
                   </span>
-                  <span className="tile__title">{s.title}</span>
+                  <span>
+                    <span className="eyebrow block !text-[0.62rem]">{s.bucket}</span>
+                    <span className="tile__title block">{s.title}</span>
+                  </span>
                 </Link>
               ))}
               <Link href="/services" className="tile" data-reveal>
@@ -174,7 +200,7 @@ export default function Home() {
         </section>
 
         {/* Why */}
-        <section className="section" data-stop="cairn">
+        <section className="section" data-stop="standing">
           <div className="wrap wrap--wide grid items-center gap-10 lg:grid-cols-[0.85fr_1.15fr]">
             <div className="relative mx-auto w-[min(72vw,420px)] lg:order-2">
               <Photo asset="cw-cairn-shoreline" alt="A cairn of balanced stones on the shoreline" shape="blob" className="ring" float={40} sizes="420px" />
@@ -182,28 +208,21 @@ export default function Home() {
             <div className="glass px-6 py-7 md:px-9 md:py-9 lg:order-1">
               <h2 data-reveal>Why Pathways Within?</h2>
               <ul className="check-list mt-6">
-                <li data-reveal>
-                  <strong>Complete 360º Well-Being:</strong> Inner healing + outer rejuvenation in one place
-                </li>
-                <li data-reveal>
-                  <strong>Expert Practitioners:</strong> Licensed therapists, aestheticians &amp; holistic providers
-                </li>
-                <li data-reveal>
-                  <strong>Tailored Care:</strong> Personalized treatments designed for your unique needs
-                </li>
-                <li data-reveal>
-                  <strong>A Holistic Experience:</strong> Mind-body wellness to help you feel whole
-                </li>
+                {WHY.map((w) => (
+                  <li key={w.title} data-reveal>
+                    <strong>{w.title}:</strong> {w.text}
+                  </li>
+                ))}
               </ul>
               <p className="lead mt-6" data-reveal>
-                Your journey to healing, confidence, and balance starts here.
+                Take what you need. Leave what you do not. We will help you find a place to begin.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Founder, concise */}
-        <section className="section" data-stop="standing">
+        {/* Founder, short version only */}
+        <section className="section" data-stop="ivy">
           <div className="wrap grid items-center gap-10 lg:grid-cols-[1fr_0.8fr]">
             <div className="glass px-6 py-7 md:px-9 md:py-9">
               <p className="eyebrow mb-3" data-reveal>
@@ -212,9 +231,6 @@ export default function Home() {
               <h2 data-reveal>Meet Rachel: Founder, Therapist &amp; “Patient Zero”</h2>
               <p className="mt-5" data-reveal>
                 Hi, I’m Rachel, therapist, founder, lifelong listener, and the original “Patient Zero” behind Pathways Within.
-              </p>
-              <p className="mt-4" data-reveal>
-                That calling led me to study psychology, human behavior, and the mind-body-spirit connection. It also led me to build Pathways Within: the kind of place I wished existed when I was learning how to navigate my own path.
               </p>
               <p className="mt-4" data-reveal>
                 Therapy is not just what I do. It is woven into who I am.
@@ -228,19 +244,6 @@ export default function Home() {
               <div className="orbit">
                 <Photo asset="ha-ap26-rachel-solo" alt="Rachel Lessard, founder of Pathways Within" shape="circle" className="ring" float={34} sizes="400px" />
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Marquee */}
-        <section className="section--tight glass glass--strong !rounded-none !border-x-0" aria-label="What clients say">
-          <div className="marquee py-4">
-            <div className="marquee__track">
-              {Array.from({ length: 4 }).map((_, i) => (
-                <span key={i} className="text-[clamp(1.05rem,0.95rem+0.8vw,1.5rem)] font-bold text-brand-deep" style={{ fontFamily: "var(--font-display)" }} aria-hidden={i > 0}>
-                  The Pathways Within team helped me find my way back to myself -K.F. 〰️
-                </span>
-              ))}
             </div>
           </div>
         </section>
@@ -271,17 +274,14 @@ export default function Home() {
             <p className="eyebrow" data-reveal>
               Get Started
             </p>
-            <h2 data-reveal>We are big believers in therapy tailored to your wants and needs.</h2>
+            <h2 data-reveal>Not Sure Where to Start? Start Here.</h2>
             <p className="lead mx-auto max-w-[56ch]" data-reveal>
-              The journey within should be as personal and individual as you are.
-            </p>
-            <p className="mx-auto max-w-[56ch]" data-reveal>
-              We look forward to meeting you and helping you have the experiences you have been craving!
+              Ready when you are. Reach out to our Welcome Team and we will help from there.
             </p>
             <div className="mt-2 flex flex-wrap justify-center gap-3" data-reveal>
               <Cta label="Contact Us" href="/contact" />
-              <Cta label="Find your path" href="/how-it-works" secondary />
-              <Cta label={SITE.phone} href={SITE.phoneHref} secondary />
+              <Cta label="Find Your Path" href="#find-your-path" secondary />
+              <Cta label="631-371-3825" href={SITE.phoneHref} secondary />
             </div>
           </div>
         </div>

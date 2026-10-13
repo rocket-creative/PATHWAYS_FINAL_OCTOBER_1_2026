@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
   title: {
-    default: "Pathways Within - Wisdom and Wellness - New York Therapy",
+    default: "Pathways Within — Mental Health, Mind-Body Support & Wellness on Long Island",
     template: "%s — Pathways Within",
   },
   description:

@@ -14,7 +14,7 @@ export default function Footer() {
               </span>
               <div style={{ fontFamily: "var(--font-display)" }}>
                 <div className="text-xl font-bold">Pathways Within</div>
-                <div className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">Wisdom &amp; Wellness Collaborative</div>
+                <div className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">Mental Health · Mind-Body Support · Wellness</div>
               </div>
             </div>
             <p className="mt-6 max-w-sm text-[1.35rem] leading-tight font-bold text-brand-ink" style={{ fontFamily: "var(--font-display)" }}>
@@ -32,6 +32,8 @@ export default function Footer() {
                 {LOCATIONS.map((l) => (
                   <li key={l.slug} className="text-[0.95rem] leading-snug whitespace-nowrap">
                     <Link href={`/locations#${l.slug}`} className="block">
+                      <span className="font-bold">{l.name}</span>
+                      <br />
                       {l.line1}
                       <br />
                       {l.line2}

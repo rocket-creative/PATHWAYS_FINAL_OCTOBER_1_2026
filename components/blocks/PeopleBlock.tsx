@@ -1,7 +1,7 @@
 import data from "@/content/people.json";
 import { Headshot, Photo } from "@/components/ui/Photo";
 import Link from "next/link";
-import PeopleSearch from "./PeopleSearch";
+import PeopleSearch, { type SearchPerson } from "./PeopleSearch";
 
 export type Person = {
   slug: string;
@@ -11,6 +11,9 @@ export type Person = {
   title: string;
   paragraphs: string[];
   specialties: string;
+  type: string;
+  locations: string[];
+  bio?: string;
 };
 
 export const PEOPLE = data.people as Person[];
@@ -22,10 +25,12 @@ export const WELLNESS = data.wellness as {
   cta: string;
   displayName: string;
   short: string;
+  type: string;
+  locations: string[];
 }[];
 
 /** Specialty tags derived from each "Specializes in" line, for the search filter. */
-export function tagsFor(p: Person): string[] {
+export function tagsFor(p: { specialties: string }): string[] {
   return p.specialties
     .replace(/^Specializes in:?\s*/i, "")
     .replace(/\.$/, "")
@@ -34,22 +39,58 @@ export function tagsFor(p: Person): string[] {
     .filter((t) => t.length > 1 && t.length < 60);
 }
 
+/** Every provider in one list: Mental Health, Medication / Specialized Care, Mind-Body Support, Wellness. */
+export function allProviders(): SearchPerson[] {
+  const clinical: SearchPerson[] = PEOPLE.filter((p) => !["admin", "dogs"].includes(p.group)).map((p) => ({
+    slug: p.slug,
+    name: p.name,
+    credentials: p.credentials,
+    title: p.title,
+    paragraphs: p.paragraphs,
+    specialties: p.specialties,
+    type: p.type,
+    locations: p.locations,
+    tags: tagsFor(p),
+    href: p.bio,
+  }));
+  const wellness: SearchPerson[] = WELLNESS.map((w) => ({
+    slug: w.slug,
+    name: w.displayName,
+    credentials: "",
+    title: w.role.charAt(0) + w.role.slice(1).toLowerCase(),
+    paragraphs: [w.short],
+    specialties: "",
+    type: w.type,
+    locations: w.locations,
+    tags: [],
+    href: `/team/${w.slug}`,
+  }));
+  const seen = new Set<string>();
+  return clinical.concat(wellness).filter((p) => (seen.has(p.slug) ? false : (seen.add(p.slug), true)));
+}
+
+const GROUPS: Record<string, (p: Person) => boolean> = {
+  therapists: (p) => ["leadership", "clinical"].includes(p.group),
+  medication: (p) => p.slug === "tiffany-roberts",
+  "mind-body": (p) => p.slug === "tia-baumohl",
+  admin: (p) => p.group === "admin",
+};
+
 export function PeopleBlock({ group }: { group: string }) {
   if (group === "search") {
-    const people = PEOPLE.filter((p) => ["leadership", "clinical", "specialized"].includes(p.group) && p.slug !== "rachel-lessard");
-    return <PeopleSearch people={people.map((p) => ({ ...p, tags: tagsFor(p) }))} />;
+    return <PeopleSearch people={allProviders()} />;
   }
   if (group === "wellness") {
     return (
       <div className="grid gap-4 sm:grid-cols-2">
         {WELLNESS.map((p) => (
-          <Link key={p.slug} href={`/team/${p.slug}`} className="tile !grid-cols-[128px_1fr] !rounded-[var(--r-md)]" data-reveal>
+          <Link key={p.slug} href={`/team/${p.slug}`} className="tile !grid-cols-[96px_1fr] sm:!grid-cols-[128px_1fr] !rounded-[var(--r-md)]" data-reveal>
             <Headshot slug={p.slug} name={p.displayName} size={128} ring={false} />
             <span>
               <span className="eyebrow block !text-[0.68rem]">{p.role}</span>
               <span className="tile__title block">{p.displayName}</span>
               <span className="tile__text block">{p.short}</span>
-              <span className="tile__text mt-1 block font-bold text-brand-deep">{p.cta.replace("Work with", "Read bio")} →</span>
+              <span className="tile__text mt-1 block font-bold text-brand-deep">Read bio →</span>
             </span>
           </Link>
         ))}
@@ -67,7 +108,7 @@ export function PeopleBlock({ group }: { group: string }) {
         <div className="grid gap-6 md:grid-cols-2">
           {dogs.map((d) => (
             <div key={d.slug} className="grid gap-3 text-center" data-reveal>
-              <Photo asset={photo[d.slug]} alt={`${d.name}, therapy dog`} shape="circle" className="ring mx-auto w-[260px]" sizes="260px" />
+              <Photo asset={photo[d.slug]} alt={`${d.name}, therapy dog`} shape="circle" className="ring mx-auto w-[min(70vw,260px)]" sizes="260px" />
               <h3>{d.name}</h3>
               {d.paragraphs.map((p, i) => (
                 <p key={i} className="text-left">
@@ -80,12 +121,13 @@ export function PeopleBlock({ group }: { group: string }) {
       </div>
     );
   }
-  const people = PEOPLE.filter((p) => p.group === group);
+  const pick = GROUPS[group] ?? ((p: Person) => p.group === group);
+  const people = PEOPLE.filter(pick);
   return (
     <div className="grid gap-8">
       {people.map((p) => (
-        <div key={p.slug} id={p.slug} className="grid scroll-mt-28 items-start gap-5 sm:grid-cols-[190px_1fr]" data-reveal>
-          <Headshot slug={p.slug} name={p.name} size={190} className="mx-auto sm:mx-0" />
+        <div key={p.slug} id={p.slug} className="grid scroll-mt-28 items-start gap-5 sm:grid-cols-[150px_1fr] md:grid-cols-[190px_1fr]" data-reveal>
+          <Headshot slug={p.slug} name={p.name} size={190} className="mx-auto w-[150px] sm:w-auto sm:mx-0" />
           <div className="grid gap-2">
             <h3 className="!text-[1.25rem]">
               {p.name}

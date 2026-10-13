@@ -7,7 +7,7 @@ import type { PageContent } from "../types";
 
 const medicationManagement: PageContent = {
   url: "/services/medication-management",
-  title: "Medication Management on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Medication Management on Long Island — Pathways Within",
   meta: "At Pathways Within, medication management is offered as part of a whole-person approach to mental health and emotional wellness.",
   source: "12-www-pathwayswithin-me-medication-management.txt, 23-www-pathwayswithin-me-clinicians.txt",
   eyebrow: "Medication Management",
@@ -44,7 +44,7 @@ const medicationManagement: PageContent = {
             "Emotional dysregulation",
             "Life transitions",
             "Medication changes or refills",
-            "Support alongside therapy or holistic care",
+            "Support alongside therapy or other wellness care",
           ],
         },
         { kind: "p", text: "Our goal is not to change who you are. Our goal is to support your nervous system, your emotional well-being, and your ability to feel more present in your life.", lead: true },
@@ -54,7 +54,7 @@ const medicationManagement: PageContent = {
       id: "nurse-practitioner",
       stop: "pool",
       layout: "wide",
-      heading: "MEET OUR NURSE PRACTITIONER",
+      heading: "Meet Our Nurse Practitioner — Tiffany Roberts",
       photos: [
         { asset: "ha-ap26-camp-tiffany", alt: "Tiffany Roberts, psychiatric nurse practitioner" },
         { asset: "cw-ap26-med-couples", alt: "A couple meeting with our nurse practitioner" },
@@ -68,12 +68,8 @@ const medicationManagement: PageContent = {
           credentials: "PMNP, MSN, BSN, RN-BC",
           paragraphs: [
             "Tiffany has spent more than 20 years caring for people in almost every kind of circumstance; from hospital patients and people in outpatient care to individuals navigating the correctional and shelter systems. Along the way, one thing that has stayed with her is that you can’t understand someone’s mental health by looking only at their symptoms. The relationships they’re in, the environment in which they live, their culture, their habits, and the pressures they carry all matter. That perspective shapes the way Tiffany works with every patient who sits across from her.",
-            "As a psychiatric nurse practitioner, Tiffany works with adolescents and adults who want more than a quick prescription and a return visit. She believes medication can be an important part of treatment, while also helping people build the changes, skills, and support that make lasting improvement possible. Coming from a cultural background where mental health was not always openly discussed, she is especially passionate about creating space for people to talk honestly without shame or judgment. Her goal is to help patients manage their symptoms, yes. Even more so, it’s to help them feel healthier, more present, and able to truly enjoy their lives again.",
-            "Over 20 years of nursing experience across hospital, outpatient, correctional, and psychiatric settings has taught Tiffany that every diagnosis comes with a person, a story, and a life beyond the exam room.",
-            "Psychiatric nurse practitioner serving adolescents (ages 10 and up) and adults, with a whole-person approach that integrates medication management, lifestyle changes, coping skills, and emerging treatment modalities.",
-            "Born into a legacy of nurses and shaped by crisis, culture, and compassion, Tiffany is changing how mental health is understood, especially in communities where suffering was once endured in silence.",
-            "I take the time to really understand each person - not just what they’re feeling, but what they need. Medication, when used, is always thoughtful and part of a bigger supportive plan.",
-            "Specializes in Anxiety, depression, mood disorders, ADHD and other mood disorders.",
+            "As a psychiatric nurse practitioner, Tiffany works with adolescents (ages 10 and up) and adults who want more than a quick prescription and a return visit. She believes medication can be an important part of treatment, while also helping people build the changes, skills, and support that make lasting improvement possible. Coming from a cultural background where mental health was not always openly discussed, she is especially passionate about creating space for people to talk honestly without shame or judgment. Her goal is to help patients manage their symptoms, yes. Even more so, it’s to help them feel healthier, more present, and able to truly enjoy their lives again.",
+            "Specializes in anxiety, depression, mood disorders, and ADHD.",
           ],
           cta: { label: "Work with Tiffany", href: "/contact" },
         },
@@ -85,9 +81,9 @@ const medicationManagement: PageContent = {
       heading: "Collaborative Care",
       photo: { asset: "cw-prescriber-conversation", alt: "A prescriber and client talking through a care plan", shape: "blob" },
       blocks: [
-        { kind: "p", text: "At Pathways Within, we believe healing is relational, holistic, and deeply personal. Medication management often works best when it is part of a larger support system. For many clients, medication and therapy work together: medication may help reduce the intensity of symptoms, while therapy offers space to process, heal, build insight, and develop meaningful coping tools.", lead: true },
-        { kind: "p", text: "Whether medication becomes a short-term support during a difficult season or part of a longer-term wellness plan, our team is here to walk alongside you with care, professionalism, and an understanding of the whole person." },
-        { kind: "p", text: "Your care plan may include starting a medication, continuing something that is already helping, adjusting a dosage, or exploring alternatives. Throughout the process, we monitor progress closely and make changes as needed." },
+        { kind: "p", text: "Medication management may be used on its own or alongside therapy and other forms of support. For some people, medication can help reduce the intensity of symptoms enough to make daily life, relationships, or therapeutic work feel more manageable.", lead: true },
+        { kind: "p", text: "Your plan may include starting medication, continuing something that is already working, adjusting dosage, or exploring other options." },
+        { kind: "p", text: "When appropriate and with your permission, your medication provider may collaborate with other members of your Pathways Within care team. Everyone stays focused on the same goal: helping you feel better and function better." },
       ],
     },
     {
@@ -137,21 +133,19 @@ const medicationManagement: PageContent = {
     },
   ],
   closing: {
-    heading: "Healing is holistic.",
-    text: [
-      "Take the next step in your journey with compassionate medication management rooted in whole-person care, collaboration, and emotional wellness. You deserve support that honors your story and helps you move toward balance, clarity, and connection.",
-    ],
-    cta: { label: "Schedule your Medication Management consultation today.", href: "/contact" },
+    heading: "Medication Is One Tool. Your Care Is Bigger Than One Tool.",
+    text: ["Medication may be one piece of your care—or it may be the only service you need right now. Either way, your plan should feel thoughtful, individualized, and connected to your goals."],
+    cta: { label: "Contact our Welcome Team to learn more.", href: "/contact" },
   },
 };
 
 const coaching: PageContent = {
   url: "/services/performance-wellness-coaching",
   // The captured <title> on the old page read "Therapy for Teens on Long Island" (a live-site error); title follows the site's pattern instead.
-  title: "Performance & Wellness Coaching on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "Performance & Wellness Coaching on Long Island — Pathways Within",
   meta: "Performance & Wellness Coaching at Pathways Within offers one-on-one support for people ready to better understand themselves, navigate change, and create lasting growth.",
   source: "13-www-pathwayswithin-me-performance-wellness-coaching.txt, 49-pathwayswithinwellness-com-tia-baumohl.txt, 23-www-pathwayswithin-me-clinicians.txt",
-  eyebrow: "Coaching",
+  eyebrow: "Mind-Body Support",
   h1: "Performance & Wellness Coaching",
   subtitle: "Growth Looks Different for Everyone",
   intro: [
@@ -179,7 +173,7 @@ const coaching: PageContent = {
             "Build confidence and resilience",
             "Strengthen emotional regulation",
             "Address avoidance or self-sabotage",
-            "Life transitions",
+            "Develop healthier habits",
             "Feel more grounded and intentional",
           ],
         },
@@ -189,7 +183,7 @@ const coaching: PageContent = {
       id: "meet-your-coach",
       stop: "pool",
       layout: "wide",
-      heading: "MEET YOUR COACH",
+      heading: "Meet Your Coach — Tia Baumohl",
       photos: [
         { asset: "ha-tia-baumohl", alt: "Tia Baumohl, certified coach and energy medicine practitioner" },
         { asset: "cw-ap26-hands", alt: "Hands held open in a moment of calm" },
@@ -205,12 +199,8 @@ const coaching: PageContent = {
             "Performance & Wellness Coaching at Pathways Within is led by Tia Baumohl, a certified coach with advanced training in Somatic Awareness, Internal Family Systems-informed practices, and energy work.",
             "Tia’s style is warm, honest, and collaborative, with enough humor to make the deeper work feel a little less heavy. She has a way of asking the question that makes you pause and think, “I have never looked at it that way before.”",
             "She helps clients notice recurring patterns, understand what may be driving them, and experiment with new ways of responding. There is no pressure to have the perfect answer or to arrive with everything figured out.",
-            "Tia will meet you where you are, help you get curious about what is happening beneath the surface, and support you as you move forward with greater clarity and intention.",
-            "Tia's work is rooted in helping people navigate change with greater clarity, connection, and confidence.",
             "She began her career supporting mothers and their partners through pregnancy and labor, giving her more than a decade of experience guiding people through some of life's most transformative moments. Over the past five years, she has expanded that work through energy medicine and coaching, supporting individuals and couples as they move through challenging dynamics, strengthen communication, and uncover new possibilities.",
-            "Tia is trained in a range of modalities that may help ease anxiety, depression, and nervous system dysregulation. Her approach is warm, strategic, and deeply holistic, helping clients build self-awareness, create meaningful breakthroughs, and move toward lasting personal growth.",
-            "Getting my start in supporting mothers and their partners through pregnancy and labor for over a decade, I am seasoned at supporting people during life’s most transformative journeys. With over five years of expertise in energy work and coaching practices, I empower individuals and couples to navigate challenging dynamics, facilitating breakthroughs and uncovering untapped potentials. Trained in various modalities proved to alleviate symptoms of anxiety, depression, and nervous system dysregulation, I offer strategic interventions for relationship enhancement, effective communication, and personal evolution, fostering holistic well-being and profound transformations.",
-            "Specializes in assertiveness/ confidence building, effective communication, IFS-Parts work, healing attachment patterns, breaking codependency patterns.",
+            "Specializes in assertiveness and confidence building, effective communication, IFS-Parts work, healing attachment patterns, and breaking codependency patterns.",
           ],
           cta: { label: "Work with Tia Baumohl", href: "/contact" },
         },
@@ -226,7 +216,7 @@ const coaching: PageContent = {
         { kind: "p", text: "Your first session is an opportunity to talk about what is bringing you in, where you feel stuck, and what you would like to change. Together, you and Tia will identify meaningful goals and create an approach tailored to your needs." },
         { kind: "p", text: "From there, coaching becomes an active partnership. You may reflect on a recent experience, explore a recurring pattern, notice how stress shows up in your body, practice a different response, or try a new approach between sessions." },
         { kind: "p", text: "There is no script and no expectation that you arrive with all the answers. Tia brings thoughtful questions, honest reflection, practical tools, and genuine curiosity. You bring your experiences, goals, and willingness to explore them." },
-        { kind: "h3", text: "Your work with performance wellness coach Tia may include:" },
+        { kind: "h3", text: "Your work together may include:" },
         {
           kind: "list",
           style: "bullet",
@@ -246,9 +236,7 @@ const coaching: PageContent = {
       stop: "seated",
       heading: "How Coaching Fits Into Your Care",
       blocks: [
-        { kind: "p", text: "At Pathways Within, we believe there is no one-size-fits-all approach to wellness.", lead: true },
-        { kind: "p", text: "Performance & Wellness Coaching is one part of our integrated model of care and may be used on its own or alongside therapy, medication management, acupuncture, and other wellness services." },
-        { kind: "p", text: "Our Welcome Team will help determine the best combination of services that supports your goals." },
+        { kind: "p", text: "Performance & Wellness Coaching may be used on its own or alongside therapy, medication management, acupuncture, or other wellness services. Because Pathways Within works collaboratively, we can also help you determine when coaching is the right fit—and when another kind of support may make more sense.", lead: true },
       ],
     },
     {
@@ -301,8 +289,7 @@ const coaching: PageContent = {
             {
               q: "Can I work with Tia while seeing a therapist?",
               a: [
-                "Absolutely. In fact, coaching and therapy often work really well together.",
-                "Therapy may help you process your past and strengthen your emotional well-being. Coaching focuses on how to apply those insights to your life today — whether that is setting boundaries, navigating relationships, building confidence, or trying a different way of responding.",
+                "Yes. Coaching and therapy may complement one another, but they serve different purposes. Therapy is clinical mental health care. Coaching is goal-oriented support focused on patterns, choices, communication, behavior, and personal growth. Some patients use both. Others use one.",
               ],
             },
             {
@@ -346,13 +333,13 @@ const coaching: PageContent = {
   closing: {
     heading: "Growth Looks Different for Everyone",
     text: ["Progress is not measured by perfection. It is measured by becoming more aware, intentional, and aligned with the life you want to create."],
-    cta: { label: "Schedule your performance & wellness coaching consultation today.", href: "/contact" },
+    cta: { label: "Contact Us", href: "/contact" },
   },
 };
 
 const rachel: PageContent = {
   url: "/about/rachel",
-  title: "Meet Rachel — Pathways Within | Wisdom & Wellness Services",
+  title: "Meet Rachel — Pathways Within",
   meta: "Hi, I’m Rachel, therapist, founder, lifelong listener, and the original “Patient Zero” behind Pathways Within.",
   source: "03-www-pathwayswithin-me-about-us.txt, 31-pathwayswithinwellness-com-about.txt, 23-www-pathwayswithin-me-clinicians.txt, 28-www-pathwayswithin-me-news-a-new-way-podcast.txt",
   eyebrow: "FOUNDER OF PATHWAYS WITHIN",
@@ -379,29 +366,9 @@ const rachel: PageContent = {
       heading: "Therapy is not just what I do. It is woven into who I am.",
       photo: { asset: "ha-rachel-lessard-portrait", alt: "Portrait of Rachel Lessard", shape: "arch" },
       blocks: [
-        { kind: "p", text: "I am here for the big, messy, complicated conversations, and I am also the person who will remind you to drink water, unclench your jaw, take the win, and stop pretending rest has to be earned.", lead: true },
-        { kind: "p", text: "Together we can explore your experiences in order to help you feel safe and secure again. In my office, with our without your loved one, we can develop new styles of communication that can create the relationship you have always wanted." },
-        { kind: "p", text: "Specializes in anxiety, depression, PTSD, couples, hypnotherapy, veterans, first responders, and weight loss surgery evals and counseling." },
-      ],
-    },
-    {
-      id: "big-picture-thinker",
-      stop: "labyrinth",
-      layout: "wide",
-      heading: "Founder and Big-Picture Thinker",
-      blocks: [
-        {
-          kind: "person",
-          slug: "rachel-lessard",
-          eyebrow: "Founder and Big-Picture Thinker",
-          name: "Rachel Lessard",
-          credentials: "LCSW-R",
-          paragraphs: [
-            "Rachel created Pathways Within Wellness to expand the conversation around healing beyond the therapy room. She guides the larger vision, exploring how mind, body, and spirit can be supported in practical, personal, and sometimes unexpected ways.",
-            "For a behind-the-scenes look at Rachel's journey as founder and 'Patient Zero,' follow The Wisdom of Wellness on Substack at [@the.wisdom.of.wellness](https://substack.com/@the.wisdom.of.wellness).",
-          ],
-          cta: { label: "Contact Us", href: "/contact" },
-        },
+        { kind: "p", text: "I am here for the big, messy, complicated conversations. I am also the person who will remind you to drink water, unclench your jaw, take the win, and stop pretending rest has to be earned.", lead: true },
+        { kind: "p", text: "Together, we can explore what you have experienced, identify patterns that may no longer be serving you, and build ways of coping, communicating, and connecting that feel healthier and more sustainable." },
+        { kind: "p", text: "I work with individuals and couples across a range of needs, including anxiety, depression, PTSD, relationship concerns, hypnotherapy, veterans and first responders, and weight loss surgery evaluations and counseling." },
       ],
     },
     {
@@ -410,7 +377,7 @@ const rachel: PageContent = {
       heading: "The Wisdom of Wellness",
       photo: { asset: "ha-ap-rachel-lessard", alt: "Rachel Lessard at the office" },
       blocks: [
-        { kind: "p", text: "For the more candid version of the story, follow The Wisdom of Wellness on Substack at [@the.wisdom.of.wellness](https://substack.com/@the.wisdom.of.wellness), where I share the behind-the-scenes journey of being a founder, therapist, lifelong learner.", lead: true },
+        { kind: "p", text: "For the more candid version of the story, follow The Wisdom of Wellness on Substack, where Rachel shares the behind-the-scenes experience of being a therapist, founder, lifelong learner, and Pathways Within’s original “Patient Zero.”", lead: true },
         { kind: "cta", label: "Follow The Wisdom of Wellness on Substack", href: "https://substack.com/@the.wisdom.of.wellness" },
         { kind: "cta", label: "Resources", href: "/resources", secondary: true },
       ],
@@ -421,22 +388,21 @@ const rachel: PageContent = {
       heading: "A Podcast with Rachel Lessard",
       photo: { asset: "cw-table-notes", alt: "Notes on a table during a conversation", shape: "blob" },
       blocks: [
-        { kind: "p", text: "Owner and founder of Pathways Within, Rachel Lessard, joined Aynisa Leonardo from Wellbridge addiction treatment to discuss the practice and share more about the many pathways to treatment offered here at Pathways Within.", lead: true },
+        { kind: "p", text: "Rachel joined Aynisa Leonardo from Wellbridge to talk about the evolution of Pathways Within, her approach to care, and the different ways people can find support. Listen to the conversation, then reach out if something you hear feels familiar—or simply makes you curious about where to begin.", lead: true },
         { kind: "h3", text: "A New Way Podcast with Rachel Lessard" },
-        { kind: "p", text: "Connect with us today to learn more about anything that Rachel talked about on the show! Call us at (631) 371-3825 today!" },
+        { kind: "cta", label: "Contact Us", href: "/contact" },
       ],
     },
   ],
   closing: {
     heading: "Take what you need. Leave what you do not.",
-    text: ["We will walk with you — and probably remind you to breathe along the way."],
     cta: { label: "Contact Us", href: "/contact" },
   },
 };
 
 const faq: PageContent = {
   url: "/faq",
-  title: "FAQs | Therapy Near You on Long Island — Pathways Within | Wisdom & Wellness Services",
+  title: "FAQs | Therapy Near You on Long Island — Pathways Within",
   meta: "Here are some of the most common questions we hear—if you’re curious about anything else, just reach out; we’re always happy to help.",
   source: "26-www-pathwayswithin-me-faq.txt, 03-www-pathwayswithin-me-about-us.txt, 31-pathwayswithinwellness-com-about.txt, 25-www-pathwayswithin-me-locations.txt",
   h1: "Frequently Asked Questions",
@@ -455,11 +421,10 @@ const faq: PageContent = {
           kind: "faq",
           items: [
             { q: "What is Pathways Within?", a: ["Pathways Within is a collaborative mental health and wellness organization for the whole person, not just the one concern that brought you through the door."] },
-            { q: "What does “whole-person care” mean?", a: ["It means we recognize that mental health, physical health, relationships, stress, lifestyle, and daily responsibilities are all part of the same life. We look at the broader picture and help you explore the support that may be most useful."] },
             { q: "Do I need to know exactly what kind of support I need?", a: ["No, and honestly, most people do not. You may know that something feels off, heavy, stuck, or simply ready to change. Our Welcome Team can help you sort through the options and find a place to begin."] },
-            { q: "What services does Pathways Within offer?", a: ["Services may include individual, couples, family, and group therapy, medication management, performance and wellness coaching, acupuncture, massage, nutrition, esthetic services, and other wellness offerings. Availability varies by location, because apparently one building cannot contain all of us."] },
-            { q: "Do I have to use more than one service?", a: ["Not at all. Some clients work with one provider, while others build a mix of services over time. Take what feels helpful. Leave what does not. Your care should fit you not the other way around."] },
-            { q: "Can my providers communicate with one another?", a: ["Yes, when it is helpful and with your permission. Members of your care team will collaborate to create a more connected healing experience, while your privacy, comfort, and consent stay at the center of the process."] },
+            { q: "What services does Pathways Within offer?", a: ["Pathways Within offers mental health therapy, medication management, Performance & Wellness Coaching, energy work, massage therapy, acupuncture, cupping, and other active wellness services.", "Specific services and provider availability vary by location—because apparently one building cannot contain all of us."] },
+            { q: "Do I have to use more than one service?", a: ["Not at all. Some patients work with one provider. Others use different services over time. The collaborative model simply means more support is available if and when it becomes useful. Your care should fit you—not the other way around."] },
+            { q: "Can my providers communicate with one another?", a: ["Yes, when appropriate and with your permission. Members of your care team may collaborate so everyone stays aligned around your goals and your care feels more connected. Your privacy, comfort, and consent remain central to that process."] },
             { q: "Is Pathways Within only for people in crisis?", a: ["Definitely not. People come to us during hard seasons, but also for personal growth, stronger relationships, stress support, physical well-being, performance goals, or simply because life could use a tune-up."] },
             { q: "Do you accept insurance?", a: ["Insurance participation varies by provider, service, and individual plan. Some mental health, medication management, acupuncture, and other services may be covered. Our Welcome team can help explain the options based on your coverage."] },
             { q: "Where are services available?", a: ["Pathways Within serves clients across multiple Nassau and Suffolk County locations, with virtual appointments available for eligible services. Our Welcome Team can help you find the provider, service, and location that best fit your life."] },
@@ -477,15 +442,15 @@ const faq: PageContent = {
         {
           kind: "faq",
           items: [
-            { q: "Is Pathways Within Wellness only for current therapy clients?", a: ["No. Our Wellness services are available whether or not you receive mental health services through Pathways Within. Some clients use both sides of the organization, while others come to us only for massage, acupuncture, energy work, or another Wellness service."] },
+            { q: "Do I need to be a therapy patient to use wellness services?", a: ["No. Massage, acupuncture, cupping, energy work, and other active wellness services are available whether or not you receive therapy through Pathways Within. Some people use one service. Others combine care over time. Both are completely fine."] },
             { q: "Do I need to know which treatment I need?", a: ["Not necessarily. You can contact our team, share what you are experiencing, and we will help guide you toward an appropriate service or provider."] },
             { q: "Are Wellness services customized?", a: ["Yes. Your provider will learn more about your needs, preferences, comfort level, and goals before beginning. Care should feel personal—not like you were handed someone else’s treatment plan."] },
-            { q: "Can Wellness services complement therapy?", a: ["They can. Stress, anxiety, grief, and other emotional experiences may also show up physically. Hands-on and holistic care can offer another way to support relaxation, regulation, body awareness, and overall well-being. These services do not replace mental health or medical treatment, but they may complement a broader care plan."] },
+            { q: "Can wellness services complement therapy?", a: ["They may. Stress, anxiety, grief, and other emotional experiences can also affect the body. Massage, acupuncture, and other wellness services offer additional ways to support physical comfort, relaxation, recovery, and overall well-being. These services do not replace mental health or medical treatment when those services are needed."] },
             { q: "Do I need to be in pain to book a massage?", a: ["No. Massage can support pain relief and recovery, but it can also be used for relaxation, stress management, preventive care, or simply because your shoulders have been living near your ears all week."] },
             { q: "What should I expect during my first appointment?", a: ["Your provider will begin by asking about your goals, areas of concern, relevant health history, and personal preferences. You will also have an opportunity to ask questions and discuss anything that may make your experience more comfortable."] },
             { q: "Can I combine different Wellness services?", a: ["Yes. Depending on your needs and provider recommendations, you may choose to explore multiple services over time. There is no required path or predetermined package. Start where you are and build from there."] },
             { q: "Is self-care really part of health care?", a: ["We certainly think so. Rest, recovery, stress reduction, and feeling connected to your body can all play meaningful roles in your overall well-being. Self-care is not always candles and quiet music—but we are not opposed to either."] },
-            { q: "How do I get started?", a: ["Contact our team or book through the Pathways Within Wellness app. You do not need a perfect plan. You just need a place to begin."] },
+            { q: "How do I get started?", a: ["Contact our Welcome Team. You do not need a perfect plan. You just need a place to begin."] },
           ],
         },
       ],
@@ -496,7 +461,7 @@ const faq: PageContent = {
       layout: "wide",
       heading: "Where are you located?",
       blocks: [
-        { kind: "p", text: "We have four locations in the greater Long Island area! You can find us in Nassau or Smithtown for all of your wisdom and wellness needs. To minimize stress before and after your appointments, each location has dedicated parking for your convenience.", lead: true },
+        { kind: "p", text: "Pathways Within serves Nassau and Suffolk Counties from five Long Island locations, with virtual appointments available for eligible services.", lead: true },
         { kind: "locations" },
       ],
     },
@@ -579,16 +544,12 @@ const faq: PageContent = {
               q: "Do you offer virtual visits?",
               a: [
                 "We do offer virtual visits! Called telehealth, our therapy services can be offered in any format you feel most comfortable with. Whether that means you meet with your therapist every time through our virtual platform or you switch it up between telehealth and in-person visits, we are happy to work with you to meet all your needs.",
-                "Before your first visit, we’ll send you a link to get you all set up. During this onboarding process, you’ll have the chance to get familiar with our platform, SimplePractice.",
+                "Before your first visit, we’ll send you a link to get you all set up.",
               ],
             },
             {
               q: "Is virtual therapy private?",
-              a: ["Absolutely! SimplePractice is both HIPAA compliant as well as VeriSign security sealed. Your privacy is crucial to us, and we take every step to ensure confidentiality in every format."],
-            },
-            {
-              q: "How do you incorporate Therapy and Wellness in a collaborative treatment plan?",
-              a: ["At Pathways Within, we believe true healing happens when the mind and body are supported together. Our therapy services focus on emotional insight, personal growth, and mental well-being—but we don’t stop there. Through our 360º approach to care, we partner with our sister site Pathways to Wellness, we provide a truly holistic experience. Together, we support your journey from the inside out, integrating therapeutic care with restorative wellness services to help you feel grounded, renewed, and whole."],
+              a: ["Yes. Our electronic health records are managed through Jane, a HIPAA-compliant healthcare platform, and patient communication runs through Trust Driven Care. Your privacy is central to how we work, in every format."],
             },
             {
               q: "Do you offer discounts or sliding scale fees for self-pay without insurance coverage?",
@@ -608,7 +569,7 @@ const faq: PageContent = {
 
 const resources: PageContent = {
   url: "/resources",
-  title: "Resources — Pathways Within | Wisdom & Wellness Services",
+  title: "Resources — Pathways Within",
   meta: "Follow The Wisdom of Wellness on Substack at @the.wisdom.of.wellness, where I share the behind-the-scenes journey of being a founder, therapist, lifelong learner.",
   source: "03-www-pathwayswithin-me-about-us.txt, 27-www-pathwayswithin-me-news.txt, 28-www-pathwayswithin-me-news-a-new-way-podcast.txt, 29-www-pathwayswithin-me-news-telehealth.txt",
   h1: "Resources",
@@ -667,7 +628,7 @@ const resources: PageContent = {
 
 const careers: PageContent = {
   url: "/careers",
-  title: "Careers — Pathways Within | Wisdom & Wellness Services",
+  title: "Careers — Pathways Within",
   meta: "Submit your resume through our careers page.",
   source: "(no source capture; functional copy only)",
   h1: "Careers",
@@ -688,7 +649,7 @@ const careers: PageContent = {
   ],
   closing: {
     heading: "Better Together",
-    text: ["Pathways Within Wellness is built around collaboration."],
+    text: ["Pathways Within is built around collaboration."],
     cta: { label: "Contact Us", href: "/contact" },
   },
 };

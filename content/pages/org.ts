@@ -1,86 +1,75 @@
 import type { PageContent } from "../types";
-import { NAV } from "@/lib/site";
+import { BUCKETS } from "@/lib/site";
 
-const col = (i: number) => NAV[0].columns![i].links;
+const tile = (l: { label: string; href: string }, asset?: string) => ({ title: l.label, href: l.href, asset });
 
-/** Services hub. Source: 01 (landing lists), 30 (wellness home), 02. */
+/** Services hub. Copy: client revision deck, Page 4. Three buckets: Mental Health, Mind-Body Support, Wellness. */
 const services: PageContent = {
   url: "/services",
-  title: "Services — Pathways Within | Wisdom & Wellness Services",
-  meta: "Mental Health & Therapy and Holistic, Whole Body Care at Pathways Within on Long Island. Therapy, medication management, coaching, massage, acupuncture, cupping, and energy work.",
-  source: "01-www-pathwayswithin-me.txt, 30-pathwayswithinwellness-com-home.txt",
+  title: "Services — Pathways Within",
+  meta: "Pathways Within brings therapy, medication management, coaching, and whole-body wellness into one connected organization. Mental Health, Mind-Body Support, and Wellness on Long Island.",
+  source: "client revision deck, Page 4",
   eyebrow: "Services",
   h1: "Choose Your Personalized Path",
   intro: [
-    "At Pathways Within Wellness, we provide personalized care to tend to your mind, body and spirit so that you can be your best self, inside and out.",
-    "Our Welcome Team will help determine the best combination of services that supports your goals.",
+    "Pathways Within brings therapy, medication management, coaching, and whole-body wellness into one connected organization.",
+    "Choose the service you know you want—or let our Welcome Team help you narrow it down.",
   ],
   heroPhoto: { asset: "th-ap26-across", alt: "A therapy session at Pathways Within" },
   sections: [
     {
-      id: "therapy",
+      id: "mental-health",
       stop: "seated",
       layout: "wide",
-      eyebrow: "Mental Health & Therapy",
-      heading: "Wisdom: Counseling Services",
+      eyebrow: "Mental Health",
+      heading: "Counseling Services",
       blocks: [
-        { kind: "p", text: "Begin your journey to wellness, where our expert team of therapist’s wisdom guides the way", lead: true },
-        { kind: "tiles", items: col(0).map((l) => ({ title: l.label, href: l.href })) },
+        { kind: "p", text: "Our licensed clinicians work with children, teens, adults, couples, and families across a wide range of mental health needs, life experiences, relationships, and transitions. Medication Management is also part of this mental-health pathway for patients who may benefit from psychiatric evaluation or medication support. Explore the options—or let our Welcome Team help you narrow them down.", lead: true },
+        { kind: "tiles", items: BUCKETS.mentalHealth.therapy.map((l) => tile(l)).concat(BUCKETS.mentalHealth.medication.map((l) => tile(l, "cw-ap26-med-np"))) },
       ],
     },
     {
-      id: "types",
+      id: "types-of-therapy",
       stop: "labyrinth",
       layout: "wide",
+      eyebrow: "Mental Health",
       heading: "Types of Therapy",
-      blocks: [{ kind: "tiles", items: col(1).map((l) => ({ title: l.label, href: l.href })) }],
+      blocks: [
+        { kind: "p", text: "Licensed clinical therapy approaches and modalities." },
+        { kind: "tiles", items: BUCKETS.mentalHealth.types.map((l) => tile(l)) },
+      ],
     },
     {
-      id: "medication-coaching",
+      id: "mind-body-support",
       stop: "standing",
       layout: "wide",
-      heading: "Medication Management & Coaching",
+      eyebrow: "Mind-Body Support",
+      heading: "Coaching & Energy Work",
       blocks: [
-        { kind: "p", text: "Performance & Wellness Coaching is one part of our integrated model of care and may be used on its own or alongside therapy, medication management, acupuncture, and other wellness services." },
-        { kind: "tiles", items: col(2).map((l) => ({ title: l.label, href: l.href, asset: l.href.includes("medication") ? "cw-ap26-med-np" : "ha-tia-baumohl" })) },
+        { kind: "p", text: "Performance & Wellness Coaching and Energy Work are separate from licensed mental health treatment. They may be used on their own or alongside therapy, medication management, and wellness services." },
+        { kind: "tiles", items: BUCKETS.mindBody.links.map((l) => tile(l, l.href.includes("coaching") ? "ha-tia-baumohl" : "cw-ap26-hands")) },
       ],
     },
     {
       id: "wellness",
       stop: "pool",
       layout: "wide",
-      eyebrow: "Holistic, Whole Body Care",
+      eyebrow: "Wellness",
       heading: "Your Wellness",
       blocks: [
-        { kind: "p", text: "Let us help you build a beautiful outside that matches your inside.", lead: true },
-        { kind: "tiles", items: col(3).map((l) => ({ title: l.label, text: l.note, href: l.href, asset: l.href.includes("massage") ? "cw-ap-massage-session" : l.href.includes("acupuncture") ? "cw-ap26-acu-needles" : l.href.includes("cupping") ? "cw-ap26-acu-shoulder" : l.href.includes("energy") ? "ha-hand-on-water" : undefined })) },
-        { kind: "p", text: "Massage: Relaxation Massage, Sports Massage, Pregnancy Massage, Swedish Massage, Hot Stone Massage." },
-      ],
-    },
-    {
-      id: "your-wellness",
-      stop: "ivy",
-      heading: "You deserve to love what you see when you look in the mirror.",
-      photo: { asset: "cw-face-to-sun", alt: "A face turned to the sun", shape: "blob" },
-      blocks: [
-        { kind: "p", text: "Loving yourself is not about the way you look, but it can make a difference to feel like what you see on the outside matches the aspirations you’re reaching for from within. Loving yourself matters above all else- above what you’re told you should be or want or need." },
-        { kind: "p", text: "But it doesn’t matter what we think. It’s what you think that matters." },
-        { kind: "p", text: "Your body, your confidence, and your image are yours to own. They’re yours to dictate." },
-        { kind: "p", text: "If you’re ready to change the skin that you’re in so you can feel your confidence from the top of your head to the depths of your soul, we want to invite you to follow that pathway to wellness within." },
-        { kind: "p", text: "At Pathways Within, we embrace the truth that taking care of yourself physically has major impacts on your mental and emotional health." },
-        { kind: "p", text: "Being well is an inside job, but often the way we feel about ourselves moves in reverse. From the outside in, we build ideas about who we are and what we should be." },
+        { kind: "p", text: "Physical well-being is part of the bigger picture. Massage, acupuncture, cupping, and energy work can support physical comfort, stress relief, movement, recovery, and overall well-being.", lead: true },
+        { kind: "p", text: "You do not need to be a therapy patient to use wellness services. Start with the service you know you want—or ask the Welcome Team for help choosing." },
+        { kind: "tiles", items: BUCKETS.wellness.links.map((l) => tile(l, l.href.includes("massage") ? "cw-ap-massage-session" : l.href.includes("acupuncture") ? "cw-ap26-acu-needles" : "cw-ap26-acu-shoulder")) },
       ],
     },
     {
       id: "about-our-team",
       stop: "seated",
       heading: "About Our Team",
-      photo: { asset: "ha-ap-wellness-lobby", alt: "The wellness lobby" },
+      photo: { asset: "ha-ap26-camp-five", alt: "The Pathways Within team together outdoors" },
       blocks: [
-        { kind: "p", text: "Our Mission at Pathways Within is to provide personalized care to tend to your mind, body and spirit so that you can be your best self, inside and out. We create a tranquil and serene atmosphere by combining beauty and wellness through the use of environmentally friendly and organic products and holistic services." },
-        { kind: "p", text: "We believe in the interconnectedness of body, spirit, mind, and earth. Pathways Within is for those of us who wish for peace, balance, and clarity, and opt to start within." },
-        { kind: "p", text: "The journey begins here!", lead: true },
-        { kind: "cta", label: "Meet Our Team", href: "/team", secondary: true },
+        { kind: "p", text: "Pathways Within is a collaborative mental health and wellness organization serving Nassau and Suffolk Counties. Our team includes clinicians, medical providers, coaches, wellness practitioners, and support professionals who work together to help patients find care that feels connected, personal, and useful." },
+        { kind: "cta", label: "Meet Our Team", href: "/team" },
       ],
     },
     {
@@ -91,90 +80,113 @@ const services: PageContent = {
       blocks: [
         {
           kind: "list",
+          style: "check",
           items: [
-            "**Complete 360º Well-Being:** Inner healing + outer rejuvenation in one place",
-            "**Expert Practitioners:** Licensed therapists, aestheticians & holistic providers",
-            "**Tailored Care:** Personalized treatments designed for your unique needs",
-            "**A Holistic Experience:** Mind-body wellness to help you feel whole",
+            "**Whole-Person Perspective** — We look beyond the single concern that brought you through the door.",
+            "**Multiple Ways to Begin** — Therapy, medication management, coaching, massage, acupuncture, and wellness services all offer different entry points.",
+            "**Individualized Support** — Your goals, preferences, comfort level, and needs guide the experience.",
+            "**Connected When It Helps** — When appropriate and with your permission, providers may collaborate so care feels more coordinated.",
           ],
         },
-        { kind: "p", text: "Your journey to healing, confidence, and balance starts here.", lead: true },
+        { kind: "p", text: "One organization. More than one pathway forward.", lead: true },
       ],
     },
   ],
-  closing: { heading: "Discover Your Pathway to Wellness", text: ["We look forward to meeting you and helping you have the experiences you have been craving!"], cta: { label: "Contact Us", href: "/contact" } },
+  closing: { heading: "Choose the service you know you want—or let our Welcome Team help you narrow it down.", cta: { label: "Contact Us", href: "/contact" } },
 };
 
-/** Team directory. Source: 23 (clinicians), 46 (wellness providers). Rachel lives on /about/rachel. */
+/** Team directory. Copy: client revision deck, Page 11. All-inclusive, filterable by specialty, location, and provider type. */
 const team: PageContent = {
   url: "/team",
-  title: "Clinicians — Pathways Within | Wisdom & Wellness Services",
-  meta: "Meet Our Team. Pathways Within leadership, clinical team, specialized care providers, wellness providers, admin team, and therapy dogs on Long Island.",
-  source: "23-www-pathwayswithin-me-clinicians.txt, 46-pathwayswithinwellness-com-providers.txt",
+  title: "Our Team — Pathways Within",
+  meta: "Pathways Within brings together clinicians, medical providers, coaches, wellness practitioners, and support professionals across Nassau and Suffolk Counties.",
+  source: "client revision deck, Page 11",
   eyebrow: "Our Team",
   h1: "Meet Our Team",
-  intro: ["Our therapists are trained, licensed, and experienced in different areas of counseling. Each clinician works with special populations based on their expertise and passions."],
+  intro: [
+    "Pathways Within brings together clinicians, medical providers, coaches, wellness practitioners, and support professionals across Nassau and Suffolk Counties.",
+    "Different specialties. Different perspectives. One shared goal: helping patients find the support that works best for them.",
+    "Use the search below to explore providers—or contact our Welcome Team if you would rather have help finding the right fit.",
+  ],
   heroPhoto: { asset: "ha-ap26-camp-pair", alt: "Two members of the Pathways Within team" },
   heroCtas: [
-    { label: "Search providers by specialty", href: "#search" },
-    { label: "Meet Rachel, our founder", href: "/about/rachel", secondary: true },
+    { label: "Find Your Provider", href: "#find-your-provider" },
+    { label: "Contact the Welcome Team", href: "/contact", secondary: true },
   ],
   sections: [
     {
-      id: "search",
+      id: "find-your-provider",
       stop: "labyrinth",
       layout: "wide",
-      heading: "Find your provider",
+      heading: "Find Your Provider",
       glass: false,
       blocks: [{ kind: "people", group: "search" }],
     },
     {
-      id: "specialized",
+      id: "therapists",
       stop: "cairn",
       layout: "wide",
-      heading: "Pathways Within Specialized Care Providers",
+      heading: "Therapists",
+      blocks: [{ kind: "people", group: "therapists" }],
+    },
+    {
+      id: "medication-specialized-care",
+      stop: "pool",
+      layout: "wide",
+      heading: "Medication & Specialized Care",
       blocks: [
-        { kind: "people", group: "specialized" },
-        { kind: "cta", label: "Learn About Medication Management", href: "/services/medication-management" },
+        { kind: "people", group: "medication" },
+        { kind: "cta", label: "Learn About Medication Management", href: "/services/medication-management", secondary: true },
+      ],
+    },
+    {
+      id: "mind-body-support",
+      stop: "standing",
+      layout: "wide",
+      heading: "Mind-Body Support",
+      blocks: [
+        { kind: "people", group: "mind-body" },
         { kind: "cta", label: "Performance & Wellness Coaching", href: "/services/performance-wellness-coaching", secondary: true },
       ],
     },
     {
       id: "wellness-providers",
-      stop: "pool",
+      stop: "seated",
       layout: "wide",
-      heading: "Meet Our Providers",
+      heading: "Wellness Providers",
       blocks: [{ kind: "people", group: "wellness" }],
     },
     {
-      id: "admin",
+      id: "welcome-team",
       stop: "ivy",
       layout: "wide",
-      heading: "Pathways Within Admin Team",
+      heading: "Welcome Team & Administration",
       blocks: [{ kind: "people", group: "admin" }],
     },
     {
       id: "therapy-dogs",
       stop: "ground",
       layout: "wide",
-      heading: "Meet Our Therapy Dogs!",
+      heading: "Therapy Dogs",
       blocks: [{ kind: "people", group: "dogs" }],
     },
   ],
-  closing: { heading: "We look forward to meeting you and helping you have the experiences you have been craving!", cta: { label: "Contact Us", href: "/contact" } },
+  closing: { heading: "Would rather have help finding the right fit?", text: ["Contact our Welcome Team and we will help from there."], cta: { label: "Contact Us", href: "/contact" } },
 };
 
-/** Locations. Source: 25, 44, footer address lines. Status and accessibility lines come from the client brief. */
+/** Locations. Copy: client revision deck, Page 12. Five cards, each shown once; address and accessibility only. */
 const locations: PageContent = {
   url: "/locations",
-  title: "Locations — Pathways Within | Wisdom & Wellness Services",
-  meta: "Our Long Island Locations. Pathways Within offices in Rockville Centre, Garden City, Massapequa, Port Jefferson, and Smithtown, with accessibility details for each.",
-  source: "25-www-pathwayswithin-me-locations.txt, 44-pathwayswithinwellness-com-location.txt",
+  title: "Locations — Pathways Within",
+  meta: "Pathways Within serves Nassau and Suffolk Counties from five Long Island locations, with virtual appointments available for eligible services.",
+  source: "client revision deck, Page 12",
   eyebrow: "Locations",
   h1: "Our Long Island Locations",
-  subtitle: "Where are you located?",
-  intro: ["We have four locations in the greater Long Island area! You can find us in Nassau or Smithtown for all of your wisdom and wellness needs. To minimize stress before and after your appointments, each location has dedicated parking for your convenience."],
-  heroPhoto: { asset: "ha-ap-front-desk-welcome", alt: "The front desk at Pathways Within" },
+  intro: [
+    "Pathways Within serves Nassau and Suffolk Counties from five Long Island locations, with virtual appointments available for eligible services. Our Welcome Team can help you find the provider, service, and location that best fit your needs.",
+    "Accessibility details are included below so you know what to expect before you arrive.",
+  ],
+  heroPhoto: { asset: "pr-rvc-lounge", alt: "The lounge at the Rockville Centre office" },
   sections: [
     {
       id: "offices",
@@ -183,99 +195,77 @@ const locations: PageContent = {
       glass: false,
       blocks: [{ kind: "locations" }],
     },
-    {
-      id: "office-names",
-      stop: "labyrinth",
-      layout: "wide",
-      heading: "Our Locations:",
-      blocks: [
-        {
-          kind: "list",
-          style: "bullet",
-          items: [
-            "Port Jefferson Therapy Office — 1227 Main Street, Suite 101, Port Jefferson, NY 11777",
-            "Garden City Therapy Office — 647 Franklin Ave, Lower Level, Garden City, NY 11530",
-            "Smithtown Therapy Office — 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787",
-            "Rockville Centre Therapy Office — 53 N Park Ave, Suite 302, Rockville Centre NY 11570",
-            "Massapequa Therapy Office — 4160 Merrick Road, Suite 7, Massapequa, NY 11758",
-          ],
-        },
-        { kind: "p", text: "Services can be offered at any location. Our Welcome Team can help you find the provider, service, and location that best fit your life." },
-      ],
-      photos: [
-        { asset: "pr-ap-smt-therapy-window", alt: "Smithtown therapy room" },
-        { asset: "pr-ap-pj-teal-room", alt: "Port Jefferson room" },
-        { asset: "pr-ap-gc-waiting-nook", alt: "Garden City waiting nook" },
-      ],
-    },
   ],
-  closing: { heading: "More Questions?", text: ["Visit our Frequently Asked Questions Page"], cta: { label: "Frequently Asked Questions", href: "/faq" } },
+  closing: { heading: "Accessibility Support", text: ["If stairs are a barrier, contact our Welcome Team. We can help you explore appointments at an accessible location or virtual care when available."], cta: { label: "Contact Us", href: "/contact" } },
 };
 
-/** Contact. Source: 24, 45. The two live Trust Driven Care forms, dropdowns intact. */
+/** Contact. Copy: client revision deck, Page 14. One front door, one Welcome Team. */
 const contact: PageContent = {
   url: "/contact",
-  title: "Contact — Pathways Within | Wisdom & Wellness Services",
-  meta: "Let’s Talk. Fill out the form below and someone from our team will be in touch. Or Contact Us Directly. Welcome@pathwayswithin.com, (631) 371-3825.",
-  source: "24-www-pathwayswithin-me-contact.txt, 45-pathwayswithinwellness-com-contact.txt",
+  title: "Contact Us — Pathways Within",
+  meta: "Not sure where to start? That is okay. Tell us a little about what is going on and our Welcome Team will help you explore the options. Call or text 631-371-3825.",
+  source: "client revision deck, Page 14",
   eyebrow: "Contact Us",
   h1: "Let’s Talk",
-  intro: ["Fill out the form below and someone from our team will be in touch."],
+  subtitle: "Not sure where to start? That is okay.",
+  intro: [
+    "Tell us a little about what is going on and our Welcome Team will help you explore the options. You do not need to know which service, provider, or location you need before reaching out.",
+    "Call or text: 631-371-3825 · Email: Welcome@pathwayswithin.com",
+  ],
   heroCtas: [
-    { label: "(631) 371-3825", href: "tel:+16313713825" },
-    { label: "Welcome@pathwayswithin.com", href: "mailto:Welcome@pathwayswithin.com", secondary: true },
+    { label: "Call or Text", href: "tel:+16313713825" },
+    { label: "Email Us", href: "mailto:Welcome@pathwayswithin.com", secondary: true },
   ],
   sections: [
     {
       id: "form",
       stop: "seated",
       layout: "wide",
-      heading: "Let’s Talk Wellness",
+      heading: "Contact Form",
       blocks: [
-        { kind: "p", text: "Or Contact Us Directly: [Welcome@pathwayswithin.com](mailto:Welcome@pathwayswithin.com) · [(631) 371-3825](tel:+16313713825) · [admin@pathwayswithinwellness.com](mailto:admin@pathwayswithinwellness.com) · [631-371-3825](tel:+16313713825)" },
+        { kind: "p", text: "Mental Health, Mind-Body Support, Wellness, or Not Sure / Help Me Decide—one form reaches the whole team." },
         { kind: "contactForms" },
+      ],
+    },
+    {
+      id: "privacy",
+      stop: "cairn",
+      heading: "Your Privacy Matters From the First Hello.",
+      photo: { asset: "ha-welcome-desk", alt: "The welcome desk at Pathways Within", shape: "blob" },
+      blocks: [
+        { kind: "p", text: "Reaching out to Pathways Within may be your first step toward care, so we want that interaction to feel protected from the start.", lead: true },
+        { kind: "p", text: "Our website chat bubble is powered by Trust Driven Care, the patient communication platform our team uses to help manage patient conversations. Our electronic health records are managed through Jane, a HIPAA-compliant healthcare platform." },
+        { kind: "p", text: "Whether you contact us through the form, chat, phone, or text, our goal is simple: make it easy to reach us while treating your information with the care and confidentiality it deserves." },
       ],
     },
     {
       id: "our-locations",
       stop: "ground",
       layout: "wide",
-      heading: "Our Locations:",
+      heading: "Our Locations",
       blocks: [{ kind: "locations" }],
     },
   ],
   closing: {
-    heading: "Healing is holistic.",
-    text: ["Take the next step in your journey with rejuvenating treatments designed to restore balance, confidence, and well-being. You deserve to feel your best—inside and out."],
-    cta: { label: "Discover your Pathway to Wellness", href: "/services" },
+    heading: "Take the Next Step.",
+    cta: { label: "Contact Us", href: "#form" },
   },
 };
 
-/** How it works: the 360 intake and the quiz. Intake steps are from the client brief. */
+/** How It Works. Copy: client revision deck, Page 5. The one primary home for the full patient journey. */
 const howItWorks: PageContent = {
   url: "/how-it-works",
-  title: "How It Works — Pathways Within | Wisdom & Wellness Services",
-  meta: "The Pathways Within Collaborative Approach. One Welcome Team, one 360 intake, one plan built around you. Take the short quiz to find a place to begin.",
-  source: "02-www-pathwayswithin-me-home.txt",
+  title: "How It Works — Pathways Within",
+  meta: "The Pathways Within Collaborative Approach. You may know exactly what kind of support you want—or simply know that something needs to change. Our role is to help you make sense of the options.",
+  source: "client revision deck, Page 5",
   eyebrow: "How It Works",
   h1: "The Pathways Within Collaborative Approach",
   intro: [
-    "We believe some of the most powerful tools we have as therapists are using the complementary tools we like to call Wisdom and Wellness to guide our clients in their healing journey.",
-    "This means we offer traditional therapy services like individual and couples therapy, along with holistic whole body services, such as massage and acupuncture through our sister practice, Pathways Within Wellness.",
+    "You may know exactly what kind of support you want—or simply know that something needs to change.",
+    "Our role is to help you make sense of the options and connect you with an appropriate starting point.",
   ],
   heroPhoto: { asset: "ha-ap26-desk-talk", alt: "A conversation at the welcome desk" },
   sections: [
-    {
-      id: "questions",
-      stop: "cairn",
-      heading: "Have you ever experienced an event that completely changed your view of the world?",
-      photo: { asset: "cw-sea-rocks-alone", alt: "A person alone by the sea rocks", shape: "blob" },
-      blocks: [
-        { kind: "p", text: "Do you have negative thoughts or overwhelming emotions that prevent you from living the life you want?", lead: true },
-        { kind: "p", text: "Are you holding onto scars from the past? Is your body manifesting physical or spiritual pain?", lead: true },
-        { kind: "p", text: "Together we can explore your experiences in order to help you feel safe and secure again, and we can develop new styles of communication that can help you create the relationships you have always wanted. Whatever you may be dealing with, we can help." },
-      ],
-    },
     {
       id: "the-360-intake",
       stop: "labyrinth",
@@ -286,14 +276,14 @@ const howItWorks: PageContent = {
         { asset: "th-ap26-hands", alt: "Hands in conversation" },
       ],
       blocks: [
-        { kind: "p", text: "Our Welcome Team guides everyone through the same intake process to build an individual plan. Healing from the inside out, 360 degrees around.", lead: true },
+        { kind: "p", text: "The 360 Intake gives us a fuller picture so we can help identify the right starting point.", lead: true },
         {
           kind: "steps",
           items: [
-            { title: "You contact the Welcome Team", text: "Form, call, or text. You do not need to know which service you need." },
-            { title: "A 360 intake conversation", text: "A Welcome Team member reaches out and schedules a 360 intake, a conversation about what you are experiencing and what you want to change." },
-            { title: "One plan, built around you", text: "The team builds a care plan across therapy, medication management, coaching, and wellness as needed, and matches you with available providers." },
-            { title: "Your first appointment", text: "Your first appointment is scheduled. The Welcome Team stays your point of contact." },
+            { title: "You Contact the Welcome Team", text: "Form, call, or text. You do not need to know which provider or service you need." },
+            { title: "A 360 Intake Conversation", text: "We learn more about what is bringing you in, what you want to change, and what kind of support may feel useful." },
+            { title: "One Plan, Built Around You", text: "Together, we identify an appropriate starting point across therapy, medication management, coaching, and wellness." },
+            { title: "Your First Appointment", text: "We help connect you with an appropriate available provider and schedule your first appointment. The Welcome Team remains a resource if your needs change." },
           ],
         },
         { kind: "cta", label: "Contact Us", href: "/contact" },
@@ -303,22 +293,22 @@ const howItWorks: PageContent = {
       id: "quiz",
       stop: "seated",
       layout: "wide",
-      heading: "Not sure where to begin? Answer five questions.",
+      heading: "Not Sure Where to Begin? Answer Five Questions.",
       glass: false,
       blocks: [{ kind: "quiz" }],
     },
     {
-      id: "tailored",
+      id: "your-path",
       stop: "standing",
-      heading: "We are big believers in therapy tailored to your wants and needs.",
+      heading: "Your Path Should Feel Like Yours.",
       photo: { asset: "th-ap26-conversation", alt: "A therapy conversation" },
       blocks: [
-        { kind: "p", text: "The journey within should be as personal and individual as you are.", lead: true },
-        { kind: "p", text: "We look forward to meeting you and helping you have the experiences you have been craving!" },
+        { kind: "p", text: "Start with what feels most relevant now. If your needs change, your care can change with them.", lead: true },
+        { kind: "p", text: "Take what you need. Leave what you do not." },
       ],
     },
   ],
-  closing: { heading: "Discover Your Pathway to Wellness", cta: { label: "Contact Us", href: "/contact" } },
+  closing: { heading: "Ready to Find a Place to Begin?", text: ["Call or text 631-371-3825."], cta: { label: "Contact Us", href: "/contact" } },
 };
 
 export const orgPages: PageContent[] = [services, team, locations, contact, howItWorks];

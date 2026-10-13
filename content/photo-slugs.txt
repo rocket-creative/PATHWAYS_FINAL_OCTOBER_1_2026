@@ -183,3 +183,7 @@ th-woman-plant-chair
 th-woman-self-hug
 th-woman-sunlit-wall
 th-woman-windy-beach
+pr-rvc-desk-room
+pr-rvc-green-room
+pr-rvc-group-room
+pr-rvc-lounge
