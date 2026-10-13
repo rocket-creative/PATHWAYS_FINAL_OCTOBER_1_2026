@@ -48,6 +48,32 @@ async function logo() {
   await sharp(path.join(MASTERS, "logo.webp")).resize(192).png().toFile(path.join(OUT, "logo-192.png"));
 }
 
+/**
+ * April 2026 sweep portraits. The frame includes the blue walls, stands, and
+ * floor around the white paper. These squares sit on the paper only, with
+ * white left above the highest head. Fractions of the source frame.
+ */
+const SWEEP_CROPS = {
+  "ha-ap26-camp-five": { x: 0.214, y: 0.003, s: 0.5575 },
+  "ha-ap26-camp-pair": { x: 0.299, y: 0.09, s: 0.4995 },
+  "ha-ap26-camp-three": { x: 0.2645, y: 0.1778, s: 0.441 },
+  "ha-ap26-camp-tiffany": { x: 0.1815, y: 0.0758, s: 0.509 },
+  "ha-ap26-rachel-family": { x: 0.2795, y: 0.036, s: 0.5355 },
+  "ha-ap26-rachel-solo": { x: 0.306, y: 0.1253, s: 0.476 },
+  "ha-ap26-woman-smile": { x: 0.272, y: 0.2041, s: 0.4235 },
+};
+
+function sweepExtract(meta, slug) {
+  const crop = SWEEP_CROPS[slug];
+  if (!crop) return null;
+  const side = Math.max(1, Math.round(crop.s * meta.width));
+  const width = Math.min(side, meta.width);
+  const height = Math.min(side, meta.height);
+  const left = Math.max(0, Math.min(Math.round(crop.x * meta.width), meta.width - width));
+  const top = Math.max(0, Math.min(Math.round(crop.y * meta.height), meta.height - height));
+  return { left, top, width, height };
+}
+
 async function folder(name, widths, square = false) {
   const srcDir = path.join(MASTERS, "images", name);
   const out = path.join(OUT, name);
@@ -57,9 +83,11 @@ async function folder(name, widths, square = false) {
     const slug = file.replace(/-\d+\.webp$/, "");
     const src = path.join(srcDir, file);
     const meta = await sharp(src).metadata();
+    const extract = name === "photos" ? sweepExtract(meta, slug) : null;
     for (const w of widths) {
       if (w > meta.width && w !== widths[0]) continue;
       let pipe = sharp(src);
+      if (extract) pipe = pipe.extract(extract);
       pipe = square ? pipe.resize(w, w, { fit: "cover", position: "attention" }) : pipe.resize({ width: Math.min(w, meta.width) });
       await pipe.webp({ quality: 80 }).toFile(path.join(out, `${slug}-${w}.webp`));
     }
