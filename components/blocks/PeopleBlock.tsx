@@ -14,6 +14,7 @@ export type Person = {
   type: string;
   locations: string[];
   bio?: string;
+  noPhoto?: boolean;
 };
 
 export const PEOPLE = data.people as Person[];
@@ -52,6 +53,7 @@ export function allProviders(): SearchPerson[] {
     locations: p.locations,
     tags: tagsFor(p),
     href: p.bio,
+    noPhoto: p.noPhoto,
   }));
   const wellness: SearchPerson[] = WELLNESS.map((w) => ({
     slug: w.slug,
@@ -127,7 +129,7 @@ export function PeopleBlock({ group }: { group: string }) {
     <div className="grid gap-8">
       {people.map((p) => (
         <div key={p.slug} id={p.slug} className="grid scroll-mt-28 items-start gap-5 sm:grid-cols-[150px_1fr] md:grid-cols-[190px_1fr]" data-reveal>
-          <Headshot slug={p.slug} name={p.name} size={190} className="mx-auto w-[150px] sm:w-auto sm:mx-0" />
+          <Headshot slug={p.slug} name={p.name} size={190} className="mx-auto w-[150px] sm:w-auto sm:mx-0" noPhoto={p.noPhoto} />
           <div className="grid gap-2">
             <h3 className="!text-[1.25rem]">
               {p.name}

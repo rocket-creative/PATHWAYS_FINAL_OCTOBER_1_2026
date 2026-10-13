@@ -15,6 +15,7 @@ export type SearchPerson = {
   locations: string[];
   tags: string[];
   href?: string;
+  noPhoto?: boolean;
 };
 
 const TYPES = ["Mental Health", "Medication / Specialized Care", "Mind-Body Support", "Wellness"];
@@ -110,7 +111,7 @@ export default function PeopleSearch({ people }: { people: SearchPerson[] }) {
         {results.map((p) => (
           <article key={p.slug} id={p.slug} className="glass grid scroll-mt-28 gap-3 p-5 md:p-6" style={{ borderRadius: "var(--r-md)" }}>
             <div className="flex items-center gap-4">
-              <Headshot slug={p.slug} name={p.name} size={112} />
+              <Headshot slug={p.slug} name={p.name} size={112} noPhoto={p.noPhoto} />
               <div className="min-w-0">
                 <h3 className="!text-[1.1rem]">
                   {p.name}

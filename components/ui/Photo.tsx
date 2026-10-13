@@ -51,13 +51,33 @@ export function Headshot({
   size = 160,
   className = "",
   ring = true,
+  noPhoto = false,
 }: {
   slug: string;
   name: string;
   size?: number;
   className?: string;
   ring?: boolean;
+  noPhoto?: boolean;
 }) {
+  if (noPhoto) {
+    const initials = name
+      .split(/\s+/)
+      .filter((w) => /^[A-Za-z]/.test(w))
+      .slice(0, 2)
+      .map((w) => w[0].toUpperCase())
+      .join("");
+    return (
+      <span
+        className={`circle ${ring ? "ring" : ""} flex shrink-0 items-center justify-center bg-brand-soft font-bold text-brand-deep ${className}`}
+        style={{ width: size, maxWidth: "100%", aspectRatio: "1 / 1", fontSize: size * 0.34, fontFamily: "var(--font-display)" }}
+        role="img"
+        aria-label={`${name}, photo coming soon`}
+      >
+        {initials}
+      </span>
+    );
+  }
   return (
     <span className={`circle ${ring ? "ring" : ""} block shrink-0 bg-white ${className}`} style={{ width: size, maxWidth: "100%", aspectRatio: "1 / 1" }}>
       <img
