@@ -68,33 +68,9 @@
       ],
       "specialties": "Specializes in anxiety, depression, stress management, communication, teens, adults",
       "type": "Mental Health",
-      "locations": []
-    },
-    {
-      "slug": "laura-desilva",
-      "group": "leadership",
-      "name": "Laura DeSilva",
-      "credentials": "LMHC",
-      "title": "Supervisor",
-      "paragraphs": [
-        "As an eclectic clinician, I pull from humanistic, cognitive behavioral, and psychodynamic frameworks to suit my clients’ needs. I view counseling as a collaboration between the therapist and client and take a person-centered approach to the process. I strive to bring warmth, genuineness, and acceptance to the therapeutic relationship so my clients feel safe and unconditionally supported to grow and change."
-      ],
-      "specialties": "Specializes in anxiety, trauma, and depression.",
-      "type": "Mental Health",
-      "locations": []
-    },
-    {
-      "slug": "samantha-juravich",
-      "group": "leadership",
-      "name": "Samantha Juravich",
-      "credentials": "LCSW",
-      "title": "Supervisor",
-      "paragraphs": [
-        "My first goal as a therapist is to create a safe space and supportive therapeutic environment that assists clients with self-discovery change and improving their quality of life. I strive to provide treatment that is effective, inclusive, and functional. I tailor each session to the client’s individual needs, incorporating a variety of therapeutic techniques and collaborating with other treatment providers when needed."
-      ],
-      "specialties": "Specializes in children, teens, families trauma, behavior concerns, anxiety, depression, low self-esteem, developmental delays, ADHD, and intellectual disabilities.",
-      "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Garden City"
+      ]
     },
     {
       "slug": "beth-gabellini",
@@ -107,7 +83,9 @@
       ],
       "specialties": "Specializes in relationships, veterans, woman’s empowerment, and life transitions.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Smithtown"
+      ]
     },
     {
       "slug": "carly-sandstrom",
@@ -120,7 +98,10 @@
       ],
       "specialties": "Specializes in trauma, anxiety, veterans & first responders, attachment theory & parts work",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Garden City",
+        "Massapequa"
+      ]
     },
     {
       "slug": "jen-brooks",
@@ -133,7 +114,9 @@
       ],
       "specialties": "Specializes in anxiety, depression, anger management, trauma, adults with traumatic brain injuries, autism and ADHD (Teens+), behavior modification & mindfulness.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Smithtown"
+      ]
     },
     {
       "slug": "lauren-hollander",
@@ -146,7 +129,9 @@
       ],
       "specialties": "Specializes in somatic therapy, trauma, PTSD, depression, anxiety, bipolar disorder, and borderline personality disorder.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Virtual"
+      ]
     },
     {
       "slug": "paula-gonthier",
@@ -159,7 +144,9 @@
       ],
       "specialties": "Specializes in couples, health issues, and midlife crisis.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Virtual"
+      ]
     },
     {
       "slug": "anna-ostrow",
@@ -172,7 +159,9 @@
       ],
       "specialties": "Specializes in adolescents, young adults, adults, anxiety, depression, life transitions, relationships, stress management.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Garden City"
+      ]
     },
     {
       "slug": "charity-meyer",
@@ -185,7 +174,10 @@
       ],
       "specialties": "Specializes in LGBTQIA+ Issues, Neurodivergence, Addiction, Depression, Anxiety, Bipolar Disorder, and Relationship Issues, including those navigating Polyamorous Relationships.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Rockville Centre",
+        "Virtual"
+      ]
     },
     {
       "slug": "chelsea-bell",
@@ -198,7 +190,10 @@
       ],
       "specialties": "Specializes in anxiety, depression. trauma, self-esteem, and mindfulness",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Smithtown",
+        "Port Jefferson"
+      ]
     },
     {
       "slug": "frank-tropeano",
@@ -211,7 +206,9 @@
       ],
       "specialties": "Specializes in anxiety, depression, conflict and problem-solving, couples and relationships",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Massapequa"
+      ]
     },
     {
       "slug": "juliette-squicciarini",
@@ -224,7 +221,9 @@
       ],
       "specialties": "Specializes in adolescents, adults, anxiety, depression, stress management, substance use",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Rockville Centre"
+      ]
     },
     {
       "slug": "kathleen-dimartino",
@@ -237,7 +236,10 @@
       ],
       "specialties": "Specializes in chronic pain and illnesses, borderline personality disorder, self-harm, depression, and anxiety.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Port Jefferson",
+        "Virtual"
+      ]
     },
     {
       "slug": "lindsay-laier",
@@ -250,7 +252,9 @@
       ],
       "specialties": "Specializes in: Individuals, family relationships, life transitions, boundaries, couples, parenting, divorce, teens and young adults.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Massapequa"
+      ]
     },
     {
       "slug": "maddy-zambri",
@@ -263,7 +267,10 @@
       ],
       "specialties": "Specializes in life transitions, stress management, addiction, anxiety, mood disorders, LGBTQIA+, and neurodivergence",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Garden City",
+        "Rockville Centre"
+      ]
     },
     {
       "slug": "mariah-simone",
@@ -276,7 +283,10 @@
       ],
       "specialties": "Specializes in anxiety, depression, self-esteem, coping skills, stress, adolescents, teens, young adults",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Rockville Centre",
+        "Massapequa"
+      ]
     },
     {
       "slug": "nicole-duffy",
@@ -289,20 +299,9 @@
       ],
       "specialties": "Specializes in recovery from domestic violence and sexual assault, rediscovering joy and purpose, building strength and confidence.",
       "type": "Mental Health",
-      "locations": []
-    },
-    {
-      "slug": "kalovna-edmond",
-      "group": "clinical",
-      "name": "Kalovna Edmond",
-      "credentials": "MFT-LP",
-      "title": "",
-      "paragraphs": [
-        "I believe healthy relationships are the foundation of a fulfilling life. As a Marriage and Family Therapist, I’m passionate about helping couples and families improve communication, strengthen trust, and create lasting change. My goal is to provide a safe, supportive space where you feel seen and understood as we work together toward growth and healing."
-      ],
-      "specialties": "Specializes in Couples Therapy, Communication Skills, Anxiety & Stress, Life Transitions.",
-      "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Port Jefferson"
+      ]
     },
     {
       "slug": "madeline-amzler",
@@ -315,7 +314,9 @@
       ],
       "specialties": "Specializes in relationship trauma, attachment healing, first responders, veterans.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Smithtown"
+      ]
     },
     {
       "slug": "sofia-marinucci",
@@ -328,20 +329,10 @@
       ],
       "specialties": "Specializes in Anxiety, OCD, ADHD, Depression, Relational Issues, Stress, Life Transitions, School Refusal, Autism, teens, adolescents, adults, and families.",
       "type": "Mental Health",
-      "locations": []
-    },
-    {
-      "slug": "colm-ashe",
-      "group": "clinical",
-      "name": "Colm Ashe",
-      "credentials": "LMSW",
-      "title": "",
-      "paragraphs": [
-        "I break down mindfulness tools into practicals steps that foster somatic safety and help you create meaningful change in your life. Together, we can explore old stories, regulate your nervous system, and reconnect with a grounded sense of self."
-      ],
-      "specialties": "Specializes in parts work, spirituality, adolescent/transitional age guidance, somatic connection, creative purpose, men’s issues and trauma.",
-      "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Smithtown",
+        "Massapequa"
+      ]
     },
     {
       "slug": "karen-hill",
@@ -354,7 +345,10 @@
       ],
       "specialties": "Specializes in Chronic stress, anxiety, victims of sexual assault, C-PTSD, Intimate Partner Violence.",
       "type": "Mental Health",
-      "locations": []
+      "locations": [
+        "Smithtown",
+        "Port Jefferson"
+      ]
     },
     {
       "slug": "tia-baumohl",
@@ -381,7 +375,9 @@
       ],
       "specialties": "Specializes in Anxiety, depression, mood disorders, ADHD and other mood disorders.",
       "type": "Medication / Specialized Care",
-      "locations": []
+      "locations": [
+        "Garden City"
+      ]
     },
     {
       "slug": "gloria-saladino",
@@ -438,7 +434,9 @@
       "displayName": "Christine Cervo",
       "short": "Christine is a licensed massage therapist with a simple goal: to help people feel better in their bodies.",
       "type": "Wellness",
-      "locations": []
+      "locations": [
+        "Massapequa"
+      ]
     },
     {
       "slug": "leonard-ma",
@@ -453,7 +451,9 @@
       "displayName": "Leonard Ma",
       "short": "Leonard looks beyond isolated symptoms and works with each patient as a whole person, helping support greater balance across the body, mind, and spirit.",
       "type": "Wellness",
-      "locations": []
+      "locations": [
+        "Massapequa"
+      ]
     },
     {
       "slug": "tia-baumohl",
@@ -484,7 +484,9 @@
       "displayName": "Danielle Ingenito, LMT",
       "short": "Danielle specializes in deep tissue, trigger point and sports massage.",
       "type": "Wellness",
-      "locations": []
+      "locations": [
+        "Garden City"
+      ]
     }
   ]
 }

@@ -125,9 +125,12 @@ const WELLNESS: NavLink[] = [
   { label: "Massage", href: "/services/massage" },
   { label: "Acupuncture", href: "/services/acupuncture" },
   { label: "Cupping Therapy", href: "/services/cupping-therapy" },
+  { label: "Cryotherapy", href: "/services/cryotherapy" },
+  { label: "Reiki", href: "/services/reiki" },
+  { label: "Integrative Energy Therapy", href: "/services/integrative-energy-therapy" },
 ];
 
-/** Three primary buckets. Mental Health is licensed clinical care (Therapy + Medication Management). Mind-Body Support is Coaching + Energy Work. Wellness is Massage, Acupuncture, Cupping. */
+/** Three primary buckets. Mental Health is licensed clinical care (Therapy + Medication Management), the former Wisdom / counseling side. Mind-Body Support is Coaching + Energy Work. Wellness is Massage, Acupuncture, Cupping, Cryotherapy, Reiki, and IET. */
 export const BUCKETS = {
   mentalHealth: { title: "Mental Health", href: "/services#mental-health", therapy: THERAPY, types: TYPES_OF_THERAPY, medication: MEDICATION },
   mindBody: { title: "Mind-Body Support", href: "/services#mind-body-support", links: MIND_BODY },

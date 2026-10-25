@@ -28,13 +28,16 @@ const SERVICES: { bucket: string; title: string; href: string; asset: string }[]
   { bucket: "Wellness", title: "Massage", href: "/services/massage", asset: "cw-ap-massage-session" },
   { bucket: "Wellness", title: "Acupuncture", href: "/services/acupuncture", asset: "cw-ap26-acu-leo" },
   { bucket: "Wellness", title: "Cupping Therapy", href: "/services/cupping-therapy", asset: "cw-ap26-acu-shoulder" },
+  { bucket: "Wellness", title: "Cryotherapy", href: "/services/cryotherapy", asset: "cw-sea-rocks-alone" },
+  { bucket: "Wellness", title: "Reiki", href: "/services/reiki", asset: "cw-face-to-sun" },
+  { bucket: "Wellness", title: "Integrative Energy Therapy", href: "/services/integrative-energy-therapy", asset: "cw-self-embrace-yellow" },
 ];
 
 const INTAKE = [
-  { title: "You Contact the Welcome Team", text: "Fill out the Contact Form, call, or text us. No need to choose a provider or service first." },
-  { title: "We Learn More About You", text: "A Welcome Team member connects with you to hear what is bringing you in and what kind of support you may be looking for." },
-  { title: "We Help Build a Starting Point", text: "Together, we identify an appropriate place to begin across therapy, medication management, coaching, and wellness." },
-  { title: "We Stay Connected", text: "We help you schedule your first appointment, and the Welcome Team remains a resource if your needs change along the way." },
+  { title: "You Contact the Welcome Team", text: "Form, call, or text. You do not need to know which provider or service you need." },
+  { title: "A 360 Intake Conversation", text: "We learn more about what is bringing you in, what you want to change, and what kind of support may feel useful." },
+  { title: "One Plan, Built Around You", text: "Together, we identify an appropriate starting point across therapy, medication management, coaching, and wellness." },
+  { title: "Your First Appointment", text: "We help connect you with an appropriate available provider and schedule your first appointment. The Welcome Team remains a resource if your needs change." },
 ];
 
 const WHY = [

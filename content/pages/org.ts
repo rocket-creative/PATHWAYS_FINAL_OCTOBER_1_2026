@@ -57,9 +57,27 @@ const services: PageContent = {
       eyebrow: "Wellness",
       heading: "Your Wellness",
       blocks: [
-        { kind: "p", text: "Physical well-being is part of the bigger picture. Massage, acupuncture, cupping, and energy work can support physical comfort, stress relief, movement, recovery, and overall well-being.", lead: true },
+        { kind: "p", text: "Physical well-being is part of the bigger picture. Massage, acupuncture, cupping, cryotherapy, Reiki, and Integrative Energy Therapy can support physical comfort, stress relief, movement, recovery, and overall well-being. Energy Work lives under Mind-Body Support.", lead: true },
         { kind: "p", text: "You do not need to be a therapy patient to use wellness services. Start with the service you know you want—or ask the Welcome Team for help choosing." },
-        { kind: "tiles", items: BUCKETS.wellness.links.map((l) => tile(l, l.href.includes("massage") ? "cw-ap-massage-session" : l.href.includes("acupuncture") ? "cw-ap26-acu-needles" : "cw-ap26-acu-shoulder")) },
+        {
+          kind: "tiles",
+          items: BUCKETS.wellness.links.map((l) =>
+            tile(
+              l,
+              l.href.includes("massage")
+                ? "cw-ap-massage-session"
+                : l.href.includes("acupuncture")
+                  ? "cw-ap26-acu-needles"
+                  : l.href.includes("cryotherapy")
+                    ? "cw-sea-rocks-alone"
+                    : l.href.includes("reiki")
+                      ? "cw-face-to-sun"
+                      : l.href.includes("integrative-energy")
+                        ? "cw-self-embrace-yellow"
+                        : "cw-ap26-acu-shoulder",
+            ),
+          ),
+        },
       ],
     },
     {
@@ -83,7 +101,7 @@ const services: PageContent = {
           style: "check",
           items: [
             "**Whole-Person Perspective** — We look beyond the single concern that brought you through the door.",
-            "**Multiple Ways to Begin** — Therapy, medication management, coaching, massage, acupuncture, and wellness services all offer different entry points.",
+            "**Multiple Ways to Begin** — Therapy, medication management, coaching, energy work, massage, acupuncture, and wellness services all offer different entry points.",
             "**Individualized Support** — Your goals, preferences, comfort level, and needs guide the experience.",
             "**Connected When It Helps** — When appropriate and with your permission, providers may collaborate so care feels more coordinated.",
           ],

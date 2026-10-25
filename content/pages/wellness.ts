@@ -1,23 +1,23 @@
 import type { PageContent } from "../types";
 
 /**
- * Wellness (Massage, Acupuncture, Cupping), Mind-Body Support (Energy Work,
- * Reiki, IET) and wellness provider bio pages. Massage, Acupuncture and Cupping
- * copy comes from the client revision deck. IV Vitamin Therapy is on hold and
- * Cryotherapy is outside the three service buckets; neither is built.
+ * Wellness (Massage, Acupuncture, Cupping, Cryotherapy, Reiki, IET),
+ * Mind-Body Support (Energy Work), and wellness provider bio pages.
+ * Massage copy is the clinical draft. Acupuncture and cupping copy comes
+ * from the client revision deck. IV Vitamin Therapy is on hold and is not built.
  */
 
 const massage: PageContent = {
   url: "/services/massage",
   title: "Massage Therapy on Long Island — Pathways Within",
-  meta: "Clinical massage therapy for pain, muscular tension, mobility and recovery. New York State Licensed Massage Therapists at Pathways Within provide individualized, clinically informed care. NYSHIP accepted for eligible medical massage.",
-  source: "client revision deck, Page 8",
+  meta: "At Pathways Within, our New York State Licensed Massage Therapists provide individualized, clinically informed massage therapy based on your symptoms, health history, physical presentation, and treatment goals.",
+  source: "massage-clinical.txt",
   eyebrow: "Wellness",
   h1: "Massage Therapy on Long Island",
   subtitle: "Clinical Massage Therapy for Pain, Muscular Tension, Mobility & Recovery",
   intro: [
-    "At Pathways Within, our New York State Licensed Massage Therapists provide individualized, clinically informed massage therapy based on your symptoms, health history, physical presentation, and goals.",
-    "Each session begins with a focused intake so your therapist can understand what is bothering you and tailor care accordingly.",
+    "At Pathways Within, our New York State Licensed Massage Therapists provide individualized, clinically informed massage therapy based on your symptoms, health history, physical presentation, and treatment goals.",
+    "Whether you are managing chronic muscular tension, recurring discomfort, physical strain, limited mobility, or recovery needs, each session begins with a focused intake to identify treatment priorities, relevant precautions, and appropriate techniques.",
     "Massage therapy is available to all patients, with NYSHIP accepted for eligible medical massage services.",
   ],
   heroCtas: [
@@ -33,7 +33,8 @@ const massage: PageContent = {
       heading: "Why Therapeutic Massage?",
       photo: { asset: "ha-ap-massage-room", alt: "A massage treatment room at Pathways Within", shape: "blob" },
       blocks: [
-        { kind: "p", text: "Massage therapy is a licensed healthcare profession in New York State. Our therapists review your symptoms, health history, areas of pain or restriction, and treatment goals before care begins. Pressure, positioning, techniques, and areas of focus are adjusted based on what you need—not a predetermined routine.", lead: true },
+        { kind: "p", text: "Our Massage Therapists combine clinical training with individualized care. Before treatment, they review your symptoms, relevant health history, areas of pain or restriction, and functional goals.", lead: true },
+        { kind: "p", text: "Technique, pressure, positioning, and areas of focus are selected according to that assessment rather than a predetermined routine." },
       ],
     },
     {
@@ -58,18 +59,30 @@ const massage: PageContent = {
             "Ongoing mobility and physical maintenance",
           ],
         },
-        { kind: "p", text: "Massage may complement medical, rehabilitative, mental health, or other integrative care when appropriate." },
+        { kind: "p", text: "Massage therapy may complement medical, rehabilitative, mental health, or integrative care when appropriate. It does not replace medical evaluation or treatment when those services are needed." },
       ],
     },
     {
       id: "what-makes-us-different",
       stop: "labyrinth",
-      eyebrow: "What Makes Pathways Within Different?",
-      heading: "Clinical Care Within a Whole-Person Context",
-      photo: { asset: "pr-ap-ns-massage-green", alt: "A green massage treatment room with an In Session sign on the door", shape: "arch" },
+      layout: "wide",
+      heading: "What Makes Pathways Within Different?",
       blocks: [
-        { kind: "p", text: "Pain and tension do not always exist in isolation. Stress, sleep, movement, activity, posture, injury, and daily habits can all influence how your body feels.", lead: true },
-        { kind: "p", text: "Massage may be used on its own or alongside other Pathways Within services. You are never required to use multiple services. The difference is that you have a team around you if additional support becomes helpful." },
+        { kind: "h3", text: "Clinical Care Within a Whole-Person Context" },
+        { kind: "p", text: "Musculoskeletal symptoms may be influenced by several factors, including physical activity, posture, injury, repetitive movement, sleep, and stress.", lead: true },
+        { kind: "p", text: "Pain and restricted movement can also affect mood, sleep, and everyday functioning. A clinically informed intake helps place the area of discomfort within that broader context." },
+        { kind: "p", text: "At Pathways Within, massage is available as a stand-alone service or as part of a multidisciplinary care plan that may also include mental health therapy, acupuncture, medication management, and performance coaching." },
+        { kind: "p", text: "Patients are not required to receive multiple services. The collaborative setting simply allows care to be considered in relation to the whole person." },
+        { kind: "h3", text: "Licensed Providers" },
+        { kind: "p", text: "Massage services are provided by New York State Licensed Massage Therapists." },
+        { kind: "h3", text: "Clinical Intake" },
+        { kind: "p", text: "Your therapist reviews your symptoms, relevant health history, areas of discomfort or restriction, and treatment goals before care begins." },
+        { kind: "h3", text: "Individualized Treatment" },
+        { kind: "p", text: "Technique, pressure, positioning, and areas of focus are adjusted according to your presentation, comfort, and clinical needs." },
+        { kind: "h3", text: "Coordinated Care Environment" },
+        { kind: "p", text: "With your permission and when clinically appropriate, massage therapy may complement care provided by other Pathways Within or outside healthcare professionals." },
+        { kind: "h3", text: "Accessible Care" },
+        { kind: "p", text: "Massage therapy is available to all patients. Pathways Within also accepts NYSHIP for eligible medical massage services." },
       ],
     },
     {
@@ -78,29 +91,68 @@ const massage: PageContent = {
       heading: "NYSHIP Medical Massage",
       photo: { asset: "pr-intake-clipboard", alt: "An intake clipboard", shape: "circle" },
       blocks: [
-        { kind: "p", text: "If you have NYSHIP coverage, medical massage may be available when eligibility and plan requirements are met. Contact the Welcome Team at 631-371-3825 for next steps.", lead: true },
-        { kind: "cta", label: "Contact the Welcome Team", href: "/contact" },
+        { kind: "h3", text: "Therapeutic Massage Through Your Benefits" },
+        { kind: "p", text: "If you have NYSHIP coverage, medical massage may be available when eligibility and applicable plan requirements are met.", lead: true },
+        { kind: "h3", text: "Getting Started" },
+        {
+          kind: "steps",
+          items: [
+            { title: "Contact the Welcome Team", text: "Call 631-371-3825 and let us know you are interested in NYSHIP medical massage." },
+            { title: "Review Eligibility", text: "Our team will review the information and applicable requirements needed to begin care, including a prescription for care." },
+            { title: "Schedule Your Appointment", text: "We will connect you with an available Licensed Massage Therapist." },
+            { title: "Begin Individualized Treatment", text: "Your therapist will complete an intake, assess your concerns within the scope of massage therapy, and tailor treatment to your clinical needs and goals." },
+          ],
+        },
+        { kind: "p", text: "Coverage and plan requirements may vary." },
+      ],
+    },
+    {
+      id: "what-to-expect",
+      stop: "standing",
+      heading: "What to Expect",
+      photo: { asset: "pr-ap-ns-massage-green", alt: "A green massage treatment room with an In Session sign on the door", shape: "arch" },
+      blocks: [
+        { kind: "h3", text: "Before Treatment" },
+        { kind: "p", text: "Your therapist may ask about:", lead: true },
+        {
+          kind: "list",
+          style: "bullet",
+          items: [
+            "Areas of pain, tension, or restricted movement",
+            "Relevant diagnoses, injuries, or medical history",
+            "Medications or recent procedures that may affect care",
+            "Physical activity and repetitive movement patterns",
+            "Pressure and positioning preferences",
+            "Functional and treatment goals",
+          ],
+        },
+        { kind: "h3", text: "During Treatment" },
+        { kind: "p", text: "Your therapist may use a combination of techniques based on the intake findings, your treatment goals, and your comfort." },
+        { kind: "p", text: "More pressure is not automatically more clinically appropriate or effective. Communication about pressure, positioning, and sensation is encouraged throughout the session." },
+        { kind: "h3", text: "After Treatment" },
+        { kind: "p", text: "Your therapist may review your response to treatment, the areas addressed, relevant self-care considerations, and whether follow-up care may be appropriate." },
       ],
     },
     {
       id: "offerings",
-      stop: "standing",
+      stop: "ivy",
       layout: "wide",
-      heading: "Massage Offerings",
+      heading: "Massage Services",
       blocks: [
         { kind: "h3", text: "Medical Massage" },
-        { kind: "p", text: "Goal-directed treatment focused on muscular tension, soft-tissue restriction, discomfort, or functional concerns." },
+        { kind: "p", text: "Goal-directed treatment focused on identified symptoms, areas of muscular tension, soft-tissue restriction, or functional concern." },
+        { kind: "p", text: "May support: chronic tension, neck and back discomfort, repetitive strain, mobility concerns, and ongoing physical maintenance." },
         { kind: "h3", text: "Sports Massage" },
-        { kind: "p", text: "Targeted massage adapted to training demands, movement patterns, recurring tension, and recovery goals." },
+        { kind: "p", text: "Targeted massage for active individuals, adapted to training demands, muscular tension, movement patterns, and recovery goals." },
+        { kind: "p", text: "May support: exercise recovery, athletic training, repetitive movement, and recurring muscle tightness." },
         { kind: "h3", text: "Swedish Massage" },
-        { kind: "p", text: "A full-body massage using flowing techniques and adjustable pressure to support relaxation and general muscular tension." },
+        { kind: "p", text: "A full-body massage using flowing techniques and adjustable pressure to address general muscular tension and promote relaxation." },
+        { kind: "p", text: "May support: general tension, physical stress, and muscular relaxation." },
         { kind: "h3", text: "Pregnancy Massage" },
         { kind: "p", text: "Massage adapted for the physiological and positional considerations of pregnancy." },
+        { kind: "p", text: "May support: back and hip discomfort, muscular tension, fatigue, and relaxation during pregnancy." },
         { kind: "h3", text: "Hot Stone Massage" },
-        { kind: "p", text: "Heated stones may be incorporated when appropriate to provide localized warmth and support muscular relaxation." },
-        { kind: "h3", text: "Massage-Based Cupping" },
-        { kind: "p", text: "Cupping may be incorporated by appropriately trained providers as one part of an individualized massage treatment plan." },
-        { kind: "cta", label: "Cupping Therapy", href: "/services/cupping-therapy", secondary: true },
+        { kind: "p", text: "Heated stones may be incorporated when clinically appropriate to provide localized warmth and support muscular relaxation." },
       ],
     },
     {
@@ -112,19 +164,25 @@ const massage: PageContent = {
         {
           kind: "faq",
           items: [
-            { q: "Does massage hurt?", a: ["Massage should not be painful. Pressure is adjusted to your comfort and to what your therapist finds during the session. If an area is sensitive, tell your therapist and the approach will change."] },
-            { q: "What should I expect afterward?", a: ["You may feel relaxed, looser, or mildly tender in the areas treated. Drink water and give your body time to rest when you can."] },
-            { q: "How do I prepare?", a: ["Drink water before your session and wear comfortable clothing. Let your therapist know about any injuries, conditions, medications, or areas you would like to avoid."] },
-            { q: "Is massage safe for me?", a: ["Your therapist reviews your health history and current symptoms before care begins and adapts the session accordingly. If a particular technique is not appropriate for you, it will not be used."] },
-            { q: "Do I need to be a therapy patient to book massage?", a: ["No. Massage therapy is available to all patients, whether or not you receive other services at Pathways Within."] },
+            { q: "Is massage therapy only available through NYSHIP?", a: ["No. Massage therapy at Pathways Within is available to all patients. NYSHIP is accepted for eligible medical massage services."] },
+            { q: "What is medical massage?", a: ["Medical massage is goal-directed care focused on identified symptoms, areas of muscular tension or restriction, and functional concerns. Treatment is selected according to the patient's presentation rather than a standard relaxation routine."] },
+            { q: "Do you accept NYSHIP?", a: ["Yes. Pathways Within accepts NYSHIP for eligible medical massage services. Call 631-371-3825 for next steps."] },
+            { q: "Are your therapists licensed?", a: ["Yes. Massage therapy services are provided by New York State Licensed Massage Therapists."] },
+            { q: "Does therapeutic massage hurt?", a: ["Treatment may involve sensitive areas, but it should remain within your tolerance. Your therapist can modify pressure, technique, and positioning throughout the session."] },
+            { q: "Do I need an injury to receive massage therapy?", a: ["No. Patients may seek care for chronic tension, mobility concerns, repetitive strain, exercise recovery, stress-related muscular tension, relaxation, or ongoing physical maintenance."] },
+            { q: "How often should I receive massage?", a: ["Frequency depends on your symptoms, goals, response to treatment, and any applicable insurance requirements."] },
+            { q: "Can massage and acupuncture be combined?", a: ["Yes. Depending on your needs, the two services may complement one another."] },
           ],
         },
       ],
     },
   ],
   closing: {
-    heading: "Contact Our Welcome Team",
-    text: ["Tell us what is bothering you and we will help you find a starting point."],
+    heading: "Begin With a Clinical Consultation",
+    text: [
+      "You do not need to determine which massage technique is appropriate before scheduling.",
+      "Tell our Welcome Team what you are experiencing, and we will help identify the appropriate next step.",
+    ],
     cta: { label: "Contact Us", href: "/contact" },
   },
 };
@@ -378,6 +436,106 @@ const cupping: PageContent = {
   },
 };
 
+const cryotherapy: PageContent = {
+  url: "/services/cryotherapy",
+  title: "Cryotherapy — Pathways Within",
+  meta: "From burning off latent emotions to residual pain, cryotherapy is a precision tool with a wide breadth of therapeutic benefits.",
+  source: "36-pathwayswithinwellness-com-cryotherapy-1.txt",
+  eyebrow: "Wellness",
+  h1: "Cryotherapy on Long Island",
+  subtitle: "From burning off latent emotions to residual pain, cryotherapy is a precision tool with a wide breadth of therapeutic benefits.",
+  intro: [
+    "The use of cold as a therapeutic tool is a timeless way to experience localized or whole-body healing. Using subzero immersion to freeze out the unwelcome trauma of your past for a brighter future is possible with Cryotherapy.",
+  ],
+  heroPhoto: { asset: "cw-sea-rocks-alone", alt: "Dark sea rocks along a cold shoreline" },
+  heroStop: "wide",
+  sections: [
+    {
+      id: "cold-therapy-101",
+      stop: "cairn",
+      heading: "Cold Therapy 101",
+      photo: { asset: "cw-lake-dusk", alt: "A still lake at dusk", shape: "blob" },
+      blocks: [
+        { kind: "p", text: "A brief exposure to extreme cold sounds like a dare you take or an accidental experience you don’t want to repeat, but sometimes the most surprising things can create holistic healing at a cellular level.", lead: true },
+        { kind: "p", text: "In an enclosed space, you’ll be plunged into temperatures of up to -300°F for a brief period of time to provoke a myriad of benefits to body, mind, and spirit. The cold is created by liquid nitrogen, designed to ultra chill your skin and all the blood running close to it to create a holistic response of regeneration." },
+        { kind: "p", text: "With benefits at every level of your being, this ancient therapy has incredible applications for pain of many kinds. From physical to physiological, the cold truly can sink straight into all elements of your being. The benefits of cryotherapy are so much more than skin-deep." },
+        { kind: "p", text: "Every facet of your human experience may find some space to heal with cryotherapy, especially if you experience:" },
+      ],
+    },
+    {
+      id: "benefits",
+      stop: "pool",
+      layout: "wide",
+      heading: "Benefits of Cryotherapy",
+      blocks: [
+        {
+          kind: "list",
+          style: "pills",
+          items: [
+            "Pain from Injuries",
+            "Anxiety",
+            "Arthritis",
+            "Inflammation",
+            "Nerve Pain",
+            "Atopic Dermatitis",
+            "Migraines",
+            "Eczema",
+            "Depression",
+            "Mood disorders",
+          ],
+        },
+      ],
+    },
+    {
+      id: "talking-bodies",
+      stop: "labyrinth",
+      layout: "split-reverse",
+      heading: "Talking Bodies",
+      photo: { asset: "cw-sea-foam-stones", alt: "Sea foam washing over smooth stones", shape: "arch" },
+      blocks: [
+        { kind: "p", text: "The environments we exist in communicate constantly with our bodies. Both physical and emotional body conversations occur with what’s going on around you to manage the way your muscles and bones move as well as the way your emotions engage with whatever you are experiencing. Using Cryotherapy, we can slow the cellular response while heightening the oxygenation of your blood and tissues. When the temperature drops in such an extreme way, your whole body will respond.", lead: true },
+        { kind: "p", text: "This new and unexpected shift of environment can help to stop chronic conditions in their tracks. Because it is highly effective and minimally invasive, cryotherapy can be used to treat comprehensive and chronic conditions or applied in more localized manners for acute difficulties. From ice packs to immersive chambers, cryotherapy can help." },
+      ],
+    },
+    {
+      id: "inflammation",
+      stop: "seated",
+      heading: "Spotlight: Inflammation Management",
+      photo: { asset: "cw-water-drop", alt: "A single drop of water sending ripples across a still surface", shape: "circle" },
+      blocks: [
+        { kind: "p", text: "Inflammation is not just something that happens to our joints or in response to physical injury. Our whole bodies are subject to react with an inflammatory response to the things we experience." },
+        { kind: "p", text: "When our fight-or-flight reflex is engaged, it’s similar to an inflammatory response. Your body is flooded with hormones preparing you for action both mentally and physically. It can be helpful if you are in crisis or require immediate action." },
+        { kind: "p", text: "But what happens when you’re experiencing those floods of hormones chronically, and the inflammatory response becomes a constant contention?" },
+        { kind: "p", text: "Pain - Both emotional and physical pain are the result of those responses." },
+        { kind: "p", text: "Cryotherapy is an age-old tool that can help you to manage not just the way your body responds to new pain, but how you flush out the hurt that lingers there as well.", lead: true },
+      ],
+    },
+    {
+      id: "faq",
+      stop: "standing",
+      layout: "wide",
+      heading: "Frequently Asked Questions",
+      blocks: [
+        {
+          kind: "faq",
+          intro: "You’ve got questions, and we’ve got answers. Some of our most-asked questions are here but if there’s something else on your mind, we love to chat. Feel free to reach out and let us help you apply a laser focus to your wellness dreams.",
+          items: [
+            { q: "Is is dangerous?", a: ["While there are always risks to exposure therapies of any kind, the danger of extreme cold is well controlled in our therapy chambers. We keep you as safe as possible through careful consideration while making healing the central focus.", "If you have diabetes, you should avoid cryotherapy. For other health conditions, ask your physician before we begin."] },
+            { q: "What should i wear?", a: ["We will ensure you feel well-prepared before undertaking your first session.", "Loose-fitting and dry clothing are key to protecting skin from the risk of extreme cold. Socks and gloves will also help to prevent your extremities from experiencing potentially uncomfortable side effects like numbness, redness, or tingling that can occur temporarily after cryotherapy."] },
+            { q: "How long do I go to Cryotherapy?", a: ["Individual sessions are brief. For whole-body cryotherapy, you’ll be in the chamber for less than 4 minutes and your whole appointment will be less than a half-hour. Localized therapy varies over time. You may see benefits from one treatment and follow up with visits as often as twice weekly as long as you are seeing results. Some athletes even do daily cryotherapy at home!"] },
+            { q: "How can the cold help my mood?", a: ["While the body’s response to physical pain is not directly correlated to emotional pain, creating a shocking change to the physical systems can jar our emotional ones.", "By inducing vasoconstriction and sending the blood flow racing back toward your core, we can create higher levels of oxygenation and a wave of endorphins and enzymes that support your emotional wellbeing and, as a result, your mood."] },
+          ],
+        },
+      ],
+    },
+  ],
+  closing: {
+    heading: "True beauty starts from within.",
+    text: ["Complement your wellness journey with expert therapy services that nurture your mind and soul."],
+    cta: { label: "Discover the power of emotional healing today.", href: "/contact" },
+  },
+};
+
 const energyWork: PageContent = {
   url: "/services/energy-work",
   title: "Energy Work — Pathways Within",
@@ -448,7 +606,7 @@ const reiki: PageContent = {
   title: "Reiki — Pathways Within",
   meta: "Achieve inner peace and get more acquainted with your inner spirit with Reiki. Reiki offers the healing touch of an experienced practitioner and the relaxation of guided meditation.",
   source: "37-pathwayswithinwellness-com-reiki.txt",
-  eyebrow: "Mind-Body Support",
+  eyebrow: "Wellness",
   h1: "Usui Reiki",
   subtitle: "Achieve inner peace and get more acquainted with your inner spirit with Reiki.",
   intro: [
@@ -538,7 +696,7 @@ const iet: PageContent = {
   title: "Integrative Energy Therapy in Long Island — Pathways Within",
   meta: "Integrative Energy Therapy seeks out and breaks down the barriers holding you back from the inside out.",
   source: "38-pathwayswithinwellness-com-integrative-energy-therapy.txt",
-  eyebrow: "Mind-Body Support",
+  eyebrow: "Wellness",
   h1: "Integrative Energy Therapy (IET)",
   intro: [
     "In the nooks and crannies of your body as much as your mind, the memories that make you up—even the forgotten ones—shape your being. Holding on to that stagnant energy causes chronic physical and emotional pain.",
@@ -853,6 +1011,7 @@ export const wellnessPages: PageContent[] = [
   massage,
   acupuncture,
   cupping,
+  cryotherapy,
   energyWork,
   reiki,
   iet,

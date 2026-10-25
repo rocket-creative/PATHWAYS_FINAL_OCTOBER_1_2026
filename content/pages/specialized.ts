@@ -341,7 +341,7 @@ const rachel: PageContent = {
   url: "/about/rachel",
   title: "Meet Rachel — Pathways Within",
   meta: "Hi, I’m Rachel, therapist, founder, lifelong listener, and the original “Patient Zero” behind Pathways Within.",
-  source: "03-www-pathwayswithin-me-about-us.txt, 31-pathwayswithinwellness-com-about.txt, 23-www-pathwayswithin-me-clinicians.txt, 28-www-pathwayswithin-me-news-a-new-way-podcast.txt",
+  source: "03-www-pathwayswithin-me-about-us.txt, 31-pathwayswithinwellness-com-about.txt, 23-www-pathwayswithin-me-clinicians.txt",
   eyebrow: "FOUNDER OF PATHWAYS WITHIN",
   h1: "Meet Rachel: Founder, Therapist & “Patient Zero”",
   intro: ["Hi, I’m Rachel, therapist, founder, lifelong listener, and the original “Patient Zero” behind Pathways Within."],
@@ -382,17 +382,6 @@ const rachel: PageContent = {
         { kind: "cta", label: "Resources", href: "/resources", secondary: true },
       ],
     },
-    {
-      id: "podcast",
-      stop: "standing",
-      heading: "A Podcast with Rachel Lessard",
-      photo: { asset: "cw-table-notes", alt: "Notes on a table during a conversation", shape: "blob" },
-      blocks: [
-        { kind: "p", text: "Rachel joined Aynisa Leonardo from Wellbridge to talk about the evolution of Pathways Within, her approach to care, and the different ways people can find support. Listen to the conversation, then reach out if something you hear feels familiar—or simply makes you curious about where to begin.", lead: true },
-        { kind: "h3", text: "A New Way Podcast with Rachel Lessard" },
-        { kind: "cta", label: "Contact Us", href: "/contact" },
-      ],
-    },
   ],
   closing: {
     heading: "Take what you need. Leave what you do not.",
@@ -422,7 +411,7 @@ const faq: PageContent = {
           items: [
             { q: "What is Pathways Within?", a: ["Pathways Within is a collaborative mental health and wellness organization for the whole person, not just the one concern that brought you through the door."] },
             { q: "Do I need to know exactly what kind of support I need?", a: ["No, and honestly, most people do not. You may know that something feels off, heavy, stuck, or simply ready to change. Our Welcome Team can help you sort through the options and find a place to begin."] },
-            { q: "What services does Pathways Within offer?", a: ["Pathways Within offers mental health therapy, medication management, Performance & Wellness Coaching, energy work, massage therapy, acupuncture, cupping, and other active wellness services.", "Specific services and provider availability vary by location—because apparently one building cannot contain all of us."] },
+            { q: "What services does Pathways Within offer?", a: ["Pathways Within offers mental health therapy, medication management, Performance & Wellness Coaching, and Energy Work under Mind-Body Support, plus massage therapy, acupuncture, cupping, cryotherapy, Reiki, Integrative Energy Therapy, and other wellness services.", "Specific services and provider availability vary by location—because apparently one building cannot contain all of us."] },
             { q: "Do I have to use more than one service?", a: ["Not at all. Some patients work with one provider. Others use different services over time. The collaborative model simply means more support is available if and when it becomes useful. Your care should fit you—not the other way around."] },
             { q: "Can my providers communicate with one another?", a: ["Yes, when appropriate and with your permission. Members of your care team may collaborate so everyone stays aligned around your goals and your care feels more connected. Your privacy, comfort, and consent remain central to that process."] },
             { q: "Is Pathways Within only for people in crisis?", a: ["Definitely not. People come to us during hard seasons, but also for personal growth, stronger relationships, stress support, physical well-being, performance goals, or simply because life could use a tune-up."] },
@@ -442,7 +431,7 @@ const faq: PageContent = {
         {
           kind: "faq",
           items: [
-            { q: "Do I need to be a therapy patient to use wellness services?", a: ["No. Massage, acupuncture, cupping, energy work, and other active wellness services are available whether or not you receive therapy through Pathways Within. Some people use one service. Others combine care over time. Both are completely fine."] },
+            { q: "Do I need to be a therapy patient to use wellness services?", a: ["No. Massage, acupuncture, cupping, cryotherapy, Reiki, Integrative Energy Therapy, and other wellness services are available whether or not you receive therapy through Pathways Within. Energy Work is Mind-Body Support and is available the same way. Some people use one service. Others combine care over time. Both are completely fine."] },
             { q: "Do I need to know which treatment I need?", a: ["Not necessarily. You can contact our team, share what you are experiencing, and we will help guide you toward an appropriate service or provider."] },
             { q: "Are Wellness services customized?", a: ["Yes. Your provider will learn more about your needs, preferences, comfort level, and goals before beginning. Care should feel personal—not like you were handed someone else’s treatment plan."] },
             { q: "Can wellness services complement therapy?", a: ["They may. Stress, anxiety, grief, and other emotional experiences can also affect the body. Massage, acupuncture, and other wellness services offer additional ways to support physical comfort, relaxation, recovery, and overall well-being. These services do not replace mental health or medical treatment when those services are needed."] },
@@ -571,7 +560,7 @@ const resources: PageContent = {
   url: "/resources",
   title: "Resources — Pathways Within",
   meta: "Follow The Wisdom of Wellness on Substack at @the.wisdom.of.wellness, where I share the behind-the-scenes journey of being a founder, therapist, lifelong learner.",
-  source: "03-www-pathwayswithin-me-about-us.txt, 27-www-pathwayswithin-me-news.txt, 28-www-pathwayswithin-me-news-a-new-way-podcast.txt, 29-www-pathwayswithin-me-news-telehealth.txt",
+  source: "03-www-pathwayswithin-me-about-us.txt, 29-www-pathwayswithin-me-news-telehealth.txt",
   h1: "Resources",
   heroPhoto: { asset: "pr-laptop-at-home", alt: "A laptop open at home" },
   heroStop: "wide",
@@ -592,10 +581,6 @@ const resources: PageContent = {
       layout: "wide",
       heading: "News",
       blocks: [
-        { kind: "h3", text: "A Podcast with Rachel Lessard" },
-        { kind: "p", text: "Owner & Founder of Pathways Within joins host Aynisa Leonardo" },
-        { kind: "p", text: "on A New Way Podcast." },
-        { kind: "cta", label: "A New Way Podcast with Rachel Lessard", href: "/about/rachel", secondary: true },
         { kind: "h3", text: "UPDATE!" },
         { kind: "p", text: "Telehealth available in New Jersey, North Carolina and Florida in addition to New York!", lead: true },
         { kind: "p", text: "Connect with us today to learn more about getting started with a therapist near you! Call us at (631) 371-3825 today!" },

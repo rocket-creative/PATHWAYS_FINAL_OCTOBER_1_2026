@@ -80,7 +80,7 @@ export const about: PageContent = {
       photo: { asset: "ha-ap-massage-room", alt: "A massage room at Pathways Within", shape: "arch" },
       blocks: [
         { kind: "p", text: "Not every part of well-being can be talked through. Sometimes support looks like conversation. Sometimes it means addressing physical tension, pain, stress, movement, recovery, or giving your body space to reset.", lead: true },
-        { kind: "p", text: "That is why wellness services are part of the larger Pathways Within model. Massage, acupuncture, energy work, and other active wellness services can be used on their own or alongside mental health care." },
+        { kind: "p", text: "That is why wellness services are part of the larger Pathways Within model. Massage, acupuncture, cryotherapy, Reiki, Integrative Energy Therapy, and other wellness services can be used on their own or alongside mental health care. Energy Work is Mind-Body Support, and can be used on its own or alongside therapy and wellness care." },
         { kind: "p", text: "There is no requirement to use more than one service. The point is having options—and a team that can help you use them well." },
       ],
     },
