@@ -10,6 +10,7 @@ export type SearchPerson = {
   credentials: string;
   title: string;
   paragraphs: string[];
+  bullets?: string[];
   specialties: string;
   type: string;
   locations: string[];
@@ -37,7 +38,7 @@ export default function PeopleSearch({ people }: { people: SearchPerson[] }) {
     return people.filter((p) => {
       if (type && p.type !== type) return false;
       if (loc && !p.locations.includes(loc)) return false;
-      if (needle && !`${p.name} ${p.credentials} ${p.title} ${p.specialties} ${p.type} ${p.paragraphs.join(" ")}`.toLowerCase().includes(needle)) return false;
+      if (needle && !`${p.name} ${p.credentials} ${p.title} ${p.specialties} ${p.type} ${p.paragraphs.join(" ")} ${p.bullets?.join(" ") ?? ""}`.toLowerCase().includes(needle)) return false;
       return true;
     });
   }, [needle, loc, type, people]);
@@ -121,11 +122,19 @@ export default function PeopleSearch({ people }: { people: SearchPerson[] }) {
                 {p.locations.length > 0 && <p className="text-[0.85rem] text-ink-soft">{p.locations.join(" · ")}</p>}
               </div>
             </div>
-            {p.paragraphs.map((t, i) => (
-              <p key={i} className="text-[0.95rem]">
-                {t}
-              </p>
-            ))}
+            {p.bullets?.length ? (
+              <ul className="grid gap-1 pl-4 text-[0.95rem] list-disc">
+                {p.bullets.map((t, i) => (
+                  <li key={i}>{t}</li>
+                ))}
+              </ul>
+            ) : (
+              p.paragraphs.map((t, i) => (
+                <p key={i} className="text-[0.95rem]">
+                  {t}
+                </p>
+              ))
+            )}
             {p.specialties && <p className="text-[0.9rem] text-ink-soft">{p.specialties}</p>}
             {p.href && (
               <Link href={p.href} className="text-[0.9rem] font-bold">

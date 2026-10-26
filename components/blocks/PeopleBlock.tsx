@@ -10,6 +10,7 @@ export type Person = {
   credentials: string;
   title: string;
   paragraphs: string[];
+  bullets?: string[];
   specialties: string;
   type: string;
   locations: string[];
@@ -23,6 +24,7 @@ export const WELLNESS = data.wellness as {
   name: string;
   role: string;
   paragraphs: string[];
+  bullets?: string[];
   cta: string;
   displayName: string;
   short: string;
@@ -48,6 +50,7 @@ export function allProviders(): SearchPerson[] {
     credentials: p.credentials,
     title: p.title,
     paragraphs: p.paragraphs,
+    bullets: p.bullets,
     specialties: p.specialties,
     type: p.type,
     locations: p.locations,
@@ -61,6 +64,7 @@ export function allProviders(): SearchPerson[] {
     credentials: "",
     title: w.role.charAt(0) + w.role.slice(1).toLowerCase(),
     paragraphs: [w.short],
+    bullets: w.bullets,
     specialties: "",
     type: w.type,
     locations: w.locations,
@@ -91,7 +95,15 @@ export function PeopleBlock({ group }: { group: string }) {
             <span>
               <span className="eyebrow block !text-[0.68rem]">{p.role}</span>
               <span className="tile__title block">{p.displayName}</span>
-              <span className="tile__text block">{p.short}</span>
+              {p.bullets?.length ? (
+                <ul className="tile__text grid gap-1 pl-4 list-disc">
+                  {p.bullets.map((b, i) => (
+                    <li key={i}>{b}</li>
+                  ))}
+                </ul>
+              ) : (
+                <span className="tile__text block">{p.short}</span>
+              )}
               <span className="tile__text mt-1 block font-bold text-brand-deep">Read bio →</span>
             </span>
           </Link>

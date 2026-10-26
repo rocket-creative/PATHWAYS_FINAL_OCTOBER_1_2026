@@ -789,11 +789,11 @@ const iet: PageContent = {
 const christineCervo: PageContent = {
   url: "/team/christine-cervo",
   title: "Christine Cervo — Pathways Within",
-  meta: "Christine is a licensed massage therapist with a simple goal: to help people feel better in their bodies.",
-  source: "47-pathwayswithinwellness-com-christine-cervo.txt",
+  meta: "Christine has a gift for noticing what others may miss.",
+  source: "47-pathwayswithinwellness-com-christine-cervo.txt, bios-2026-10-26.txt",
   eyebrow: "LICENSED MASSAGE THERAPIST",
   h1: "Christine Cervo",
-  intro: ["Christine is a licensed massage therapist with a simple goal: to help people feel better in their bodies."],
+  intro: ["Christine has a gift for noticing what others may miss. Through years of working closely with people, she has developed an intuitive understanding of the connection between the body, emotions, and overall well-being. Clients often describe feeling deeply heard and cared for because Christine does more than focus on where something hurts. She takes the time to understand the whole person and how different areas of the body work together."],
   heroPhoto: { asset: "ha-ap-massage-room", alt: "A massage room at Pathways Within" },
   heroStop: "wide",
   sections: [
@@ -808,10 +808,19 @@ const christineCervo: PageContent = {
           eyebrow: "LICENSED MASSAGE THERAPIST",
           name: "Christine Cervo",
           paragraphs: [
-            "A graduate of the New York College of Health Professions, Christine has additional training in aromatherapy, reflexology, sports massage, and prenatal massage. Her work is both skilled and intuitive, allowing her to adapt each session to the person in front of her rather than follow a one-size-fits-all routine.",
-            "Christine pays close attention to what the body is communicating and understands that no two bodies - or days - feel exactly the same. Some sessions may focus on tension, pain, or recovery. Others may create space for quiet, rest, and a much-needed reset.",
+            "Christine has a gift for noticing what others may miss. Through years of working closely with people, she has developed an intuitive understanding of the connection between the body, emotions, and overall well-being. Clients often describe feeling deeply heard and cared for because Christine does more than focus on where something hurts. She takes the time to understand the whole person and how different areas of the body work together.",
+            "After 16 years as a medical assistant, Christine felt called toward a more holistic approach to helping people feel better. She brings that same compassion and clinical understanding into her massage practice, combining medical knowledge with advanced bodywork techniques. Her work includes medical massage, manual lymph drainage, pregnancy massage, deep tissue, somatic techniques, orthopedic massage, and more. Whether helping someone recover from an injury, manage discomfort, support healing after surgery, or simply reconnect with their body, Christine creates a space where people feel safe, supported, and truly cared for.",
           ],
           cta: { label: "Work with Christine Cervo", href: "/contact" },
+        },
+        {
+          kind: "list",
+          style: "bullet",
+          items: [
+            "Christine brings a unique blend of clinical massage expertise, intuition, and deep listening to every session, helping clients feel understood and cared for.",
+            "Specializing in medical massage, manual lymph drainage, pregnancy massage, deep tissue, somatic techniques, orthopedic massage, and cupping.",
+            "Her whole-body approach focuses on helping clients recover from pain, injury, swelling, and physical stress while reconnecting with their bodies and feeling their best.",
+          ],
         },
       ],
     },
@@ -820,7 +829,6 @@ const christineCervo: PageContent = {
       stop: "pool",
       photo: { asset: "cw-ap-massage-session", alt: "A massage session at Pathways Within", shape: "blob" },
       blocks: [
-        { kind: "p", text: "Her thoughtful, personalized approach reflects the heart of Pathways Within: listen closely, meet people where they are, and create care that helps them feel more comfortable, supported, and connected to themselves.", lead: true },
         { kind: "cta", label: "Massage", href: "/services/massage", secondary: true },
       ],
     },
@@ -830,7 +838,6 @@ const christineCervo: PageContent = {
       layout: "split-reverse",
       photo: { asset: "pr-ap-ns-massage-green", alt: "A green massage treatment room with an In Session sign on the door", shape: "arch" },
       blocks: [
-        { kind: "p", text: "Christine is a licensed massage therapist with a simple goal: to help people feel better in their bodies." },
         { kind: "cta", label: "Cupping Therapy", href: "/services/cupping-therapy", secondary: true },
       ],
     },
@@ -844,11 +851,11 @@ const christineCervo: PageContent = {
 const leonardMa: PageContent = {
   url: "/team/leonard-ma",
   title: "Leonard Ma — Pathways Within",
-  meta: "Leonard looks beyond isolated symptoms and works with each patient as a whole person, helping support greater balance across the body, mind, and spirit.",
-  source: "48-pathwayswithinwellness-com-leonard-ma.txt",
+  meta: "Leonard believes healing is not just about addressing where something hurts.",
+  source: "48-pathwayswithinwellness-com-leonard-ma.txt, bios-2026-10-26.txt",
   eyebrow: "LICENSED ACUPUNCTURIST",
   h1: "Leonard Ma",
-  intro: ["Leonard's connection to acupuncture began early. Growing up, he saw its impact within his own family and experienced its benefits personally while managing a heart issue as a child."],
+  intro: ["Leonard believes healing is not just about addressing where something hurts. It’s about understanding the whole person behind the symptoms. As an acupuncturist, he works with patients experiencing physical challenges such as muscle tension, joint discomfort, inflammation, and pain, while also recognizing the powerful connection between the body, emotions, and overall well-being. His calm, thoughtful approach allows patients to feel seen and supported as they work toward greater balance."],
   heroPhoto: { asset: "cw-ap26-acu-leo", alt: "Acupuncturist Leonard Ma with a teen client" },
   heroStop: "wide",
   sections: [
@@ -863,10 +870,19 @@ const leonardMa: PageContent = {
           eyebrow: "LICENSED ACUPUNCTURIST",
           name: "Leonard Ma",
           paragraphs: [
-            "That early exposure later became a clear calling. During his clinical training, Leonard saw how acupuncture could support not only physical pain, but also emotional and mental well-being.",
-            "At Pathways Within, he brings a calm, easygoing presence and a deeply holistic approach to care. Leonard looks beyond isolated symptoms and works with each patient as a whole person, helping support greater balance across the body, mind, and spirit.",
+            "Leonard believes healing is not just about addressing where something hurts. It’s about understanding the whole person behind the symptoms. As an acupuncturist, he works with patients experiencing physical challenges such as muscle tension, joint discomfort, inflammation, and pain, while also recognizing the powerful connection between the body, emotions, and overall well-being. His calm, thoughtful approach allows patients to feel seen and supported as they work toward greater balance.",
+            "His connection to acupuncture began early in life through his own experiences receiving care and witnessing its impact on those around him. During his clinical training, Leonard became especially interested in the way acupuncture could support emotional well-being in addition to physical health. That perspective continues to guide his work today. At Pathways Within, Leonard is passionate about being part of a collaborative approach to wellness, one where healthcare professionals work together to support the complete person. His goal is simple: to help patients feel better, regain balance, and move forward with greater ease.",
           ],
           cta: { label: "Work with Leonard", href: "/contact" },
+        },
+        {
+          kind: "list",
+          style: "bullet",
+          items: [
+            "Leonard combines traditional acupuncture expertise with a deep understanding of the connection between physical, mental, and emotional wellness.",
+            "His approach goes beyond symptom relief, helping patients find greater balance through personalized, whole-person care.",
+            "With a calm presence and a genuine passion for helping people feel better in their bodies and lives, Leonard creates a space where patients feel understood, supported, and cared for.",
+          ],
         },
       ],
     },
@@ -875,7 +891,6 @@ const leonardMa: PageContent = {
       stop: "pool",
       photo: { asset: "cw-ap26-acu-needles", alt: "Acupuncture needles being placed", shape: "blob" },
       blocks: [
-        { kind: "p", text: "Leonard looks beyond isolated symptoms and works with each patient as a whole person, helping support greater balance across the body, mind, and spirit.", lead: true },
         { kind: "cta", label: "Acupuncture", href: "/services/acupuncture", secondary: true },
       ],
     },
@@ -885,7 +900,6 @@ const leonardMa: PageContent = {
       layout: "split-reverse",
       photo: { asset: "cw-ap-acupuncture-session", alt: "An acupuncture session at Pathways Within", shape: "arch" },
       blocks: [
-        { kind: "p", text: "At Pathways Within, he brings a calm, easygoing presence and a deeply holistic approach to care." },
         { kind: "cta", label: "Cupping Therapy", href: "/services/cupping-therapy", secondary: true },
       ],
     },
@@ -954,11 +968,11 @@ const tiaBaumohl: PageContent = {
 const danielleIngenito: PageContent = {
   url: "/team/danielle-ingenito",
   title: "Danielle Ingenito — Pathways Within",
-  meta: "Danielle is a licensed massage therapist with 12 years of experience, specializing in therapeutic massage and deep-tissue techniques.",
-  source: "50-pathwayswithinwellness-com-danielle-ingenito.txt",
+  meta: "Danielle understands that what we carry doesn't always stay in our minds.",
+  source: "50-pathwayswithinwellness-com-danielle-ingenito.txt, bios-2026-10-26.txt",
   eyebrow: "LICENSED MASSAGE THERAPIST",
   h1: "Danielle Ingenito",
-  intro: ["Danielle is a licensed massage therapist with 12 years of experience, specializing in therapeutic massage and deep-tissue techniques. She completed more than 1,100 hours of comprehensive training at the Connecticut Center for Massage Therapy in Westport, Connecticut."],
+  intro: ["Danielle understands that what we carry doesn't always stay in our minds. Stress can become tension. Overwork can become pain. An injury, headache, or persistent ache can affect far more than one part of the body. Having experienced the impact of high stress herself, Danielle discovered practices that helped her reconnect with a sense of balance—and ultimately found a calling in helping others do the same.For Danielle, there are no shortcuts when it comes to understanding and caring for the body. After completing an intensive two-year clinical massage program and more than 1,100 hours of classroom and clinical training, she built her experience in spas, wellness centers, chiropractic clinics, and private practice before returning to New York."],
   heroPhoto: { asset: "pr-ap-ns-massage-green", alt: "A green massage treatment room at Pathways Within" },
   heroStop: "wide",
   sections: [
@@ -973,11 +987,19 @@ const danielleIngenito: PageContent = {
           eyebrow: "LICENSED MASSAGE THERAPIST",
           name: "Danielle Ingenito",
           paragraphs: [
-            "“My approach is tailored to each client, with a focus on relieving tension, reducing pain, and supporting overall wellness. I’m also trained in Transcendental Meditation, practicing for over 10 years.",
-            "My belief is the body can heal itself given the proper conditions and environment. Massage therapy is a great way to bring the body back into balance and greatly supports mental health by reducing tat mental noise and excessive thought patterns. Knowing when to slow down and get help is just as important. When the body is relaxed, it comes back to the present moment.",
-            "In addition to massage, I found meditation and breathwork reduces overall stress and calms the nervous system.”",
+            "Danielle understands that what we carry doesn't always stay in our minds. Stress can become tension. Overwork can become pain. An injury, headache, or persistent ache can affect far more than one part of the body. Having experienced the impact of high stress herself, Danielle discovered practices that helped her reconnect with a sense of balance—and ultimately found a calling in helping others do the same.For Danielle, there are no shortcuts when it comes to understanding and caring for the body. After completing an intensive two-year clinical massage program and more than 1,100 hours of classroom and clinical training, she built her experience in spas, wellness centers, chiropractic clinics, and private practice before returning to New York.",
+            "Today, after 12 years in the field, she brings her skills to Pathways because she believes massage belongs in a broader, holistic approach to wellness. Whether someone is navigating chronic pain, injury, stress, or simply the tension of everyday life, Danielle meets them with patience, knowledge, and deep respect for the trust they place in her. Years from now, she knows she will look back and know how many people she helped feel better, how many allowed her to be part of their journey, and those she has been privileged to serve and guide toward a healthier mind, body, and soul.",
           ],
           cta: { label: "Work with Danielle", href: "/contact" },
+        },
+        {
+          kind: "list",
+          style: "bullet",
+          items: [
+            "Danielle is a clinically trained massage therapist who sees the body as a whole—because pain, tension, injury, and stress rarely exist in isolation.",
+            "With 1,100+ hours of clinical and classroom training and dual licensure in New York and Connecticut, she draws from deep tissue, trigger point, Swedish, sports massage, and acupressure techniques.",
+            "Most importantly, Danielle considers every client's trust an honor—and every step toward feeling better a journey she is privileged to share.",
+          ],
         },
       ],
     },
@@ -986,7 +1008,6 @@ const danielleIngenito: PageContent = {
       stop: "pool",
       photo: { asset: "cw-ap-massage-session", alt: "A massage session at Pathways Within", shape: "blob" },
       blocks: [
-        { kind: "p", text: "Danielle is a licensed massage therapist with 12 years of experience, specializing in therapeutic massage and deep-tissue techniques.", lead: true },
         { kind: "cta", label: "Massage", href: "/services/massage", secondary: true },
       ],
     },
@@ -996,7 +1017,6 @@ const danielleIngenito: PageContent = {
       layout: "split-reverse",
       photo: { asset: "ha-ap-massage-room", alt: "A massage room at Pathways Within", shape: "arch" },
       blocks: [
-        { kind: "p", text: "In addition to massage, I found meditation and breathwork reduces overall stress and calms the nervous system.”" },
         { kind: "cta", label: "Cupping Therapy", href: "/services/cupping-therapy", secondary: true },
       ],
     },
