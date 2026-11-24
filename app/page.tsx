@@ -155,8 +155,8 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mx-auto grid w-[min(80vw,440px)] grid-cols-2 gap-4 lg:mt-16 lg:w-full">
-              <Photo asset="ha-ap26-desk-smile" alt="A warm welcome at the front desk" shape="circle" className="ring" float={28} sizes="220px" />
-              <Photo asset="pr-intake-clipboard" alt="An intake clipboard" shape="circle" className="ring mt-12" float={44} sizes="220px" />
+              <Photo asset="pw-desk-greeting" alt="A warm welcome at the front desk" shape="circle" className="ring" float={28} sizes="220px" />
+              <Photo asset="pw-front-door" alt="A visitor arriving at the Smithtown office" shape="circle" className="ring mt-12" float={44} sizes="220px" />
               <Photo asset="th-ap26-two-women" alt="Two people in conversation" shape="circle" className="ring -mt-6 col-start-2" float={36} sizes="220px" />
             </div>
           </div>

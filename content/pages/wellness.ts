@@ -203,7 +203,7 @@ const acupuncture: PageContent = {
     { label: "Contact Our Welcome Team", href: "/contact" },
     { label: "631-371-3825", href: "tel:+16313713825", secondary: true },
   ],
-  heroPhoto: { asset: "cw-ap-acupuncture-session", alt: "An acupuncture session at Pathways Within" },
+  heroPhoto: { asset: "pw-acu-leo-smile", alt: "An acupuncture session at Pathways Within" },
   heroStop: "wide",
   sections: [
     {
@@ -850,7 +850,7 @@ const leonardMa: PageContent = {
       id: "session",
       stop: "labyrinth",
       layout: "split-reverse",
-      photo: { asset: "cw-ap-acupuncture-session", alt: "An acupuncture session at Pathways Within", shape: "arch" },
+      photo: { asset: "pw-acu-leo-smile", alt: "An acupuncture session at Pathways Within", shape: "arch" },
       blocks: [
         { kind: "cta", label: "Cupping Therapy", href: "/services/cupping-therapy", secondary: true },
       ],

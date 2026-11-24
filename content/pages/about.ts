@@ -12,13 +12,13 @@ export const about: PageContent = {
     "Pathways Within is a collaborative mental health and wellness organization built around a simple idea: people are not one-dimensional, and care should not be either.",
     "Mental health, physical health, stress, relationships, sleep, pain, work, and everyday life overlap all the time. We created Pathways Within to stop pretending they do not.",
   ],
-  heroPhoto: { asset: "pr-ap-desk-saul-greeting", alt: "The Welcome Team greeting a visitor at the Smithtown front desk" },
+  heroPhoto: { asset: "pw-desk-wide", alt: "The Welcome Team greeting a visitor at the Smithtown front desk" },
   heroStop: "wide",
   sections: [
     {
       id: "who-we-are",
       stop: "seated",
-      photo: { asset: "ha-ap-front-desk-team", alt: "The Welcome Team at the Smithtown front desk" },
+      photo: { asset: "pw-desk-greeting", alt: "The Welcome Team at the Smithtown front desk" },
       blocks: [
         { kind: "p", text: "Our team includes clinicians, medical providers, coaches, wellness practitioners, and support professionals who work together to make care feel more connected, more personal, and easier to navigate." },
         { kind: "p", text: "You may come to us knowing exactly what you need—or simply knowing something needs to change." },
@@ -63,8 +63,8 @@ export const about: PageContent = {
       heading: "How Pathways Found Its Way",
       photos: [
         { asset: "pr-ap-smt-labyrinth-sign", alt: "The labyrinth sign at the Smithtown office" },
-        { asset: "pr-ap-desk-waiting", alt: "The Smithtown waiting area by the front desk" },
-        { asset: "ha-ap26-desk-handshake", alt: "A handshake at the welcome desk" },
+        { asset: "pw-waiting-smithtown", alt: "The Smithtown waiting area by the front desk" },
+        { asset: "pw-wellness-greeting", alt: "A warm hello outside the Smithtown wellness rooms" },
       ],
       blocks: [
         { kind: "p", text: "What began as a small private therapy practice has grown into a collaborative mental health and wellness organization across Long Island, with one shared goal: making care feel more connected, useful, and human." },

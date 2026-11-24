@@ -278,16 +278,16 @@ const howItWorks: PageContent = {
     "You may know exactly what kind of support you want—or simply know that something needs to change.",
     "Our role is to help you make sense of the options and connect you with an appropriate starting point.",
   ],
-  heroPhoto: { asset: "ha-ap26-desk-talk", alt: "A conversation at the welcome desk" },
+  heroPhoto: { asset: "pw-desk-checkin", alt: "A conversation at the welcome desk" },
   sections: [
     {
       id: "the-360-intake",
       stop: "labyrinth",
       heading: "The 360 Intake",
       photos: [
-        { asset: "ha-ap26-desk-smile", alt: "A smile at the front desk" },
+        { asset: "pw-desk-greeting", alt: "A smile at the front desk" },
         { asset: "pr-intake-clipboard", alt: "Intake clipboard" },
-        { asset: "th-ap26-hands", alt: "Hands in conversation" },
+        { asset: "pw-walk-to-room", alt: "A visitor being welcomed and walked to her room" },
       ],
       blocks: [
         { kind: "p", text: "The 360 Intake gives us a fuller picture so we can help identify the right starting point.", lead: true },

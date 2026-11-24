@@ -195,7 +195,7 @@ const coaching: PageContent = {
       layout: "wide",
       heading: "Meet Your Coach — Tia Baumohl",
       photos: [
-        { asset: "ha-tia-baumohl", alt: "Tia Baumohl, certified coach and energy medicine practitioner" },
+        { asset: "pw-tia-white", alt: "Tia Baumohl, certified coach and energy medicine practitioner" },
         { asset: "cw-ap26-hands", alt: "Hands held open in a moment of calm" },
       ],
       blocks: [

@@ -43,8 +43,8 @@ export const LOCATIONS: Location[] = [
     line2: "Garden City, NY 11530",
     accessible: false,
     accessibility: "Lower level, reached by stairs. Not wheelchair accessible.",
-    photo: "ha-ap-waiting-garden-city",
-    photos: ["ha-ap-waiting-garden-city", "pr-ap-gc-waiting-nook", "pr-ap-gc-session-chair", "pr-ap-gc-flower-wall"],
+    photo: "pw-gc-reception",
+    photos: ["pw-gc-reception", "pw-gc-wellness", "pw-gc-session", "pw-gc-lounge"],
   },
   {
     slug: "massapequa",
@@ -53,8 +53,8 @@ export const LOCATIONS: Location[] = [
     line2: "Massapequa, NY 11758",
     accessible: false,
     accessibility: "Reached by stairs. Not wheelchair accessible.",
-    photo: "ha-ap-therapy-massapequa",
-    photos: ["ha-ap-therapy-massapequa", "pr-ap-mpq-mandala-chair", "pr-ap-mpq-sunflower", "pr-ap-mpq-child-waiting"],
+    photo: "pw-mpq-reception",
+    photos: ["pw-mpq-reception", "pw-mpq-waiting", "pw-mpq-session", "pw-mpq-wellness"],
   },
   {
     slug: "port-jefferson",

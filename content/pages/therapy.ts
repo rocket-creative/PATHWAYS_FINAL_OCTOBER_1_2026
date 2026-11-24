@@ -1559,7 +1559,7 @@ const groupTherapy: PageContent = {
       id: "current-groups",
       stop: "standing",
       heading: "Current Groups",
-      photo: { asset: "ha-ap-group-room-garden-city", alt: "The group room in Garden City" },
+      photo: { asset: "pr-rvc-group-room", alt: "The group room in Rockville Centre" },
       blocks: [
         { kind: "list", style: "check", items: ["COVID Bereavement Group", "Psychotherapy Book Club Groups", "Chair YOGA & Meditation"] },
         { kind: "cta", label: "Let's Get Started", href: "/contact" },
