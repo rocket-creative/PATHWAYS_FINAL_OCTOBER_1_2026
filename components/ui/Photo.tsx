@@ -33,6 +33,7 @@ const WIDE = new Set([
   "pw-desk-checkin",
   "pw-desk-greeting",
   "pw-desk-wide",
+  "pw-leadership-offsite",
   "pw-massage-hands",
   "pw-waiting-smithtown",
   "pw-walk-to-room",

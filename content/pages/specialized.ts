@@ -355,7 +355,7 @@ const rachel: PageContent = {
   eyebrow: "FOUNDER OF PATHWAYS WITHIN",
   h1: "Meet Rachel: Founder, Therapist & “Patient Zero”",
   intro: ["Hi, I’m Rachel, therapist, founder, lifelong listener, and the original “Patient Zero” behind Pathways Within."],
-  heroPhoto: { asset: "ha-ap26-rachel-solo", alt: "Rachel Lessard, founder of Pathways Within" },
+  heroPhoto: { asset: "ha-rachel-polished", alt: "Rachel Lessard, founder of Pathways Within" },
   heroStop: "wide",
   sections: [
     {
@@ -627,7 +627,7 @@ const careers: PageContent = {
   meta: "Submit your resume through our careers page.",
   source: "(no source capture; functional copy only)",
   h1: "Careers",
-  heroPhoto: { asset: "ha-team-bright-room", alt: "The Pathways Within team in a bright room" },
+  heroPhoto: { asset: "pw-leadership-offsite", alt: "The Pathways Within leadership team at an offsite" },
   heroStop: "wide",
   sections: [
     {

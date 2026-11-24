@@ -187,3 +187,5 @@ pr-rvc-desk-room
 pr-rvc-green-room
 pr-rvc-group-room
 pr-rvc-lounge
+ha-rachel-polished
+pw-leadership-offsite
