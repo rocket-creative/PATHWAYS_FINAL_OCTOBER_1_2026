@@ -1,6 +1,9 @@
 import type { CSSProperties } from "react";
+import PARTIAL_WIDTHS from "@/lib/photo-widths.json";
 
 const PHOTO_WIDTHS = [640, 1200, 2000];
+/** Widths actually exported for a photo (small sources skip the larger sizes). */
+const widthsFor = (asset: string): number[] => (PARTIAL_WIDTHS as Record<string, number[]>)[asset] ?? PHOTO_WIDTHS;
 const HEADSHOT_WIDTHS = [320, 640];
 
 export function photoSrc(asset: string, w = 1200) {
@@ -65,8 +68,8 @@ export function Photo({
   return (
     <figure className={`${frame} ${className} m-0`} style={wide ? { aspectRatio: "3 / 2", ...style } : style} data-float={float ?? undefined}>
       <img
-        src={photoSrc(asset, 1200)}
-        srcSet={PHOTO_WIDTHS.map((w) => `${photoSrc(asset, w)} ${w}w`).join(", ")}
+        src={photoSrc(asset, widthsFor(asset).includes(1200) ? 1200 : widthsFor(asset).at(-1))}
+        srcSet={widthsFor(asset).map((w) => `${photoSrc(asset, w)} ${w}w`).join(", ")}
         sizes={sizes}
         alt={alt}
         loading={priority ? "eager" : "lazy"}

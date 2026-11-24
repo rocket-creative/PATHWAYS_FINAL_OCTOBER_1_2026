@@ -562,21 +562,6 @@ const energyWork: PageContent = {
       ],
     },
     {
-      id: "practitioner",
-      stop: "seated",
-      layout: "wide",
-      blocks: [
-        {
-          kind: "person",
-          slug: "tia-baumohl",
-          eyebrow: "CERTIFIED COACH & ENERGY MEDICINE PRACTITIONER",
-          name: "Tia Baumohl",
-          paragraphs: ["Tia's work is rooted in helping people navigate change with greater clarity, connection, and confidence."],
-          cta: { label: "Work with Tia Baumohl", href: "/team/tia-baumohl" },
-        },
-      ],
-    },
-    {
       id: "ita",
       stop: "pool",
       layout: "split-reverse",
