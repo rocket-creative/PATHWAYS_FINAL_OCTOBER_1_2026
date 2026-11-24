@@ -63,7 +63,7 @@ export function Headshot({
   if (noPhoto) {
     const initials = name
       .split(/\s+/)
-      .filter((w) => /^[A-Za-z]/.test(w))
+      .filter((w) => /^[A-Za-z]/.test(w) && !/^(meet|dr\.?)$/i.test(w))
       .slice(0, 2)
       .map((w) => w[0].toUpperCase())
       .join("");

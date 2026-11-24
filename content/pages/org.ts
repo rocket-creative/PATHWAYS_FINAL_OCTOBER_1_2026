@@ -44,10 +44,10 @@ const services: PageContent = {
       stop: "standing",
       layout: "wide",
       eyebrow: "Mind-Body Support",
-      heading: "Coaching & Energy Work",
+      heading: "Coaching, Energy Work & Functional Medicine",
       blocks: [
-        { kind: "p", text: "Performance & Wellness Coaching and Energy Work are separate from licensed mental health treatment. They may be used on their own or alongside therapy, medication management, and wellness services." },
-        { kind: "tiles", items: BUCKETS.mindBody.links.map((l) => tile(l, l.href.includes("coaching") ? "ha-tia-baumohl" : "cw-ap26-hands")) },
+        { kind: "p", text: "Performance & Wellness Coaching, Energy Work (including Reiki and Integrative Energy Therapy), and Functional Medicine through our collaboration with Ascend Functional Health are separate from licensed mental health treatment. They may be used on their own or alongside therapy, medication management, and wellness services." },
+        { kind: "tiles", items: BUCKETS.mindBody.links.map((l) => tile(l, l.href.includes("coaching") ? "ha-tia-baumohl" : l.href.includes("functional") ? "pr-laptop-at-home" : "cw-ap26-hands")) },
       ],
     },
     {
@@ -57,7 +57,7 @@ const services: PageContent = {
       eyebrow: "Wellness",
       heading: "Your Wellness",
       blocks: [
-        { kind: "p", text: "Physical well-being is part of the bigger picture. Massage, acupuncture, cupping, cryotherapy, Reiki, and Integrative Energy Therapy can support physical comfort, stress relief, movement, recovery, and overall well-being. Energy Work lives under Mind-Body Support.", lead: true },
+        { kind: "p", text: "Physical well-being is part of the bigger picture. Massage, acupuncture, cupping, and cryotherapy can support physical comfort, stress relief, movement, recovery, and overall well-being. Reiki and Integrative Energy Therapy are part of [Energy Work](/services/energy-work) under Mind-Body Support.", lead: true },
         { kind: "p", text: "You do not need to be a therapy patient to use wellness services. Start with the service you know you want—or ask the Welcome Team for help choosing." },
         {
           kind: "tiles",
@@ -70,11 +70,7 @@ const services: PageContent = {
                   ? "cw-ap26-acu-needles"
                   : l.href.includes("cryotherapy")
                     ? "cw-sea-rocks-alone"
-                    : l.href.includes("reiki")
-                      ? "cw-face-to-sun"
-                      : l.href.includes("integrative-energy")
-                        ? "cw-self-embrace-yellow"
-                        : "cw-ap26-acu-shoulder",
+                    : "cw-ap26-acu-shoulder",
             ),
           ),
         },
@@ -101,7 +97,7 @@ const services: PageContent = {
           style: "check",
           items: [
             "**Whole-Person Perspective** — We look beyond the single concern that brought you through the door.",
-            "**Multiple Ways to Begin** — Therapy, medication management, coaching, energy work, massage, acupuncture, and wellness services all offer different entry points.",
+            "**Multiple Ways to Begin** — Therapy, medication management, coaching, energy work, functional medicine, massage, acupuncture, and wellness services all offer different entry points.",
             "**Individualized Support** — Your goals, preferences, comfort level, and needs guide the experience.",
             "**Connected When It Helps** — When appropriate and with your permission, providers may collaborate so care feels more coordinated.",
           ],

@@ -138,26 +138,27 @@ const individualTherapy: PageContent = {
   },
 };
 
-const childTherapy: PageContent = {
-  url: "/services/child-therapy",
-  title: "Therapy for Children on Long Island — Pathways Within",
-  meta: "There’s no singular way forward when someone small is experiencing something really big and we’re happy to help you navigate your next steps.",
-  source: "05-www-pathwayswithin-me-child-therapy.txt",
+const childTeenTherapy: PageContent = {
+  url: "/services/child-teen-therapy",
+  title: "Child & Teen Therapy on Long Island — Pathways Within",
+  meta: "Therapy for children and teens on Long Island. Play therapy for younger children, a safe space for teens, and family involvement at every age.",
+  source: "05-www-pathwayswithin-me-child-therapy.txt + 06-www-pathwayswithin-me-teen-therapy.txt",
   eyebrow: "Mental Health",
-  h1: "Therapy for Children on Long Island",
-  subtitle: "Do you know your child needs support but you’re not sure where to begin?",
+  h1: "Child & Teen Therapy on Long Island",
+  subtitle: "Do you know your child or teen needs support but you’re not sure where to begin?",
   intro: [
     "There’s no singular way forward when someone small is experiencing something really big and we’re happy to help you navigate your next steps.",
-    "Children are not miniature adults, yet they often feel emotions as all-consuming as we do in our adult lives. With different developmental stages and expression cues, supporting your little ones through their difficult feelings and challenging behaviors can feel scary or even downright impossible.",
+    "Children are not miniature adults, yet they often feel emotions as all-consuming as we do in our adult lives. And teens are working to understand themselves first. We’re here to support that effort, not replace or undermine it.",
     "With expert therapists across each age and stage, we are here to help you find the Pathways back to “possible”.",
   ],
   heroPhoto: { asset: "th-ap26-fam-child", alt: "A child with a parent in a therapy room" },
   heroStop: "wide",
-  heroCtas: [{ label: "CALL PATHWAYS WITHIN TODAY TO GET STARTED →", href: "/contact" }],
+  heroCtas: [{ label: "Contact Us", href: "/contact" }],
   sections: [
     {
       id: "no-one-got-it-wrong",
       stop: "cairn",
+      eyebrow: "For Children",
       heading: "No one got it wrong. No one missed a step.",
       photo: { asset: "th-mother-hugging-child", alt: "A mother hugging her child" },
       blocks: [
@@ -219,59 +220,9 @@ const childTherapy: PageContent = {
       ],
     },
     {
-      id: "privacy-and-parent-engagement",
-      stop: "seated",
-      layout: "prose",
-      heading: "Privacy & Parent Engagement in Child Therapy",
-      blocks: [
-        {
-          kind: "p",
-          text: "At Pathways Within, we recognize that effective therapy for children involves both respecting their need for privacy and actively engaging parents in the therapeutic process.​",
-          lead: true,
-        },
-        { kind: "h3", text: "Child Privacy" },
-        {
-          kind: "p",
-          text: "Confidentiality is a cornerstone of effective therapy. Children are more likely to open up and engage in the therapeutic process when they feel their privacy is respected. Therapists are committed to maintaining this confidentiality, sharing information with parents only when necessary, such as when there are concerns about the child's safety.",
-        },
-        { kind: "h3", text: "Parent Engagement" },
-        {
-          kind: "p",
-          text: "While respecting a child's privacy, we also believe in the importance of parental involvement. Parents are encouraged to participate in the therapeutic process, collaborating with therapists to support their child's progress. This partnership ensures that therapeutic strategies are reinforced at home and that parents are equipped to assist their child effectively. ​",
-        },
-        {
-          kind: "p",
-          text: "By balancing confidentiality with active parental involvement, we aim to create a supportive environment that fosters healing and growth for your child.",
-        },
-      ],
-    },
-  ],
-  closing: {
-    heading: "Celebrate your child’s ability to ask for help by responding to their needs.",
-    cta: { label: "CALL PATHWAYS WITHIN TODAY TO GET STARTED →", href: "/contact" },
-  },
-};
-
-const teenTherapy: PageContent = {
-  url: "/services/teen-therapy",
-  title: "Therapy for Teens on Long Island — Pathways Within",
-  meta: "Teens reign supreme in the realm of “I don’t want to talk about it” and with good reason. We’re here to support that effort, not replace or undermine it.",
-  source: "06-www-pathwayswithin-me-teen-therapy.txt",
-  eyebrow: "Mental Health",
-  h1: "Therapy for Teens on Long Island",
-  subtitle: "Do you or your child need someone to talk to but you’re not sure where or how to begin?",
-  intro: [
-    "Teens reign supreme in the realm of “I don’t want to talk about it” and with good reason. The cognitive and emotional development that takes place in our teen years is profound—moving each of us along our own journey from voiceless to independent within a complicated world that’s changing around us.",
-    "It can be hard to know how to process what you’re feeling while you’re feeling it, much less putting it into words so someone else can understand.",
-    "It’s not that teens don’t want to be understood or feel above relating to their loved ones. They’re trying to understand themselves first. We’re here to support that effort, not replace or undermine it.",
-  ],
-  heroPhoto: { asset: "th-ap26-teen", alt: "A teenager in a therapy session" },
-  heroStop: "wide",
-  heroCtas: [{ label: "We’re ready to listen →", href: "/contact" }],
-  sections: [
-    {
       id: "kaleidoscope",
-      stop: "cairn",
+      stop: "standing",
+      eyebrow: "For Teens",
       heading: "A comfortable and safe therapeutic relationship can help make sense of the kaleidoscope of experiences that can make teenhood feel tumultuous.",
       photo: { asset: "th-teens-pebble-beach", alt: "Teens together on a pebble beach" },
       blocks: [
@@ -284,7 +235,7 @@ const teenTherapy: PageContent = {
     {
       id: "for-teens",
       stop: "pool",
-      heading: "For Teens →",
+      heading: "If You’re a Teen Reading This",
       photo: { asset: "th-teen-denim-jacket", alt: "A teen in a denim jacket" },
       blocks: [
         {
@@ -294,7 +245,7 @@ const teenTherapy: PageContent = {
         },
         {
           kind: "p",
-          text: "Growing up is complicated and no one is going to tell you it’s normal or that you’re being too “emo” or “angsty”. The truth is, you’re not. You’re going through a lot and there is nothing wrong with asking for help to make sure you can do that safely. Your mental health is important and we value your autonomy in advocating for it and your privacy in talking about the things that matter to you. Be clear, be confident, and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.",
+          text: "Growing up is complicated and no one is going to tell you it’s normal or that you’re being too “emo” or “angsty”. The truth is, you’re not. You’re going through a lot and there is nothing wrong with asking for help to make sure you can do that safely. Your mental health is important and we value your autonomy in advocating for it and your privacy in talking about the things that matter to you.",
         },
         {
           kind: "p",
@@ -365,9 +316,36 @@ const teenTherapy: PageContent = {
       ],
     },
     {
+      id: "privacy-and-parent-engagement",
+      stop: "seated",
+      layout: "prose",
+      heading: "Privacy & Parent Engagement in Child Therapy",
+      blocks: [
+        {
+          kind: "p",
+          text: "At Pathways Within, we recognize that effective therapy for children involves both respecting their need for privacy and actively engaging parents in the therapeutic process.​",
+          lead: true,
+        },
+        { kind: "h3", text: "Child Privacy" },
+        {
+          kind: "p",
+          text: "Confidentiality is a cornerstone of effective therapy. Children are more likely to open up and engage in the therapeutic process when they feel their privacy is respected. Therapists are committed to maintaining this confidentiality, sharing information with parents only when necessary, such as when there are concerns about the child's safety.",
+        },
+        { kind: "h3", text: "Parent Engagement" },
+        {
+          kind: "p",
+          text: "While respecting a child's privacy, we also believe in the importance of parental involvement. Parents are encouraged to participate in the therapeutic process, collaborating with therapists to support their child's progress. This partnership ensures that therapeutic strategies are reinforced at home and that parents are equipped to assist their child effectively. ​",
+        },
+        {
+          kind: "p",
+          text: "By balancing confidentiality with active parental involvement, we aim to create a supportive environment that fosters healing and growth for your child.",
+        },
+      ],
+    },
+    {
       id: "for-parents",
       stop: "ivy",
-      heading: "For Parents →",
+      heading: "For Parents of Teens",
       photo: { asset: "th-parent-teen-car", alt: "A parent and teen talking in the car" },
       blocks: [
         {
@@ -380,10 +358,22 @@ const teenTherapy: PageContent = {
         },
       ],
     },
+    {
+      id: "medication-management",
+      stop: "ground",
+      eyebrow: "Mental Health",
+      heading: "Medication Management for Ages 10 and Older",
+      photo: { asset: "cw-ap26-med-np", alt: "A medication management provider in conversation" },
+      blocks: [
+        { kind: "p", text: "Medication management is available for children and teens ages 10 and older, alongside therapy or on its own. A parent or guardian takes part in the first appointment and in ongoing decisions.", lead: true },
+        { kind: "cta", label: "Learn About Medication Management", href: "/services/medication-management", secondary: true },
+      ],
+    },
   ],
   closing: {
-    heading: "Therapeutic support for your teens is a tool to support those conversations, not a replacement for having them. It’s just as much a parenting tool for you as it is for them.",
-    cta: { label: "We’re ready to listen →", href: "/contact" },
+    heading: "Celebrate your child’s ability to ask for help by responding to their needs.",
+    text: ["Therapeutic support for your teens is a tool to support those conversations, not a replacement for having them. It’s just as much a parenting tool for you as it is for them."],
+    cta: { label: "Contact Us", href: "/contact" },
   },
 };
 
@@ -1011,138 +1001,6 @@ const veteransFirstResponders: PageContent = {
   },
 };
 
-const hypnotherapy: PageContent = {
-  url: "/services/hypnotherapy",
-  title: "Hypnotherapy on Long Island — Pathways Within",
-  meta: "Hypnotherapy is the intentional induction of a gentle trance-like state to allow your unconscious mind some time in the driver’s seat.",
-  source: "14-www-pathwayswithin-me-hypnotherapy.txt",
-  eyebrow: "Mental Health",
-  h1: "Hypnotherapy on Long Island",
-  subtitle: "Do you ever wish you could mute the external noise of the world and turn inward to decipher the things you’re feeling?",
-  intro: [
-    "Hypnotherapy is the intentional induction of a gentle trance-like state to allow your unconscious mind some time in the driver’s seat. By releasing the obligation of conscious feeling, hypnotherapy can help you to release the lingering grasp of psychological, emotional, and somatic experiences.",
-  ],
-  heroPhoto: { asset: "th-session-reclining", alt: "A client reclining during a guided session" },
-  heroStop: "wide",
-  heroCtas: [{ label: "Let's Get Started", href: "/contact" }],
-  sections: [
-    {
-      id: "hypnotherapy",
-      stop: "cairn",
-      layout: "center",
-      heading: "Hypnotherapy",
-      blocks: [
-        { kind: "quote", text: "“The easier you can make it inside your head, the easier it will make things outside your head.”", cite: "— Richard Bandler" },
-      ],
-    },
-    {
-      id: "how-hypnosis-heals",
-      stop: "pool",
-      heading: "How Hypnosis Heals",
-      photo: { asset: "th-ap26-resting", alt: "A client resting with eyes closed" },
-      blocks: [
-        {
-          kind: "p",
-          text: "As a part of your therapeutic treatment plan, hypnotherapy brings the focus back to you- the truest version of you that lies beneath expectation and repressed response to the things you experience. Whether you’re looking to extinguish a stubborn behavior like smoking or move through spaces where you struggle to access the reality of your pain, a hypnosis state is a valuable tool to access the needs of your unconscious mind.",
-        },
-        {
-          kind: "p",
-          text: "Hypnotherapy is not the same thing as stage hypnosis. There is no motivation to deceive or manipulate you. The hope in accessing your unconscious mind is to offer you the freedom from the world around you to harness the healing already possible within you.",
-          lead: true,
-        },
-      ],
-    },
-    {
-      id: "how-can-hypnotherapy-help",
-      stop: "labyrinth",
-      heading: "How Can Hypnotherapy Help?",
-      photo: { asset: "cw-sunlit-meditation", alt: "A person meditating in the sunlight" },
-      blocks: [
-        {
-          kind: "p",
-          text: "Hypnosis has proven benefits as a part of a myriad of treatment plans and can be practiced in several ways. You may experience hypnosis through visualized relaxation, behavioral suggestion, gentle internal exploration or as a developing coping skill. Each of these experiences is rooted in the way hypnotic trances engage the neurological pathways at the root of your emotional responses with a goal of moving you through the processes of healing toward recovery.",
-        },
-        { kind: "h3", text: "You may benefit from hypnotherapy if you have:" },
-        {
-          kind: "list",
-          style: "pills",
-          items: [
-            "Chronic Pain",
-            "Symptoms of Dementia",
-            "Persistent nausea or vomiting related to medication like chemo",
-            "Irritable Bowel Syndrome",
-            "Anxiety or Panic Disorder",
-            "Depression (Acute or Chronic)",
-            "Insomnia",
-          ],
-        },
-      ],
-    },
-    {
-      id: "spotlight-expression",
-      stop: "seated",
-      heading: "Spotlight: Expression",
-      photo: { asset: "th-woman-gazing-up", alt: "A woman gazing upward" },
-      blocks: [
-        {
-          kind: "p",
-          text: "One of the beautiful things about experiencing the world as a whole human being is that we have limitless possibilities in how we express ourselves. Through hypnotherapy, you can lean on the support of a trained professional to explore the expression of your unconscious without the expectation of action. Your expression of thought, feeling, and behavior is all uniquely yours, and your hypnotherapeutic trance will be uniquely yours as well.",
-        },
-        {
-          kind: "p",
-          text: "Giving yourself the permission to lean into that freedom with the guidance of your Pathways Within treatment plan and sense of purpose, we can go together toward the expression of yourself you most desire.",
-        },
-      ],
-    },
-    {
-      id: "faqs",
-      stop: "standing",
-      layout: "wide",
-      heading: "Frequently Asked Questions",
-      blocks: [
-        {
-          kind: "faq",
-          items: [
-            {
-              q: "Will I be aware of what happens?",
-              a: [
-                "You will be aware of what you’re doing and what’s being asked of you, even while you are under hypnosis. You are not being controlled or having your power altered, in any way. If anything, you are simply returning the control of your body to the full awareness of your mind.",
-                "Your awareness will remain focused on the experiences you’re having and, when you return to your active state of awareness, you should remember everything you experience.",
-              ],
-            },
-            {
-              q: "What if I change my mind?",
-              a: [
-                "If you want to try hypnotherapy but aren’t sure if it will be right for you, we can explore it gently. By taking it one session at a time, one breath at a time, we can explore the possibility of your untapped trance space with no expectation of returning there.",
-                "If you decide that this isn’t the therapeutic path you were looking for, it is perfectly alright to check off that experience without repeating it.",
-              ],
-            },
-            {
-              q: "Does hypnosis hurt?",
-              a: [
-                "Hypnosis does not cause physical pain or involve any direct physical contact. You may feel a sense of lightness or weighed down as your body lets go of the tension it holds and you relax into the experience of just being, but it should not be painful.",
-                "We often enter hypnotic states during moments of daydreaming (like “checking out” when you’ve got too much on your mind), so it may feel familiar.",
-              ],
-            },
-            {
-              q: "Will I still be in control of my body?",
-              a: [
-                "Absolutely. You are still aware of, and in charge of, the actions you take and your own will.",
-                "Hypnosis is not a release of your power or autonomy. Instead, it’s the granting of permission to look more honestly at the things happening inside of you instead of around you.",
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  closing: {
-    heading: "Hypnotherapy focuses on bringing the mind and body together to create impactful changes in thought and behavior.",
-    text: ["Are you ready to release the patterns that don’t serve you through guided hypnosis?"],
-    cta: { label: "Create A New Pathway Within Today ⇢", href: "/contact" },
-  },
-};
-
 const somaticTherapy: PageContent = {
   url: "/services/somatic-therapy",
   title: "Somatic Therapy on Long Island — Pathways Within",
@@ -1764,156 +1622,6 @@ const groupTherapy: PageContent = {
   },
 };
 
-const ketamineAssistedTherapy: PageContent = {
-  url: "/services/ketamine-assisted-therapy",
-  title: "Ketamine Assisted Therapy on Long Island — Pathways Within",
-  meta: "Life-altering change to your healing game, one hour at a time? It’s possible with ketamine-assisted therapy as a part of your clinical counseling experience.",
-  source: "20-www-pathwayswithin-me-ketamine-assisted-therapy.txt",
-  eyebrow: "Mental Health",
-  h1: "Ketamine Assisted Therapy on Long Island",
-  intro: [
-    "Life-altering change to your healing game, one hour at a time? It’s possible with ketamine-assisted therapy as a part of your clinical counseling experience.",
-  ],
-  heroPhoto: { asset: "cw-ap26-med-single", alt: "A client meeting with a provider" },
-  heroStop: "wide",
-  heroCtas: [{ label: "Let's Get Started", href: "/contact" }],
-  sections: [
-    {
-      id: "ketamine-assisted-therapy",
-      stop: "cairn",
-      layout: "center",
-      heading: "Ketamine-Assisted Therapy",
-      blocks: [
-        {
-          kind: "quote",
-          text: "“To be truly visionary, we have to root our imagination in our concrete reality while simultaneously imagining possibilities beyond that reality.”",
-          cite: "— bell hooks",
-        },
-      ],
-    },
-    {
-      id: "beyond-possible",
-      stop: "pool",
-      heading: "Beyond what you thought possible",
-      photo: { asset: "cw-ap26-med-np", alt: "A nurse practitioner in consultation" },
-      blocks: [
-        {
-          kind: "p",
-          text: "You know what it’s like to live with stubborn depression, defeating ennui, or a sense of doom that you cannot escape. If you are one of the millions of people who have tried anti-depressants and antipsychotics to alleviate the symptoms of difficult-to-manage mental health disorders and found no relief, ketamine-assisted therapy may be the next step you’ve been waiting for.",
-        },
-        {
-          kind: "p",
-          text: "Ketamine offers you a glimpse beyond the spaces you’ve visited to access healing. Thought to offer a life-altering opportunity to re-grow the connections in your mind that allow you to heal and thrive, ketamine therapy immediately impacts your ability to function right here and now.",
-        },
-        { kind: "p", text: "Ketamine-assisted therapy may be the psychotherapy supercharger you’ve sought if you have treatment-resistent mental health disorders.", lead: true },
-      ],
-    },
-    {
-      id: "benefits",
-      stop: "labyrinth",
-      layout: "wide",
-      heading: "Benefits of Ketamine-assisted Therapy",
-      blocks: [
-        {
-          kind: "list",
-          style: "check",
-          items: [
-            "See immediate improvement from the first treatment!",
-            "Eases PTSD symptoms",
-            "Treats chronic neuropathic pain",
-            "Alleviate intrusive thoughts",
-            "Effective alternative to other long-term medications",
-            "Reduces feeling of depression",
-            "The only treatment to provide relief from suicidal ideation",
-          ],
-        },
-      ],
-    },
-    {
-      id: "spotlight-science",
-      stop: "seated",
-      eyebrow: "SPOTLIGHT ON THE SCIENCE OF KETAMINE ASSISTED THERAPY",
-      heading: "Surprising impacts for depression and OCD symptoms",
-      photo: { asset: "cw-medication-hands", alt: "Hands holding medication" },
-      blocks: [
-        {
-          kind: "p",
-          text: "While ketamine has become an established therapy for chronic pain management through decades of effective use, it’s still being explored as a treatment for psychotherapeutic support. These developments are exciting, particularly for clients who experience disruptions to their daily routines due to their diagnoses.",
-        },
-        { kind: "p", text: "In early studies, ketamine-assisted therapy has been found to provide immediate and effective relief for those suffering from many troubling symptoms, including suicidal ideation." },
-        {
-          kind: "p",
-          text: "When you’re stressed, scared, or under overwhelming pressure due to what you’re going through, your mind becomes rigid. It loses the ability to respond effectively to your experiences as it works hard to protect you from the impact of the trauma you’ve been through before. Ketamine-assisted therapy acts as a massage for these areas of your brain, relaxing the rigidity they’ve developed and allowing for more fluidity in how you respond to experiences, thoughts, and energy at a cellular level. Through increased neuroplasticity, the changes you experience can change how you experience things long-term!",
-        },
-        { kind: "p", text: "Ketamine-assisted therapy gives you the edge to perceive the things you experience in a new way, without long waits to see the results you need.", lead: true },
-      ],
-    },
-    {
-      id: "unprecedented-possibility",
-      stop: "standing",
-      heading: "Unprecedented possibility awaits you",
-      photo: { asset: "cw-face-to-sun", alt: "A person turning their face to the sun" },
-      blocks: [
-        {
-          kind: "p",
-          text: "While the medications used to support your mental health are typically focused on interrupting the chemicals in your brain that cause your symptoms, ketamine is different. Acting as a mind-opening gateway to a new headspace, you’ll experience ketamine in a safe and fully supported environment.",
-        },
-        {
-          kind: "p",
-          text: "This life-changing treatment combines ketamine’s ability to relax and regulate the emotional response of the mind at a cellular level with the guidance and expertise of a therapist prepared to explore your experiences with you.",
-        },
-      ],
-    },
-    {
-      id: "faqs",
-      stop: "ivy",
-      layout: "wide",
-      heading: "Frequently Asked Questions",
-      blocks: [
-        {
-          kind: "faq",
-          intro: "You’ve got questions, and we’ve got answers. Some of our most-asked questions are below, but if there’s something else on your mind, we love to chat. Feel free to reach out for the clarity you seek at any time.",
-          items: [
-            {
-              q: "How is ketamine given?",
-              a: [
-                "Under your therapist’s supervision, you’ll take your dose as an under-the-tongue (sublingual) tablet that will dissolve. This delivery system allows for the best balance between gentle and time-sensitive efficacy.",
-              ],
-            },
-            {
-              q: "Who is ketamine for?",
-              a: [
-                "Ketamine-assisted therapy is for people who have taken other psychotherapeutic medications and felt no relief. Notably, this treatment is ideal for people who have depression, anxiety, PTSD, suicidal ideation, or Obsessive Compulsive Disorder (OCD).",
-                "Ketamine-assisted therapy is a short-acting, long-lasting treatment experience. You may feel immediate effects on your mental state that will be supported by the psychotherapy sessions you’ll have during your ketamine experience.",
-              ],
-            },
-            {
-              q: "How many sessions will I need?",
-              a: [
-                "After your first session, you’ll begin to feel new and exciting changes, but you may find additional change through infrequent but regular low-dose treatment across 1-3 months.",
-              ],
-            },
-            {
-              q: "What are the risks?",
-              a: [
-                "You may feel a brief discomfort like dizziness, nausea, or disorientation when you take your dose.",
-                "The data on ketamine risks are low-level and related to chronic pain treatment. Due to the psychoactive nature of ketamine, the primary risk is a negative or scary altered state. This is temporary. Other potential risks of ketamine-assisted therapy are related to long-term use, like a (low) risk of addiction or development of lesions with overuse.",
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  closing: {
-    heading: "Ready to start from the outside and work toward your Pathways Within? Call us today!",
-    text: [
-      "However you’re hoping to take your next steps to unlock the reality you’re dreaming of, we’re here to help. We specialize in packages focused on whole-self healing and an emphasis on wellness.",
-    ],
-    cta: CONTACT,
-  },
-};
-
 const parentChildInteractionTherapy: PageContent = {
   url: "/services/parent-child-interaction-therapy",
   title: "Parent-Child Interaction Therapy on Long Island — Pathways Within",
@@ -2070,19 +1778,16 @@ const parentChildInteractionTherapy: PageContent = {
 
 export const therapyPages: PageContent[] = [
   individualTherapy,
-  childTherapy,
-  teenTherapy,
+  childTeenTherapy,
   couplesTherapy,
   familyTherapy,
   traumaTherapy,
   weightLossSurgerySupport,
   veteransFirstResponders,
-  hypnotherapy,
   somaticTherapy,
   emdrTherapy,
   ifsTherapy,
   griefTherapy,
   groupTherapy,
-  ketamineAssistedTherapy,
   parentChildInteractionTherapy,
 ];

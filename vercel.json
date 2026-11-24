@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/services/child-therapy", "destination": "/services/child-teen-therapy", "permanent": true },
+    { "source": "/services/teen-therapy", "destination": "/services/child-teen-therapy", "permanent": true },
+    { "source": "/services/hypnotherapy", "destination": "/services#mental-health", "permanent": true },
+    { "source": "/services/ketamine-assisted-therapy", "destination": "/services#mental-health", "permanent": true },
+    { "source": "/services/reiki", "destination": "/services/energy-work", "permanent": true },
+    { "source": "/services/integrative-energy-therapy", "destination": "/services/energy-work", "permanent": true }
+  ]
+}

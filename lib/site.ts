@@ -98,8 +98,7 @@ export interface NavGroup {
 
 const THERAPY: NavLink[] = [
   { label: "Individual Therapy", href: "/services/individual-therapy" },
-  { label: "Child Therapy", href: "/services/child-therapy" },
-  { label: "Teen Therapy", href: "/services/teen-therapy" },
+  { label: "Child & Teen Therapy", href: "/services/child-teen-therapy" },
   { label: "Couples Therapy", href: "/services/couples-therapy" },
   { label: "Family Therapy", href: "/services/family-therapy" },
   { label: "Group Therapy", href: "/services/group-therapy" },
@@ -112,25 +111,22 @@ const TYPES_OF_THERAPY: NavLink[] = [
   { label: "EMDR Therapy", href: "/services/emdr-therapy" },
   { label: "IFS Therapy", href: "/services/ifs-therapy" },
   { label: "Somatic Therapy", href: "/services/somatic-therapy" },
-  { label: "Hypnotherapy", href: "/services/hypnotherapy" },
   { label: "Parent-Child Interaction Therapy", href: "/services/parent-child-interaction-therapy" },
-  { label: "Ketamine Assisted Therapy", href: "/services/ketamine-assisted-therapy" },
 ];
 const MEDICATION: NavLink[] = [{ label: "Medication Management", href: "/services/medication-management" }];
 const MIND_BODY: NavLink[] = [
   { label: "Performance & Wellness Coaching", href: "/services/performance-wellness-coaching" },
   { label: "Energy Work", href: "/services/energy-work" },
+  { label: "Functional Medicine", href: "/services/functional-medicine" },
 ];
 const WELLNESS: NavLink[] = [
   { label: "Massage", href: "/services/massage" },
   { label: "Acupuncture", href: "/services/acupuncture" },
   { label: "Cupping Therapy", href: "/services/cupping-therapy" },
   { label: "Cryotherapy", href: "/services/cryotherapy" },
-  { label: "Reiki", href: "/services/reiki" },
-  { label: "Integrative Energy Therapy", href: "/services/integrative-energy-therapy" },
 ];
 
-/** Three primary buckets. Mental Health is licensed clinical care (Therapy + Medication Management), the former Wisdom / counseling side. Mind-Body Support is Coaching + Energy Work. Wellness is Massage, Acupuncture, Cupping, Cryotherapy, Reiki, and IET. */
+/** Three primary buckets. Mental Health is licensed clinical care (Therapy + Medication Management), the former Wisdom / counseling side. Mind-Body Support is Coaching, Energy Work (Reiki, IET, ITA), and Functional Medicine. Wellness is Massage, Acupuncture, Cupping, and Cryotherapy. */
 export const BUCKETS = {
   mentalHealth: { title: "Mental Health", href: "/services#mental-health", therapy: THERAPY, types: TYPES_OF_THERAPY, medication: MEDICATION },
   mindBody: { title: "Mind-Body Support", href: "/services#mind-body-support", links: MIND_BODY },

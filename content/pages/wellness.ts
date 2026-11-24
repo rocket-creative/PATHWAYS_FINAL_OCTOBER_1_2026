@@ -1,7 +1,7 @@
 import type { PageContent } from "../types";
 
 /**
- * Wellness (Massage, Acupuncture, Cupping, Cryotherapy, Reiki, IET),
+ * Wellness (Massage, Acupuncture, Cupping, Cryotherapy),
  * Mind-Body Support (Energy Work), and wellness provider bio pages.
  * Massage copy is the clinical draft. Acupuncture and cupping copy comes
  * from the client revision deck. IV Vitamin Therapy is on hold and is not built.
@@ -538,9 +538,9 @@ const cryotherapy: PageContent = {
 
 const energyWork: PageContent = {
   url: "/services/energy-work",
-  title: "Energy Work — Pathways Within",
-  meta: "Discover transformative methods designed to balance your mind, body, and spirit. Our Energy Work offerings are rooted in gentle, hands-on healing that supports deep relaxation, emotional processing, and holistic well‑being.",
-  source: "35-pathwayswithinwellness-com-energy-work.txt",
+  title: "Energy Work: IET, ITA & Reiki — Pathways Within",
+  meta: "Discover transformative methods designed to balance your mind, body, and spirit. Our Energy Work offerings, Integrative Energy Therapy (IET), Integrated Therapeutic Alignment (ITA), and Reiki, are rooted in gentle, hands-on healing.",
+  source: "35-pathwayswithinwellness-com-energy-work.txt, 37-pathwayswithinwellness-com-reiki.txt, 38-pathwayswithinwellness-com-integrative-energy-therapy.txt",
   eyebrow: "Mind-Body Support",
   h1: "Energy Work",
   intro: [
@@ -548,35 +548,17 @@ const energyWork: PageContent = {
   ],
   heroPhoto: { asset: "cw-sunlit-meditation", alt: "A woman meditating in warm sunlight beside a plant" },
   heroStop: "wide",
+  heroCtas: [{ label: "Contact Us", href: "/contact" }],
   sections: [
     {
-      id: "reiki",
-      stop: "cairn",
-      heading: "Reiki (Universal Life Energy)",
-      photo: { asset: "cw-face-to-sun", alt: "A woman lifting her face toward the sun", shape: "blob" },
-      blocks: [
-        { kind: "p", text: "Feel your stress melt away with this soothing, hands-on practice that promotes deep relaxation and emotional clarity. Reiki is ideal for anyone seeking peace, energetic balance, or a spiritual reset—whether as a standalone practice or in combination with talk therapy.", lead: true },
-        { kind: "cta", label: "Usui Reiki", href: "/services/reiki" },
-      ],
-    },
-    {
-      id: "ita",
-      stop: "pool",
-      layout: "wide",
-      heading: "Integrated Therapeutic Alignment (ITA)",
-      blocks: [
-        { kind: "p", text: "Integrated Therapeutic Alignment is a gentle, energy-based healing modality designed to bring the body, mind, emotions, and energy system back into balance. By working with key energetic connection points, ITA helps identify and release stored emotions, limiting beliefs, and patterns that may be contributing to stress, discomfort, or imbalance. This restorative practice supports deep relaxation, emotional clarity, and a greater sense of harmony from within." },
-      ],
-    },
-    {
       id: "iet",
-      stop: "labyrinth",
-      layout: "split-reverse",
+      stop: "cairn",
       heading: "Integrative Energy Therapy (IET)",
-      photo: { asset: "cw-self-embrace-yellow", alt: "A smiling woman in yellow wrapping her arms around herself", shape: "arch" },
+      photo: { asset: "cw-self-embrace-yellow", alt: "A smiling woman in yellow wrapping her arms around herself", shape: "blob" },
       blocks: [
         { kind: "p", text: "Ready to release what’s been holding you back? IET gently clears emotional blocks stored in the body and helps you feel lighter, more grounded, and open to positive change. It’s especially supportive for those processing trauma, anxiety, or life transitions.", lead: true },
-        { kind: "cta", label: "Integrative Energy Therapy (IET)", href: "/services/integrative-energy-therapy" },
+        { kind: "p", text: "Everything that’s ever happened to you still lives inside you—good, bad, and in between. When you experience something, and it becomes covered up, erased, or denied by will or happenstance, it doesn’t just disappear. IET is a hands-on healing therapy that seeks out trapped energy in your body." },
+        { kind: "p", text: "The practice of energy therapy is colloquially referred to as, “removing the issues from the tissues”. Much like yoga or acupuncture, IET is a subtle and targeted approach. From regularly scheduled treatments to intermittent maintenance, the balance of benefit and time commitment is as unique as the life you’ve lived." },
       ],
     },
     {
@@ -594,158 +576,26 @@ const energyWork: PageContent = {
         },
       ],
     },
-  ],
-  closing: {
-    heading: "Ready to release what’s been holding you back?",
-    cta: { label: "Contact Us", href: "/contact" },
-  },
-};
-
-const reiki: PageContent = {
-  url: "/services/reiki",
-  title: "Reiki — Pathways Within",
-  meta: "Achieve inner peace and get more acquainted with your inner spirit with Reiki. Reiki offers the healing touch of an experienced practitioner and the relaxation of guided meditation.",
-  source: "37-pathwayswithinwellness-com-reiki.txt",
-  eyebrow: "Wellness",
-  h1: "Usui Reiki",
-  subtitle: "Achieve inner peace and get more acquainted with your inner spirit with Reiki.",
-  intro: [
-    "If you’re looking for a powerful holistic treatment, look no further. Reiki offers the healing touch of an experienced practitioner and the relaxation of guided meditation. It’s almost like a massage for your mind, with health benefits that extend to your physical self.",
-  ],
-  heroPhoto: { asset: "cw-face-to-sun", alt: "A woman lifting her face toward the sun" },
-  heroStop: "wide",
-  sections: [
     {
-      id: "what-is-reiki",
-      stop: "cairn",
-      heading: "What is Reiki?",
-      photo: { asset: "cw-sunlit-meditation", alt: "A woman meditating in warm sunlight", shape: "blob" },
-      blocks: [
-        { kind: "p", text: "Reiki is a technique developed in Japan to reduce stress and improve healing. It’s founded on the idea that our bodies contain our life energy, and if that energy reserve is low, you are more likely to feel stress or even get sick. However, if it is in ample supply, you’ll find that you feel better both physically and emotionally.", lead: true },
-        { kind: "p", text: "Reiki perfectly complements our wisdom services because therapy often appeals to the intellectual part of our minds, while Reiki is more attuned to our spiritual side. It’s not religious in nature, which is great for both people of faith and those who are nonreligious because it enhances your inner spirit regardless of your belief system." },
-      ],
-    },
-    {
-      id: "five-principles",
+      id: "ita",
       stop: "pool",
-      layout: "wide",
-      heading: "The Five Principles of Reiki",
-      blocks: [
-        {
-          kind: "list",
-          style: "numbered",
-          items: [
-            "Just for today, do not worry",
-            "Just for today, do not anger",
-            "Honor your parents, teachers, and elders",
-            "Earn your living honestly",
-            "Show gratitude for every living thing",
-          ],
-        },
-      ],
-    },
-    {
-      id: "typical-session",
-      stop: "labyrinth",
       layout: "split-reverse",
-      heading: "A Typical Reiki Session",
-      photo: { asset: "cw-stone-stack-bokeh", alt: "A stack of balanced stones in soft light", shape: "arch" },
+      heading: "Integrated Therapeutic Alignment (ITA)",
+      photo: { asset: "cw-water-drop", alt: "A single drop of water sending ripples across a still surface", shape: "arch" },
       blocks: [
-        { kind: "p", text: "Reiki is like a healing massage but can be done with or without touching. You would lay fully dressed on a comfortable table and your practitioner would either hover their hands around certain areas or if you’re comfortable, they may lightly touch those areas to improve healing." },
-        { kind: "p", text: "People often report feeling heat or tingling where the practitioner is working, or sometimes even memories or colors pop into their imagination. Some people even fall asleep because the practice is so peaceful and relaxing. The best way to learn if Reiki is for you is to try it! You won’t know how it feels until you do it once, and we promise, after the first time, you’ll feel the benefits." },
-        { kind: "cta", label: "Contact Us", href: "/contact" },
+        { kind: "p", text: "Integrated Therapeutic Alignment is a gentle, energy-based healing modality designed to bring the body, mind, emotions, and energy system back into balance. By working with key energetic connection points, ITA helps identify and release stored emotions, limiting beliefs, and patterns that may be contributing to stress, discomfort, or imbalance. This restorative practice supports deep relaxation, emotional clarity, and a greater sense of harmony from within." },
       ],
     },
     {
-      id: "energy-work",
-      stop: "seated",
-      photo: { asset: "cw-water-drop", alt: "A single drop of water sending ripples across a still surface", shape: "circle" },
-      blocks: [
-        { kind: "p", text: "Reiki is ideal for anyone seeking peace, energetic balance, or a spiritual reset—whether as a standalone practice or in combination with talk therapy.", lead: true },
-        { kind: "cta", label: "Energy Work", href: "/services/energy-work", secondary: true },
-      ],
-    },
-    {
-      id: "faq",
-      stop: "ground",
-      layout: "wide",
-      heading: "Frequently Asked Questions",
-      blocks: [
-        {
-          kind: "faq",
-          intro: "You’ve got questions, and we’ve got answers. Some of our most-asked questions are here but if there’s something else on your mind, we love to chat. Feel free to reach out and let us help you apply a laser focus to your wellness dreams.",
-          items: [
-            { q: "How often do I have to do Reiki?", a: ["As often as you like! Ideally, you would start with a few consecutive sessions if you’re dealing with a lot of pain. For more general cases, you can expect to do Reiki once a week or once every two weeks and expect good results."] },
-            { q: "Can Reiki replace my medical treatment?", a: ["Reiki is meant to work in conjunction with any treatments you are already doing. If you’re taking medication or following other procedures directed by a doctor, you should continue to do so. Reiki can be a complementary pursuit to help heal you faster and better."] },
-            { q: "Can anyone practice Reiki?", a: ["Of course! As long as you have a qualified practitioner who you trust, Reiki is a universal practice. The specific goals of Reiki change depending on the person and the pain they are experiencing, but generally, the principle is the same."] },
-            { q: "What does Reiki target best?", a: ["Reiki targets the entire body (and spirit), so it can work to heal any issue you may have. You may feel healing in a specific area or just a general sense of well-being and relaxation, which in turn will improve your health in the long run."] },
-          ],
-        },
-      ],
-    },
-  ],
-  closing: {
-    heading: "True beauty starts from within.",
-    text: ["Complement your wellness journey with expert therapy services that nurture your mind and soul."],
-    cta: { label: "Discover the power of emotional healing today.", href: "/contact" },
-  },
-};
-
-const iet: PageContent = {
-  url: "/services/integrative-energy-therapy",
-  title: "Integrative Energy Therapy in Long Island — Pathways Within",
-  meta: "Integrative Energy Therapy seeks out and breaks down the barriers holding you back from the inside out.",
-  source: "38-pathwayswithinwellness-com-integrative-energy-therapy.txt",
-  eyebrow: "Wellness",
-  h1: "Integrative Energy Therapy (IET)",
-  intro: [
-    "In the nooks and crannies of your body as much as your mind, the memories that make you up—even the forgotten ones—shape your being. Holding on to that stagnant energy causes chronic physical and emotional pain.",
-    "Integrative Energy Therapy seeks out and breaks down the barriers holding you back from the inside out.",
-  ],
-  heroPhoto: { asset: "cw-self-embrace-yellow", alt: "A smiling woman in yellow wrapping her arms around herself" },
-  heroStop: "wide",
-  sections: [
-    {
-      id: "raising-vibrations",
-      stop: "cairn",
-      heading: "Raising (Good) Vibrations",
-      photo: { asset: "cw-water-drop", alt: "A single drop of water sending ripples across a still surface", shape: "blob" },
-      blocks: [
-        { kind: "p", text: "Everything that’s ever happened to you still lives inside you—good, bad, and in between. When you experience something, and it becomes covered up, erased, or denied by will or happenstance, it doesn’t just disappear. It stagnates, creating disruptions in the transfer of energy from one space to another. The parts of your whole can no longer communicate effectively with tumbling balls of energy rumbling between mind, body and spirit." },
-        { kind: "p", text: "Integrative Energy Therapy (IET) is the next-generation development of targeted physical healing for emotional health, and can help you clear those blockages to restore the fluidity of healing and being. IET is a hands-on healing therapy that seeks out trapped energy in your body.", lead: true },
-        { kind: "p", text: "Through the use of a Cellular Memory Map, we can release stored trauma and untapped emotion from the spaces your energy has become stuck beneath them. In the space of this release, we create a blank slate for positive emotions. By restoring that flow of energy, you can raise your physical and emotional vibration so you can rise to meet your most empowered self." },
-      ],
-    },
-    {
-      id: "every-body-healing",
-      stop: "pool",
-      layout: "wide",
-      heading: "Every body healing",
-      blocks: [
-        { kind: "p", text: "Trauma doesn’t need to stem from some profound harm. We all experience trauma as we move through the world. Even if you’re not sure what you’d talk about in therapy, you may find you just feel better when you give your energy a clear path to move through your physical and spiritual bodies. There is no threshold of hurting at which IET becomes beneficial—it’s a healing energetic therapy for everybody, at every level.", lead: true },
-        { kind: "p", text: "From regularly scheduled treatments to intermittent maintenance, the balance of benefit and time commitment to restoring the energy pathways of your body is as unique as the life you’ve lived." },
-        { kind: "p", text: "Our goal is to get you feeling your absolute best, with access to all the energy your body has to offer to lead an emotionally and physically fulfilling life." },
-      ],
-    },
-    {
-      id: "cellular-memory",
+      id: "reiki",
       stop: "labyrinth",
-      layout: "split-reverse",
-      heading: "Spotlight: Cellular Memory",
-      photo: { asset: "cw-sea-foam-stones", alt: "Sea foam washing over smooth stones", shape: "arch" },
+      heading: "Reiki (Universal Life Energy)",
+      photo: { asset: "cw-face-to-sun", alt: "A woman lifting her face toward the sun", shape: "blob" },
       blocks: [
-        { kind: "p", text: "Integrative Energy Therapy works by targeting areas of the body where your cells take on your trauma. In a very literal sense, these cells become little sponges, soaking up the experiences you have. What’s happened to you can become a visceral reaction to your body’s attempts to overcome it without opening up your emotions to heal from those events." },
-        { kind: "p", text: "The practice of energy therapy is colloquially referred to as, “removing the issues from the tissues”. By initiating a hands-on release of those body spaces, IET seeks your blocked energy pathways and slowly works them toward release. Much like yoga or acupuncture, IET is a subtle and targeted approach that works by effectively engaging your cellular being to heal your emotional self." },
-      ],
-    },
-    {
-      id: "energy-work",
-      stop: "seated",
-      photo: { asset: "cw-sunlit-meditation", alt: "A woman meditating in warm sunlight", shape: "circle" },
-      blocks: [
-        { kind: "p", text: "Ready to release what’s been holding you back? IET gently clears emotional blocks stored in the body and helps you feel lighter, more grounded, and open to positive change. It’s especially supportive for those processing trauma, anxiety, or life transitions.", lead: true },
-        { kind: "cta", label: "Energy Work", href: "/services/energy-work", secondary: true },
-        { kind: "cta", label: "Contact Us", href: "/contact" },
+        { kind: "p", text: "Feel your stress melt away with this soothing, hands-on practice that promotes deep relaxation and emotional clarity. Reiki is ideal for anyone seeking peace, energetic balance, or a spiritual reset—whether as a standalone practice or in combination with talk therapy.", lead: true },
+        { kind: "p", text: "Reiki is a technique developed in Japan to reduce stress and improve healing. It’s not religious in nature, which is great for both people of faith and those who are nonreligious because it enhances your inner spirit regardless of your belief system." },
+        { kind: "h3", text: "A Typical Reiki Session" },
+        { kind: "p", text: "Reiki can be done with or without touching. You would lay fully dressed on a comfortable table and your practitioner would either hover their hands around certain areas or if you’re comfortable, they may lightly touch those areas. People often report feeling heat or tingling where the practitioner is working. Some people even fall asleep because the practice is so peaceful and relaxing." },
       ],
     },
     {
@@ -758,13 +608,6 @@ const iet: PageContent = {
           kind: "faq",
           items: [
             { q: "How is IET different from Reiki?", a: ["While the healing practices sound similar in the way that they occur, the distinct difference between them lies in the system they seek to align. IET strives to release stored trauma getting in the way of energy flow, while chakra alignment and aura are central to the healing that takes place in Reiki."] },
-            {
-              q: "What does IET help with?",
-              a: [
-                "Clearing the energy pathways in the body can help you to effectively manage stress, regulate mood, reduce chronic pain and increase your sense of overall well-being.",
-                "The painless release of long-stored emotional blockages is a fantastic way to restore the balance of energy inside and out so you feel more ready to take on whatever life throws at you.",
-              ],
-            },
             { q: "What does IET feel like?", a: ["Most of our clients find the sensations and overall experience of their session to be deeply relaxing. Over the course of your hour-long energy release, you may find yourself moving through different stages of awareness. You may experience a dreamlike state and afterward, your mood may be more joyful."] },
             {
               q: "Do we talk during IET?",
@@ -773,16 +616,125 @@ const iet: PageContent = {
                 "Either way, we will always create the space to move through what your energy pathways reveal when you are ready in a supportive environment.",
               ],
             },
+            { q: "How often should I have Reiki?", a: ["As often as you like! You can start with a few consecutive sessions, or plan on Reiki once a week or once every two weeks."] },
+            { q: "Can energy work replace my medical treatment?", a: ["Energy work is meant to work in conjunction with any treatments you are already doing. If you’re taking medication or following other procedures directed by a doctor, you should continue to do so."] },
           ],
         },
-        { kind: "cta", label: "Usui Reiki", href: "/services/reiki", secondary: true },
       ],
     },
   ],
   closing: {
-    heading: "True beauty starts from within.",
-    text: ["Complement your wellness journey with expert therapy services that nurture your mind and soul."],
-    cta: { label: "Discover the power of emotional healing today.", href: "/contact" },
+    heading: "Ready to release what’s been holding you back?",
+    cta: { label: "Contact Us", href: "/contact" },
+  },
+};
+
+const functionalMedicine: PageContent = {
+  url: "/services/functional-medicine",
+  title: "Functional Medicine with Ascend Functional Health — Pathways Within",
+  meta: "Through our collaboration with Ascend Functional Health, Pathways Within patients can access personalized functional medicine services that support a more complete picture of health.",
+  source: "Pathways_Within_Functional_Medicine_Website_Copy.docx (client, Nov 9 2026)",
+  eyebrow: "Mind-Body Support",
+  h1: "Functional Medicine",
+  subtitle: "Understanding Your Body. Supporting Your Whole Self.",
+  intro: [
+    "At Pathways Within, we recognize that physical, mental, and emotional well-being are deeply connected. Through our collaboration with Ascend Functional Health, we're expanding the resources available to our patients, offering access to personalized functional medicine services that support a more complete picture of health.",
+  ],
+  heroPhoto: { asset: "cw-kitchen-morning", alt: "A calm morning moment at home in the kitchen" },
+  heroStop: "wide",
+  heroCtas: [{ label: "Contact Us", href: "/contact" }],
+  sections: [
+    {
+      id: "whole-person",
+      stop: "cairn",
+      heading: "A Whole-Person Approach to Feeling Better",
+      photo: { asset: "cw-riverside-walk", alt: "A person walking along a riverside path", shape: "blob" },
+      blocks: [
+        { kind: "p", text: "How we sleep, eat, move, manage stress, and care for our bodies can all influence how we think, feel, and navigate everyday life.", lead: true },
+        { kind: "p", text: "Functional medicine builds on the Pathways Within philosophy of 360° care by looking beyond individual symptoms to explore the many factors that may contribute to overall health. This approach recognizes that every person has a unique health history, lifestyle, and set of wellness goals." },
+        { kind: "quote", text: "Because your health isn't one-dimensional. Your care shouldn't be either." },
+      ],
+    },
+    {
+      id: "what-is-functional-medicine",
+      stop: "pool",
+      layout: "split-reverse",
+      heading: "What Is Functional Medicine?",
+      photo: { asset: "pr-laptop-at-home", alt: "A person joining a virtual health session from home", shape: "arch" },
+      blocks: [
+        { kind: "p", text: "Functional medicine takes a personalized, whole-body approach to health. Rather than viewing symptoms in isolation, it explores how nutrition, lifestyle, hormones, stress, and other factors may be connected.", lead: true },
+        { kind: "p", text: "Through comprehensive assessments, targeted testing when appropriate, and individualized care plans, functional medicine helps patients better understand their bodies and identify potential contributors to ongoing health concerns." },
+      ],
+    },
+    {
+      id: "how-it-can-help",
+      stop: "labyrinth",
+      layout: "wide",
+      heading: "How Functional Medicine Can Help",
+      blocks: [
+        { kind: "p", text: "Functional medicine may offer additional insight and support for individuals experiencing:" },
+        {
+          kind: "list",
+          style: "pills",
+          items: [
+            "Chronic fatigue and low energy",
+            "Digestive and gut health concerns",
+            "Hormonal and thyroid imbalances",
+            "Brain fog and difficulty concentrating",
+            "Inflammation and autoimmune-related concerns",
+            "Metabolic health and weight management challenges",
+            "Persistent or unexplained symptoms",
+          ],
+        },
+      ],
+    },
+    {
+      id: "personalized-care",
+      stop: "seated",
+      layout: "wide",
+      heading: "Personalized Care, Connected to Your Needs",
+      blocks: [
+        { kind: "p", text: "Through Ascend Functional Health, patients can access care tailored to their individual concerns and goals.", lead: true },
+        {
+          kind: "steps",
+          items: [
+            { title: "Comprehensive Assessment", text: "A detailed review of your medical history, symptoms, lifestyle, and wellness goals helps build a more complete picture of your health." },
+            { title: "Targeted Testing", text: "When clinically appropriate, laboratory testing may provide additional insight into nutritional status, hormone levels, metabolic health, and other factors." },
+            { title: "Individualized Care Plans", text: "Based on your assessment and clinical findings, recommendations may include nutrition, lifestyle modifications, and other targeted strategies to support overall well-being." },
+            { title: "Ongoing Guidance", text: "Follow-up assessments and progress monitoring allow your care plan to evolve as your needs and goals change." },
+          ],
+        },
+      ],
+    },
+    {
+      id: "dr-alessi",
+      stop: "standing",
+      layout: "wide",
+      heading: "Meet Dr. Alfred Alessi, DC, IHP",
+      blocks: [
+        {
+          kind: "person",
+          slug: "alfred-alessi",
+          noPhoto: true,
+          eyebrow: "FOUNDER & CLINICAL DIRECTOR, ASCEND FUNCTIONAL HEALTH",
+          name: "Dr. Alfred Alessi",
+          credentials: "DC, IHP",
+          paragraphs: [
+            "Dr. Alfred Alessi is a **Doctor of Chiropractic and Integrative Health Practitioner** with more than 10 years of experience in health and wellness. As the founder and clinical director of Ascend Functional Health, he brings a personalized, whole-body approach to care, focusing on understanding the underlying factors that influence health and well-being.",
+            "His background spans **functional medicine, functional nutrition, neurology, and physical health**. Before entering healthcare, Dr. Alessi worked as a personal trainer and strength and conditioning specialist, developing an appreciation for how the body's systems work together.",
+            "He earned his Doctor of Chiropractic degree and pursued additional training in Functional Neurology, Myoneural Medicine, and Functional Nutrition.",
+            "Through his work at Ascend Functional Health, Dr. Alessi emphasizes comprehensive assessments, individualized care plans, and practical lifestyle strategies designed to support long-term health.",
+            "His philosophy aligns with Pathways Within's commitment to understanding the whole person and helping patients make informed decisions about their health.",
+          ],
+          cta: { label: "Visit Ascend Functional Health", href: "https://ascendfunctionalhealth.com/" },
+        },
+      ],
+    },
+  ],
+  closing: {
+    heading: "Curious whether functional medicine may be right for you?",
+    text: ["Through our collaboration with Ascend Functional Health, Pathways Within can help connect you with specialized resources to explore your health concerns and wellness goals."],
+    cta: { label: "Contact Us", href: "/contact" },
   },
 };
 
@@ -1033,8 +985,7 @@ export const wellnessPages: PageContent[] = [
   cupping,
   cryotherapy,
   energyWork,
-  reiki,
-  iet,
+  functionalMedicine,
   christineCervo,
   leonardMa,
   tiaBaumohl,

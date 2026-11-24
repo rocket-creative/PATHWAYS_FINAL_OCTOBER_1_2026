@@ -26,6 +26,8 @@ export type Block =
       credentials?: string;
       paragraphs: string[];
       cta?: { label: string; href: string };
+      /** No headshot on file yet: show initials. */
+      noPhoto?: boolean;
     }
   | { kind: "photo"; asset: string; alt: string; shape?: "circle" | "blob" | "arch" }
   | { kind: "steps"; items: { title: string; text: string }[] }

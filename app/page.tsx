@@ -19,18 +19,17 @@ export const metadata: Metadata = {
 /** Copy: client revision deck, Page 1 (Homepage). */
 const SERVICES: { bucket: string; title: string; href: string; asset: string }[] = [
   { bucket: "Mental Health", title: "Individual, Couples & Family Therapy", href: "/services/individual-therapy", asset: "th-ap26-conversation" },
-  { bucket: "Mental Health", title: "Child & Teen Therapy", href: "/services/child-therapy", asset: "th-ap26-kids-three" },
+  { bucket: "Mental Health", title: "Child & Teen Therapy", href: "/services/child-teen-therapy", asset: "th-ap26-kids-three" },
   { bucket: "Mental Health", title: "EMDR, IFS & Somatic Therapy", href: "/services/emdr-therapy", asset: "th-ap26-green-listen" },
   { bucket: "Mental Health", title: "Veterans & First Responders", href: "/services/veterans-first-responders", asset: "cw-veteran-cap" },
   { bucket: "Mental Health", title: "Medication Management", href: "/services/medication-management", asset: "cw-ap26-med-np" },
   { bucket: "Mind-Body Support", title: "Performance & Wellness Coaching", href: "/services/performance-wellness-coaching", asset: "ha-tia-baumohl" },
   { bucket: "Mind-Body Support", title: "Energy Work", href: "/services/energy-work", asset: "cw-ap26-hands" },
+  { bucket: "Mind-Body Support", title: "Functional Medicine", href: "/services/functional-medicine", asset: "pr-laptop-at-home" },
   { bucket: "Wellness", title: "Massage", href: "/services/massage", asset: "cw-ap-massage-session" },
   { bucket: "Wellness", title: "Acupuncture", href: "/services/acupuncture", asset: "cw-ap26-acu-leo" },
   { bucket: "Wellness", title: "Cupping Therapy", href: "/services/cupping-therapy", asset: "cw-ap26-acu-shoulder" },
   { bucket: "Wellness", title: "Cryotherapy", href: "/services/cryotherapy", asset: "cw-sea-rocks-alone" },
-  { bucket: "Wellness", title: "Reiki", href: "/services/reiki", asset: "cw-face-to-sun" },
-  { bucket: "Wellness", title: "Integrative Energy Therapy", href: "/services/integrative-energy-therapy", asset: "cw-self-embrace-yellow" },
 ];
 
 const INTAKE = [
@@ -38,6 +37,14 @@ const INTAKE = [
   { title: "A 360 Intake Conversation", text: "We learn more about what is bringing you in, what you want to change, and what kind of support may feel useful." },
   { title: "One Plan, Built Around You", text: "Together, we identify an appropriate starting point across therapy, medication management, coaching, and wellness." },
   { title: "Your First Appointment", text: "We help connect you with an appropriate available provider and schedule your first appointment. The Welcome Team remains a resource if your needs change." },
+];
+
+/** Trust bar. Copy and figures: client QC notes, Nov 9 2026 (reported through Oct 20, 2026). */
+const STATS = [
+  { value: 24500, label: "Patient Visits in 2026" },
+  { value: 1100, label: "New Patients in the Past 12 Months" },
+  { value: 12600, label: "Telehealth Visits in 2026" },
+  { value: 1100, label: "Massage & Acupuncture Visits in 2026" },
 ];
 
 const WHY = [
@@ -201,6 +208,33 @@ export default function Home() {
                 </span>
                 <span className="tile__title text-brand-deep">All services →</span>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Trust bar */}
+        <section className="section" data-stop="labyrinth" aria-labelledby="trust-heading">
+          <div className="wrap wrap--wide">
+            <div className="glass px-6 py-8 md:px-10 md:py-10">
+              <div className="max-w-[760px]">
+                <h2 id="trust-heading" data-reveal>Care That Makes a Difference, Every Day.</h2>
+                <p className="lead mt-4" data-reveal>
+                  Every appointment is an opportunity to listen, connect, and support someone on their path to feeling better. From mental health to whole-body wellness, our growing community reflects the many ways people are finding care at Pathways Within.
+                </p>
+              </div>
+              <ul className="mt-8 grid gap-4 pl-0 sm:grid-cols-2 lg:grid-cols-4">
+                {STATS.map((s) => (
+                  <li key={s.label} className="list-none rounded-[28px] bg-white/70 px-5 py-6 text-center" data-reveal>
+                    <p className="text-[clamp(2rem,1.6rem+1.4vw,2.8rem)] font-bold leading-none text-brand-deep" style={{ fontFamily: "var(--font-display)" }}>
+                      <span data-count={s.value}>{s.value.toLocaleString("en-US")}</span>+
+                    </p>
+                    <p className="mt-3 text-[0.95rem] font-bold text-brand-ink">{s.label}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-[0.82rem] text-ink-soft" data-reveal>
+                Practice activity reported through October 20, 2026. New patient count reflects the preceding 12 months.
+              </p>
             </div>
           </div>
         </section>

@@ -176,7 +176,7 @@ function BlockView({ block: b }: { block: Block }) {
       return (
         <div className="grid items-start gap-6 sm:grid-cols-[250px_1fr]" data-reveal>
           <div className="orbit mx-auto w-[220px] sm:mx-0 sm:mt-2">
-            <Headshot slug={b.slug} name={b.name} size={220} />
+            <Headshot slug={b.slug} name={b.name} size={220} noPhoto={b.noPhoto} />
           </div>
           <div className="grid gap-3">
             {b.eyebrow && <p className="eyebrow">{b.eyebrow}</p>}

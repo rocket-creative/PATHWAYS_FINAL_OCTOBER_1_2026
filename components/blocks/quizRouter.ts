@@ -86,8 +86,7 @@ const CRISIS = [
 
 const L = {
   individual: { label: "Individual Therapy", href: "/services/individual-therapy" },
-  child: { label: "Child Therapy", href: "/services/child-therapy" },
-  teen: { label: "Teen Therapy", href: "/services/teen-therapy" },
+  childTeen: { label: "Child & Teen Therapy", href: "/services/child-teen-therapy" },
   couples: { label: "Couples Therapy", href: "/services/couples-therapy" },
   family: { label: "Family Therapy", href: "/services/family-therapy" },
   massage: { label: "Massage", href: "/services/massage" },
@@ -112,7 +111,7 @@ export function routeAnswers(a: AnswerSet): QuizResult {
     case "a":
       title = "Therapy";
       links.push(L.individual);
-      if (a.q2 === "b") links.push(L.child, L.teen);
+      if (a.q2 === "b") links.push(L.childTeen);
       if (a.q2 === "c") links.push(L.couples, L.family);
       break;
     case "b":
