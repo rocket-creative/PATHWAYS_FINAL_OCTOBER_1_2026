@@ -363,7 +363,7 @@ const childTeenTherapy: PageContent = {
       stop: "ground",
       eyebrow: "Mental Health",
       heading: "Medication Management for Ages 10 and Older",
-      photo: { asset: "cw-ap26-med-np", alt: "A medication management provider in conversation" },
+      photo: { asset: "cw-ap26-med-teen", alt: "A teen and parent meeting with our nurse practitioner" },
       blocks: [
         { kind: "p", text: "Medication management is available for children and teens ages 10 and older, alongside therapy or on its own. A parent or guardian takes part in the first appointment and in ongoing decisions.", lead: true },
         { kind: "cta", label: "Learn About Medication Management", href: "/services/medication-management", secondary: true },

@@ -89,7 +89,7 @@ const massage: PageContent = {
       id: "nyship",
       stop: "seated",
       heading: "NYSHIP Medical Massage",
-      photo: { asset: "pr-intake-clipboard", alt: "An intake clipboard", shape: "circle" },
+      photo: { asset: "pw-massage-hands", alt: "Christine working on a client's back during a massage", shape: "circle" },
       blocks: [
         { kind: "h3", text: "Therapeutic Massage Through Your Benefits" },
         { kind: "p", text: "If you have NYSHIP coverage, medical massage may be available when eligibility and applicable plan requirements are met.", lead: true },
@@ -110,7 +110,7 @@ const massage: PageContent = {
       id: "what-to-expect",
       stop: "standing",
       heading: "What to Expect",
-      photo: { asset: "pr-ap-ns-massage-green", alt: "A green massage treatment room with an In Session sign on the door", shape: "arch" },
+      photo: { asset: "pw-christine-greeting", alt: "Christine greeting a client in the Smithtown wellness waiting area", shape: "arch" },
       blocks: [
         { kind: "h3", text: "Before Treatment" },
         { kind: "p", text: "Your therapist may ask about:", lead: true },
@@ -203,14 +203,14 @@ const acupuncture: PageContent = {
     { label: "Contact Our Welcome Team", href: "/contact" },
     { label: "631-371-3825", href: "tel:+16313713825", secondary: true },
   ],
-  heroPhoto: { asset: "pw-acu-leo-smile", alt: "An acupuncture session at Pathways Within" },
+  heroPhoto: { asset: "pw-acu-smithtown", alt: "An acupuncture session at Pathways Within" },
   heroStop: "wide",
   sections: [
     {
       id: "why-acupuncture",
       stop: "cairn",
       heading: "Why Acupuncture?",
-      photo: { asset: "cw-ap26-acu-needles", alt: "Acupuncture needles being placed", shape: "blob" },
+      photo: { asset: "cw-ap-needle-closeup", alt: "Acupuncture needles being placed", shape: "blob" },
       blocks: [
         { kind: "p", text: "A presenting symptom is an important place to start, but it may not tell the whole story. Your acupuncturist may ask about timing, severity, sleep, digestion, stress, energy, activity, and other patterns that help provide a broader picture. That information helps guide treatment.", lead: true },
       ],
@@ -266,7 +266,7 @@ const acupuncture: PageContent = {
       id: "follow-up-session",
       stop: "standing",
       heading: "Follow-Up Acupuncture Session",
-      photo: { asset: "cw-ap-shoulder-needles", alt: "A patient resting with needles placed along the shoulder", shape: "circle" },
+      photo: { asset: "cw-ap-treatment-room", alt: "A patient resting with needles placed during a follow-up session", shape: "circle" },
       blocks: [
         { kind: "p", text: "Follow-up sessions build on what we learned during your initial visit. Your provider will check in on what has changed, how you responded, and what still needs attention. Treatment is then adjusted accordingly.", lead: true },
       ],
@@ -294,7 +294,7 @@ const acupuncture: PageContent = {
       stop: "ground",
       layout: "split-reverse",
       heading: "What to Expect During Your Session",
-      photo: { asset: "cw-ap-needle-closeup", alt: "A close-up of a single acupuncture needle", shape: "circle" },
+      photo: { asset: "pw-acu-leo-smile", alt: "Leonard Ma with a patient during an acupuncture visit", shape: "circle" },
       blocks: [
         { kind: "p", text: "After your intake and assessment, your practitioner will place thin, sterile needles based on your treatment plan. You may feel warmth, heaviness, tingling, a dull ache, or a gentle sense of release. Once the needles are placed, you will rest quietly for about 30 minutes.", lead: true },
         { kind: "h3", text: "Before Your Appointment" },

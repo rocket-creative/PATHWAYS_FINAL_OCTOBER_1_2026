@@ -113,7 +113,7 @@ export function PeopleBlock({ group }: { group: string }) {
   }
   if (group === "dogs") {
     const dogs = PEOPLE.filter((p) => p.group === "dogs");
-    const photo: Record<string, string> = { domino: "ha-domino-therapy-dog", "gypsy-sassafras": "ha-gypsy-therapy-dog" };
+    const photo: Record<string, string> = { domino: "ha-ksusha-domino", "gypsy-sassafras": "ha-gypsy-therapy-dog" };
     return (
       <div className="grid gap-6">
         <p className="lead" data-reveal>
@@ -122,7 +122,7 @@ export function PeopleBlock({ group }: { group: string }) {
         <div className="grid gap-6 md:grid-cols-2">
           {dogs.map((d) => (
             <div key={d.slug} className="grid gap-3 text-center" data-reveal>
-              <Photo asset={photo[d.slug]} alt={`${d.name}, therapy dog`} shape="circle" className="ring mx-auto w-[min(70vw,260px)]" sizes="260px" />
+              <Photo asset={photo[d.slug]} alt={d.slug === "domino" ? "Domino with Ksusha Cascio" : `${d.name}, therapy dog`} shape="arch" className="ring mx-auto w-[min(70vw,260px)]" sizes="260px" />
               <h3>{d.name}</h3>
               {d.paragraphs.map((p, i) => (
                 <p key={i} className="text-left">

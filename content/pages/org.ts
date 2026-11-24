@@ -200,7 +200,7 @@ const locations: PageContent = {
     "Pathways Within serves Nassau and Suffolk Counties from five Long Island locations, with virtual appointments available for eligible services. Our Welcome Team can help you find the provider, service, and location that best fit your needs.",
     "Accessibility details are included below so you know what to expect before you arrive.",
   ],
-  heroPhoto: { asset: "pr-rvc-lounge", alt: "The lounge at the Rockville Centre office" },
+  heroPhoto: { asset: "pr-ap-smt-labyrinth-sign", alt: "The Pathways Within sign at the Smithtown office" },
   sections: [
     {
       id: "offices",

@@ -7,6 +7,39 @@ export function photoSrc(asset: string, w = 1200) {
   return `/img/photos/${asset}-${w}.webp`;
 }
 
+/**
+ * Group and two-person photos lose someone in a circle crop. These keep their
+ * full 3:2 frame (a rounded rectangle) wherever a circle, blob, or arch was asked for.
+ */
+const WIDE = new Set([
+  "cw-ap-massage-session",
+  "cw-ap26-acu-leo",
+  "cw-ap26-acu-needles",
+  "cw-ap26-acu-shoulder",
+  "cw-ap26-med-couples",
+  "cw-ap26-med-np",
+  "cw-ap26-med-single",
+  "cw-ap26-med-teen",
+  "cw-group-circle",
+  "cw-prescriber-conversation",
+  "cw-riverside-walk",
+  "ha-team-bright-room",
+  "pw-acu-leo-smile",
+  "pw-christine-greeting",
+  "pw-coach-conversation",
+  "pw-desk-checkin",
+  "pw-desk-greeting",
+  "pw-desk-wide",
+  "pw-massage-hands",
+  "pw-waiting-smithtown",
+  "pw-walk-to-room",
+  "pw-wellness-greeting",
+  "th-group-loft",
+  "th-group-window-room",
+  "th-parent-teen-car",
+]);
+export const isWide = (asset: string) => WIDE.has(asset) || asset.startsWith("th-ap26-");
+
 /** Ambient and office photography. `shape` applies the organic frame. */
 export function Photo({
   asset,
@@ -27,9 +60,10 @@ export function Photo({
   float?: number;
   priority?: boolean;
 }) {
-  const frame = shape === "round" ? "overflow-hidden rounded-[var(--r-lg)]" : shape ? shape : "";
+  const wide = shape !== undefined && shape !== "round" && isWide(asset);
+  const frame = shape === "round" || wide ? "overflow-hidden rounded-[var(--r-lg)]" : shape ? shape : "";
   return (
-    <figure className={`${frame} ${className} m-0`} style={style} data-float={float ?? undefined}>
+    <figure className={`${frame} ${className} m-0`} style={wide ? { aspectRatio: "3 / 2", ...style } : style} data-float={float ?? undefined}>
       <img
         src={photoSrc(asset, 1200)}
         srcSet={PHOTO_WIDTHS.map((w) => `${photoSrc(asset, w)} ${w}w`).join(", ")}
@@ -38,7 +72,7 @@ export function Photo({
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         width={1200}
-        height={shape === "arch" ? 1500 : shape ? 1200 : 800}
+        height={wide ? 800 : shape === "arch" ? 1500 : shape ? 1200 : 800}
         className="h-full w-full object-cover"
       />
     </figure>

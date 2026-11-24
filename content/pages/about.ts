@@ -31,7 +31,7 @@ export const about: PageContent = {
       stop: "standing",
       eyebrow: "FOUNDER OF PATHWAYS WITHIN",
       heading: "Meet Rachel: Founder, Therapist & “Patient Zero”",
-      photo: { asset: "ha-ap26-rachel-solo", alt: "Rachel Lessard, founder of Pathways Within" },
+      photo: { asset: "ha-rachel-lessard-portrait", alt: "Rachel Lessard, founder of Pathways Within" },
       blocks: [
         { kind: "p", text: "Hi, I’m Rachel, therapist, founder, lifelong listener, and the original “Patient Zero” behind Pathways Within." },
         { kind: "p", text: "Therapy is not just what I do. It is woven into who I am." },

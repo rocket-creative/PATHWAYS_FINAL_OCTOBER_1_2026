@@ -170,7 +170,7 @@ const coaching: PageContent = {
       id: "is-coaching-right-for-me",
       stop: "cairn",
       heading: "Is Coaching Right for Me?",
-      photo: { asset: "th-ap26-two-women", alt: "Two women in a coaching conversation" },
+      photo: { asset: "pw-coach-conversation", alt: "A coaching conversation" },
       blocks: [
         { kind: "p", text: "You do not need to have everything figured out before your first appointment. A willingness to grow is a good place to start. Coaching may be a good fit if you want to:", lead: true },
         {
@@ -579,7 +579,7 @@ const resources: PageContent = {
       id: "wisdom-of-wellness",
       stop: "cairn",
       heading: "The Wisdom of Wellness",
-      photo: { asset: "ha-ap26-rachel-solo", alt: "Rachel Lessard, founder and “Patient Zero”", shape: "circle" },
+      photo: { asset: "ha-rachel-lessard-portrait", alt: "Rachel Lessard, founder and “Patient Zero”", shape: "circle" },
       blocks: [
         { kind: "p", text: "For the more candid version of the story, follow The Wisdom of Wellness on Substack at [@the.wisdom.of.wellness](https://substack.com/@the.wisdom.of.wellness), where I share the behind-the-scenes journey of being a founder, therapist, lifelong learner.", lead: true },
         { kind: "cta", label: "Follow The Wisdom of Wellness on Substack", href: "https://substack.com/@the.wisdom.of.wellness" },
