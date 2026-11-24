@@ -47,7 +47,7 @@ const services: PageContent = {
       heading: "Coaching, Energy Work & Functional Medicine",
       blocks: [
         { kind: "p", text: "Performance & Wellness Coaching, Energy Work (including Reiki and Integrative Energy Therapy), and Functional Medicine through our collaboration with Ascend Functional Health are separate from licensed mental health treatment. They may be used on their own or alongside therapy, medication management, and wellness services." },
-        { kind: "tiles", items: BUCKETS.mindBody.links.map((l) => tile(l, l.href.includes("coaching") ? "ha-tia-baumohl" : l.href.includes("functional") ? "pr-laptop-at-home" : "cw-ap26-hands")) },
+        { kind: "tiles", items: BUCKETS.mindBody.links.map((l) => tile(l, l.href.includes("coaching") ? "ha-tia-baumohl" : l.href.includes("functional") ? "fm-ascend-results-tablet" : "cw-ap26-hands")) },
       ],
     },
     {

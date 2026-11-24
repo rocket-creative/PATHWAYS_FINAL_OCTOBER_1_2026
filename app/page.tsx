@@ -25,7 +25,7 @@ const SERVICES: { bucket: string; title: string; href: string; asset: string }[]
   { bucket: "Mental Health", title: "Medication Management", href: "/services/medication-management", asset: "cw-ap26-med-np" },
   { bucket: "Mind-Body Support", title: "Performance & Wellness Coaching", href: "/services/performance-wellness-coaching", asset: "ha-tia-baumohl" },
   { bucket: "Mind-Body Support", title: "Energy Work", href: "/services/energy-work", asset: "cw-ap26-hands" },
-  { bucket: "Mind-Body Support", title: "Functional Medicine", href: "/services/functional-medicine", asset: "pr-laptop-at-home" },
+  { bucket: "Mind-Body Support", title: "Functional Medicine", href: "/services/functional-medicine", asset: "fm-ascend-results-tablet" },
   { bucket: "Wellness", title: "Massage", href: "/services/massage", asset: "cw-ap-massage-session" },
   { bucket: "Wellness", title: "Acupuncture", href: "/services/acupuncture", asset: "cw-ap26-acu-leo" },
   { bucket: "Wellness", title: "Cupping Therapy", href: "/services/cupping-therapy", asset: "cw-ap26-acu-shoulder" },

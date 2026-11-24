@@ -640,7 +640,7 @@ const functionalMedicine: PageContent = {
   intro: [
     "At Pathways Within, we recognize that physical, mental, and emotional well-being are deeply connected. Through our collaboration with Ascend Functional Health, we're expanding the resources available to our patients, offering access to personalized functional medicine services that support a more complete picture of health.",
   ],
-  heroPhoto: { asset: "cw-kitchen-morning", alt: "A calm morning moment at home in the kitchen" },
+  heroPhoto: { asset: "fm-ascend-results-tablet", alt: "Reviewing health results on a tablet" },
   heroStop: "wide",
   heroCtas: [{ label: "Contact Us", href: "/contact" }],
   sections: [
@@ -648,7 +648,7 @@ const functionalMedicine: PageContent = {
       id: "whole-person",
       stop: "cairn",
       heading: "A Whole-Person Approach to Feeling Better",
-      photo: { asset: "cw-riverside-walk", alt: "A person walking along a riverside path", shape: "blob" },
+      photo: { asset: "fm-ascend-supplements", alt: "Ascend Functional Health nutritional supplements", shape: "blob" },
       blocks: [
         { kind: "p", text: "How we sleep, eat, move, manage stress, and care for our bodies can all influence how we think, feel, and navigate everyday life.", lead: true },
         { kind: "p", text: "Functional medicine builds on the Pathways Within philosophy of 360° care by looking beyond individual symptoms to explore the many factors that may contribute to overall health. This approach recognizes that every person has a unique health history, lifestyle, and set of wellness goals." },
@@ -691,8 +691,8 @@ const functionalMedicine: PageContent = {
     {
       id: "personalized-care",
       stop: "seated",
-      layout: "wide",
       heading: "Personalized Care, Connected to Your Needs",
+      photo: { asset: "fm-ascend-bloodwork", alt: "A lab technician preparing a blood sample for testing", shape: "arch" },
       blocks: [
         { kind: "p", text: "Through Ascend Functional Health, patients can access care tailored to their individual concerns and goals.", lead: true },
         {
@@ -715,7 +715,6 @@ const functionalMedicine: PageContent = {
         {
           kind: "person",
           slug: "alfred-alessi",
-          noPhoto: true,
           eyebrow: "FOUNDER & CLINICAL DIRECTOR, ASCEND FUNCTIONAL HEALTH",
           name: "Dr. Alfred Alessi",
           credentials: "DC, IHP",
