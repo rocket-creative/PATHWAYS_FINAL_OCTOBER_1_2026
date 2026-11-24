@@ -282,7 +282,7 @@ export default function Home() {
             </div>
             <div className="relative mx-auto w-[min(72vw,400px)]">
               <div className="orbit">
-                <Photo asset="ha-ap26-rachel-solo" alt="Rachel Lessard, founder of Pathways Within" shape="circle" className="ring" float={34} sizes="400px" />
+                <Photo asset="ha-rachel-polished" alt="Rachel Lessard, founder of Pathways Within" shape="circle" className="ring" float={34} sizes="400px" />
               </div>
             </div>
           </div>
