@@ -374,7 +374,7 @@ const rachel: PageContent = {
       id: "woven-in",
       stop: "pool",
       heading: "Therapy is not just what I do. It is woven into who I am.",
-      photo: { asset: "ha-rachel-lessard-portrait", alt: "Portrait of Rachel Lessard", shape: "arch" },
+      photo: { asset: "ha-rachel-smithtown", alt: "Portrait of Rachel Lessard", shape: "arch" },
       blocks: [
         { kind: "p", text: "I am here for the big, messy, complicated conversations. I am also the person who will remind you to drink water, unclench your jaw, take the win, and stop pretending rest has to be earned.", lead: true },
         { kind: "p", text: "Together, we can explore what you have experienced, identify patterns that may no longer be serving you, and build ways of coping, communicating, and connecting that feel healthier and more sustainable." },
@@ -579,7 +579,7 @@ const resources: PageContent = {
       id: "wisdom-of-wellness",
       stop: "cairn",
       heading: "The Wisdom of Wellness",
-      photo: { asset: "ha-rachel-lessard-portrait", alt: "Rachel Lessard, founder and “Patient Zero”", shape: "circle" },
+      photo: { asset: "ha-rachel-smithtown", alt: "Rachel Lessard, founder and “Patient Zero”", shape: "circle" },
       blocks: [
         { kind: "p", text: "For the more candid version of the story, follow The Wisdom of Wellness on Substack at [@the.wisdom.of.wellness](https://substack.com/@the.wisdom.of.wellness), where I share the behind-the-scenes journey of being a founder, therapist, lifelong learner.", lead: true },
         { kind: "cta", label: "Follow The Wisdom of Wellness on Substack", href: "https://substack.com/@the.wisdom.of.wellness" },

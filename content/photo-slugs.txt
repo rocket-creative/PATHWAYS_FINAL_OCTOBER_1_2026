@@ -189,3 +189,4 @@ pr-rvc-group-room
 pr-rvc-lounge
 ha-rachel-polished
 pw-leadership-offsite
+ha-rachel-smithtown
